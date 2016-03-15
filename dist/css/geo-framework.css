@@ -975,6 +975,10 @@ table svg {
 table svg:hover path {
   fill: #4C87FF;
 }
+/* line 38, ../../_sass/application/atoms/_atom-table.scss */
+table .geo-table--action {
+  text-align: right;
+}
 
 /*-------------------------------------------------------
 
