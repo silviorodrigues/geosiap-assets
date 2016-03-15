@@ -629,7 +629,7 @@ a:hover {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-shadow.scss */
-.geo-menu {
+.geo-menu, table {
   box-shadow: 0px 0px 5px #bababa;
 }
 
@@ -801,6 +801,20 @@ h6 {
   border-radius: 99px;
   padding: 4px 8px;
 }
+/* line 54, ../../_sass/application/atoms/_atom-historic-item.scss */
+.geo-chat__historic .geo-notification--solved.geo-historic__item .geo-historic__item--notfication .geo-notification__hour {
+  color: #4C87FF;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+/* line 60, ../../_sass/application/atoms/_atom-historic-item.scss */
+.geo-chat__historic .geo-notification--solved.geo-historic__item .geo-historic__item--notfication .geo-notification__badge {
+  background-color: #4C87FF;
+  color: #FFFFFF;
+  border-radius: 99px;
+  padding: 4px 8px;
+}
 
 /*-------------------------------------------------------
 
@@ -919,6 +933,47 @@ h6 {
   box-sizing: border-box;
   width: 100%;
   padding: 5px;
+}
+
+/*-------------------------------------------------------
+
+     Atom name: Table
+
+-------------------------------------------------------*/
+/* line 8, ../../_sass/application/atoms/_atom-table.scss */
+table {
+  border: 1px solid #ebeff2;
+  box-sizing: border-box;
+  color: #5d5d5d;
+  font-size: .9em;
+  margin: 12px;
+  width: calc(100% - 24px);
+}
+/* line 16, ../../_sass/application/atoms/_atom-table.scss */
+table thead {
+  font-weight: bold;
+  text-align: left;
+}
+/* line 20, ../../_sass/application/atoms/_atom-table.scss */
+table tr {
+  border: 1px solid #ebeff2;
+  transition: ease .2s;
+}
+/* line 23, ../../_sass/application/atoms/_atom-table.scss */
+table tr:hover {
+  background-color: #ebeff2;
+}
+/* line 27, ../../_sass/application/atoms/_atom-table.scss */
+table th, table td {
+  padding: 24px;
+}
+/* line 30, ../../_sass/application/atoms/_atom-table.scss */
+table svg {
+  padding: 5px;
+}
+/* line 33, ../../_sass/application/atoms/_atom-table.scss */
+table svg:hover path {
+  fill: #4C87FF;
 }
 
 /*-------------------------------------------------------
@@ -1212,7 +1267,7 @@ h6 {
 }
 /* line 17, ../../_sass/application/molecules/_molecule-nav__footer.scss */
 .geo-nav .geo-nav__footer:before {
-  content: "<<";
+  content: "<";
 }
 
 /*-------------------------------------------------------
@@ -1595,7 +1650,7 @@ h6 {
 }
 /* line 35, ../../_sass/application/organisms/_organism-nav.scss */
 .geo-nav.geo-nav--reduced .geo-nav__footer:before {
-  content: '>>';
+  content: '>';
 }
 /* line 39, ../../_sass/application/organisms/_organism-nav.scss */
 .geo-nav.geo-nav--reduced .geo-nav__header {

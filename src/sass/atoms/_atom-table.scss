@@ -1,0 +1,38 @@
+/*-------------------------------------------------------
+
+     Atom name: Table
+
+-------------------------------------------------------*/
+
+
+table {
+	border: 1px solid $COLOR-GRAY-LIGHT;
+	box-sizing: border-box;
+	color: $COLOR-DISABLE;
+	font-size: .9em;
+	margin: 12px;
+	width: calc(100% - 24px);
+	@extend %boson-shadow;
+	thead {
+		font-weight: bold;
+		text-align: left;
+	}
+	tr {
+		border: 1px solid $COLOR-GRAY-LIGHT;
+		transition: ease .2s;
+		&:hover {
+			background-color: $COLOR-GRAY-LIGHT;
+		}
+	}
+	th, td {
+		padding: 24px;
+	}
+	svg {
+		padding: 5px;
+		&:hover {
+			path {
+				fill: $COLOR-PRIMARY;
+			}
+		}
+	}
+}
