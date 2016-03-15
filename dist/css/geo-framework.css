@@ -798,9 +798,8 @@ h6 {
 .geo-chat__historic .geo-historic__item--notified.geo-historic__item .geo-historic__item--notfication .geo-notification__badge {
   background-color: #88d535;
   color: #FFFFFF;
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
-  padding: 4px;
+  border-radius: 99px;
+  padding: 4px 8px;
 }
 
 /*-------------------------------------------------------
