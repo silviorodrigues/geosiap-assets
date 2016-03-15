@@ -19,6 +19,12 @@ module.exports = function(grunt) {
         cwd: '../geo-framework-doc/_site/css',
         src: '*.css',
         dest: 'dist/css/'
+      },
+      images: {
+        expand: true,
+        cwd: '../geo-framework-doc/images',
+        src: '**',
+        dest: 'images/'
       }
     },
     cssmin: {
