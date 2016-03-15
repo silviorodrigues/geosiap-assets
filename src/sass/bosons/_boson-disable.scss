@@ -1,0 +1,12 @@
+/*-------------------------------------------------------
+
+     Boson name: Disable
+
+-------------------------------------------------------*/
+
+%boson-disable {
+  color: $COLOR-DISABLE;
+  cursor: not-allowed;
+  background-color: scale-lightness($COLOR-DISABLE, 90);
+  border-color: scale-lightness($COLOR-DISABLE, 80);
+}

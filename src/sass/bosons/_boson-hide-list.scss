@@ -1,0 +1,16 @@
+/*-------------------------------------------------------
+
+     Boson name: Hide List
+
+-------------------------------------------------------*/
+
+
+%boson-hide-list {
+  ul {
+    display: none;
+    position: absolute;
+  }
+  &:hover ul{
+    display: block;
+  }
+}

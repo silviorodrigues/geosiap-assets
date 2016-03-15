@@ -1,0 +1,20 @@
+/*-------------------------------------------------------
+
+     Molecule name: Chat Header
+
+-------------------------------------------------------*/
+
+%molecule-chat__header {
+	background-color: $COLOR-PRIMARY;
+	color: $COLOR-DEFAULT;
+	padding: 24px;
+	.geo-menu__button {
+		float: right;
+		svg {
+			padding: 0;
+			path {
+				fill: $COLOR-DEFAULT;
+			}
+		}
+	}
+}

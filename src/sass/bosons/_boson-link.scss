@@ -1,0 +1,13 @@
+/*-------------------------------------------------------
+
+     Boson name: Link
+
+-------------------------------------------------------*/
+
+a {
+	color: $COLOR-PRIMARY;
+	text-decoration : none;
+	&:hover {
+		text-decoration : underline;
+	}
+}

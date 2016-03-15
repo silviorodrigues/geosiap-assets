@@ -1,0 +1,21 @@
+/*-------------------------------------------------------
+
+     Molecule name: Header Info
+
+-------------------------------------------------------*/
+
+%header__info {
+  float: right;
+  & *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  & path {
+    fill: $COLOR-PRIMARY;
+  }
+  & svg:hover {
+    path {
+      fill: $COLOR-FONT;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+/*-------------------------------------------------------
+
+     Atom name: Tooltip
+
+-------------------------------------------------------*/
+
+%atom-tooltip--error-right {
+	border-radius: 3px;
+	bottom: calc(100% + 10px);
+	display: none;
+	font-size: .8em;
+	font-weight: bold;
+	padding: 5px 10px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 10000;
+	&:before {
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		content: "";
+		position: absolute;
+		top: 100%;
+	}
+
+	@extend %boson-tooltip--error;
+	@extend %boson-tooltip--right;
+}

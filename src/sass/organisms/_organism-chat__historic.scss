@@ -1,0 +1,21 @@
+/*-------------------------------------------------------
+
+     Organism name: Chat Historic
+
+-------------------------------------------------------*/
+
+.geo-chat__historic {
+	background-color: $COLOR-DEFAULT;
+	min-width: 320px;
+	max-width: 320px;
+	max-height: calc(100vh - 72px);
+	overflow-y: scroll;
+	@extend %atom-profile-picture;
+	.geo-historic__item {
+		@extend %atom-historic-item;
+	}
+	.geo-historic__search {
+		@extend %atom-search;
+		background-color: $COLOR-DEFAULT;
+	}
+}

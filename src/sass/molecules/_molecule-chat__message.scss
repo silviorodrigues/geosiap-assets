@@ -1,0 +1,56 @@
+/*-------------------------------------------------------
+
+     Molecule name: Chat Message
+
+-------------------------------------------------------*/
+
+
+%molecule-chat__message {
+	box-sizing: border-box;
+	border-bottom: 1px solid $COLOR-GRAY-LIGHT;
+	display: inline-block;
+	padding: 24px;
+	-webkit-transition: ease .2s;
+	transition: ease .2s;
+	min-width: 100%;
+	&:hover {
+		background-color: #F5F5F5;
+	}
+	&.geo-chat__message--reduced {
+		.geo-message__content{
+			height: 30px;
+			text-overflow: ellipsis;
+      		overflow: hidden;
+      		max-width: 100%;
+		}
+	}
+	.geo-message__header {
+		cursor: pointer;
+		vertical-align: top;
+		width: 100%;
+		height: 50px;
+		@extend %atom-profile-picture;
+		.geo-message__header--name {
+			display: inline-block;
+			vertical-align: top;
+			font-weight: bold;
+		}
+		.geo-message__info {
+			display: inline-block;
+			text-align: right;
+			float: right;
+			.geo-message__info--date, .geo-message__info--att {
+				margin: 0;
+			}
+			.geo-message__info--att {
+				svg {
+					padding: 0;
+					width: 20px;
+				}
+			}
+		}
+	}
+	.geo-message__content {
+		width: 100%;
+	}
+}

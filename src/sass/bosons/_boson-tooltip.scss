@@ -1,0 +1,21 @@
+/*-------------------------------------------------------
+
+     Boson name: Tooltip
+
+-------------------------------------------------------*/
+
+%boson-tooltip--error {
+	background-color: $COLOR-ERROR;
+	color: $COLOR-DEFAULT;
+
+	&:before {
+		border-top: 9px solid $COLOR-ERROR;
+	}
+}
+
+%boson-tooltip--right {
+	right: 0;
+	&:before {
+		right: 15px;
+	}
+}

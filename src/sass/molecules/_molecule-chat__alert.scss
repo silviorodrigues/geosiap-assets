@@ -1,0 +1,18 @@
+/*-------------------------------------------------------
+
+     Molecule name: Chat Alert
+
+-------------------------------------------------------*/
+
+
+%molecule-chat__alert {
+	background-color: #c4c9e8;
+	padding: 12px 24px;
+	.geo-alert__content {
+		display: inline-block;
+	}
+	.geo-alert__info {
+		display: inline-block;
+		float: right;
+	}
+}
