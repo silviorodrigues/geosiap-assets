@@ -1015,6 +1015,7 @@ table .geo-table--action {
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/atoms/_atom-toggle.scss */
 .geo-toggle {
+  display: inline-block;
   margin: 0 10px 20px;
 }
 
