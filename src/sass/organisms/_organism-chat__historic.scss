@@ -17,5 +17,14 @@
 	.geo-historic__search {
 		@extend %atom-search;
 		background-color: $COLOR-DEFAULT;
+		padding: 24px;
+		&:after {
+			right: 30px;
+		}
+ 		input {
+ 			border: 1px solid $COLOR-GRAY-LIGHT;
+			padding: 5px;
+ 			width: 100%;
+ 		}
 	}
 }

@@ -38,6 +38,18 @@
       }
     }
   }
+  &.geo-input--search div{
+    @extend %atom-search;
+    &:after {
+      right: 10px;
+    }
+  }
+  &.geo-input--datepicker div{
+    @extend %atom-datepicker;
+    &:after {
+      right: 10px;
+    }
+  }
 }
 
 .geo__input--12c {

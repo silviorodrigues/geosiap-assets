@@ -16,7 +16,6 @@
   cursor: pointer;
   display: inline-block;
   position: relative;
-  width: 0;
   white-space: nowrap;
   margin: 0 10px 20px;
 
@@ -102,7 +101,7 @@
 
   .geo__switch--label {
     @extend %atom-label;
-    padding-right: 15px;
+    padding-right: 5px;
     display: inline-block;
   }
 }

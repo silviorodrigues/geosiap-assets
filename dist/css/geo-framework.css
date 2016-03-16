@@ -558,7 +558,7 @@ th {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-icon-inside.scss */
-.geo-button.geo-button__icon--add:before, .geo__input--required.geo__input--12c .error:after, .geo__input--required.geo__input--9c .error:after, .geo__input--required.geo__input--6c .error:after, .geo__input--required.geo__input--3c .error:after, .geo__input--required.geo__input--1c .error:after, .geo-chat__historic .geo-historic__search:after {
+.geo-button.geo-button__icon--add:before, .geo-input--datepicker.geo__input--12c div:after, .geo-input--datepicker.geo__input--9c div:after, .geo-input--datepicker.geo__input--6c div:after, .geo-input--datepicker.geo__input--3c div:after, .geo-input--datepicker.geo__input--1c div:after, .geo__input--required.geo__input--12c .error:after, .geo__input--required.geo__input--9c .error:after, .geo__input--required.geo__input--6c .error:after, .geo__input--required.geo__input--3c .error:after, .geo__input--required.geo__input--1c .error:after, .geo-input--search.geo__input--12c div:after, .geo-input--search.geo__input--9c div:after, .geo-input--search.geo__input--6c div:after, .geo-input--search.geo__input--3c div:after, .geo-input--search.geo__input--1c div:after, .geo-chat__historic .geo-historic__search:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -676,6 +676,28 @@ a:hover {
   position: relative;
   text-align: center;
   text-decoration: none;
+}
+
+/*-------------------------------------------------------
+
+     Atom name: Search
+
+-------------------------------------------------------*/
+/* line 7, ../../_sass/application/atoms/_atom-datepicker.scss */
+.geo-input--datepicker.geo__input--12c div, .geo-input--datepicker.geo__input--9c div, .geo-input--datepicker.geo__input--6c div, .geo-input--datepicker.geo__input--3c div, .geo-input--datepicker.geo__input--1c div {
+  position: relative;
+}
+/* line 9, ../../_sass/application/atoms/_atom-datepicker.scss */
+.geo-input--datepicker.geo__input--12c div:after, .geo-input--datepicker.geo__input--9c div:after, .geo-input--datepicker.geo__input--6c div:after, .geo-input--datepicker.geo__input--3c div:after, .geo-input--datepicker.geo__input--1c div:after {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIxLjEwNzQsMjRIMi43MzczQzEuMTUxNCwyNCwwLDIyLjgyMDMsMCwyMS4xOTUzVjIuNzY0NkMwLDEuMTYyNiwxLjE1MTQsMCwyLjczNzMsMGgxOC4zNzAxDQoJCUMyMi43NTY4LDAsMjQsMS4xODg1LDI0LDIuNzY0NnYxOC40Mjk3QzI0LDIyLjc2NzYsMjIuNzI5NSwyNCwyMS4xMDc0LDI0eiBNMi43MzczLDFDMS42OTgyLDEsMSwxLjcwOSwxLDIuNzY0NnYxOC40MzA3DQoJCUMxLDIyLjI1NzgsMS43MTQ0LDIzLDIuNzM3MywyM2gxOC4zNzAxQzIyLjE4NjUsMjMsMjMsMjIuMjIzNiwyMywyMS4xOTQzVjIuNzY0NkMyMywxLjc1ODgsMjIuMTg2NSwxLDIxLjEwNzQsMUgyLjczNzN6Ii8+DQoJPHJlY3QgeD0iMC41IiB5PSI3IiB3aWR0aD0iMjMiIGhlaWdodD0iMSIvPg0KCTxyZWN0IHg9IjQiIHk9IjcuNDUyMSIgd2lkdGg9IjEiIGhlaWdodD0iMTYuMDQ3OSIvPg0KCTxyZWN0IHg9IjkiIHk9IjcuNDUyMSIgd2lkdGg9IjEiIGhlaWdodD0iMTYuMDQ3OSIvPg0KCTxyZWN0IHg9IjE0IiB5PSI3LjQ1MjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjE2LjA0NzkiLz4NCgk8cmVjdCB4PSIxOSIgeT0iNy40NTIxIiB3aWR0aD0iMSIgaGVpZ2h0PSIxNi4wNDc5Ii8+DQoJPHJlY3QgeD0iMC41IiB5PSIxOSIgd2lkdGg9IjIzIiBoZWlnaHQ9IjEiLz4NCgk8cmVjdCB4PSIwLjUiIHk9IjE1IiB3aWR0aD0iMjMiIGhlaWdodD0iMSIvPg0KCTxyZWN0IHg9IjAuNSIgeT0iMTEiIHdpZHRoPSIyMyIgaGVpZ2h0PSIxIi8+DQoJPHBhdGggZD0iTTcuNjQxNiw0Ljg5NjVjLTAuNzM0NCwwLTEuMzMyLTAuNTk3Ny0xLjMzMi0xLjMzMmMwLTAuNzM0OSwwLjU5NzctMS4zMzI1LDEuMzMyLTEuMzMyNQ0KCQljMC43MzQ5LDAsMS4zMzI1LDAuNTk3NywxLjMzMjUsMS4zMzI1QzguOTc0MSw0LjI5ODgsOC4zNzY1LDQuODk2NSw3LjY0MTYsNC44OTY1eiBNNy42NDE2LDMuMjMxOQ0KCQljLTAuMTgzMSwwLTAuMzMyLDAuMTQ4OS0wLjMzMiwwLjMzMjVjMCwwLjE4MzEsMC4xNDg5LDAuMzMyLDAuMzMyLDAuMzMyYzAuMTgzNiwwLDAuMzMyNS0wLjE0ODksMC4zMzI1LTAuMzMyDQoJCUM3Ljk3NDEsMy4zODA5LDcuODI1MiwzLjIzMTksNy42NDE2LDMuMjMxOXoiLz4NCgk8cGF0aCBkPSJNMTYuMzU4NCw0Ljg5NjVjLTAuNzM0NCwwLTEuMzMyLTAuNTk3Ny0xLjMzMi0xLjMzMmMwLTAuNzM0OSwwLjU5NzctMS4zMzI1LDEuMzMyLTEuMzMyNXMxLjMzMiwwLjU5NzcsMS4zMzIsMS4zMzI1DQoJCUMxNy42OTA0LDQuMjk4OCwxNy4wOTI4LDQuODk2NSwxNi4zNTg0LDQuODk2NXogTTE2LjM1ODQsMy4yMzE5Yy0wLjE4MjYsMC0wLjMzMiwwLjE0ODktMC4zMzIsMC4zMzI1DQoJCWMwLDAuMTgzMSwwLjE0OTQsMC4zMzIsMC4zMzIsMC4zMzJzMC4zMzItMC4xNDg5LDAuMzMyLTAuMzMyQzE2LjY5MDQsMy4zODA5LDE2LjU0MSwzLjIzMTksMTYuMzU4NCwzLjIzMTl6Ii8+DQo8L2c+DQo8cmVjdCBmaWxsPSJub25lIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4NCjwvc3ZnPg0K");
+  margin-top: -8px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+}
+/* line 17, ../../_sass/application/atoms/_atom-datepicker.scss */
+.geo-input--datepicker.geo__input--12c div input, .geo-input--datepicker.geo__input--9c div input, .geo-input--datepicker.geo__input--6c div input, .geo-input--datepicker.geo__input--3c div input, .geo-input--datepicker.geo__input--1c div input {
+  box-sizing: border-box;
 }
 
 /*-------------------------------------------------------
@@ -925,25 +947,20 @@ h6 {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/atoms/_atom-search.scss */
-.geo-chat__historic .geo-historic__search {
-  padding: 24px;
+.geo-input--search.geo__input--12c div, .geo-input--search.geo__input--9c div, .geo-input--search.geo__input--6c div, .geo-input--search.geo__input--3c div, .geo-input--search.geo__input--1c div, .geo-chat__historic .geo-historic__search {
   position: relative;
 }
-/* line 10, ../../_sass/application/atoms/_atom-search.scss */
-.geo-chat__historic .geo-historic__search:after {
+/* line 9, ../../_sass/application/atoms/_atom-search.scss */
+.geo-input--search.geo__input--12c div:after, .geo-input--search.geo__input--9c div:after, .geo-input--search.geo__input--6c div:after, .geo-input--search.geo__input--3c div:after, .geo-input--search.geo__input--1c div:after, .geo-chat__historic .geo-historic__search:after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iXzAxXy1fY2FtcG9fZGVfYnVzY2FfbWVudV9jbG9zZSIgZGF0YS1uYW1lPSIwMSAtIGNhbXBvIGRlIGJ1c2NhIG1lbnUgY2xvc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE0IDE0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6Izc0NzQ3NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmljb24tcGVzcXVpc2EtYmFyPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNTk5LjA2LDg2LjhoLTAuNjNsLTAuMjItLjIyYTUuMiw1LjIsMCwxLDAtLjU2LjU2bDAuMjEsMC4yMlY4OGw0LDQsMS4xOS0xLjE5Wm0tNC44LDBhMy42LDMuNiwwLDEsMSwzLjYtMy42QTMuNiwzLjYsMCwwLDEsMTU5NC4yNiw4Ni44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1ODkuMDYgLTc4KSIvPjwvc3ZnPg==");
+  margin-top: -8px;
+  top: 50%;
   width: 16px;
   height: 16px;
-  right: 30px;
-  top: 50%;
-  margin-top: -8px;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iXzAxXy1fY2FtcG9fZGVfYnVzY2FfbWVudV9jbG9zZSIgZGF0YS1uYW1lPSIwMSAtIGNhbXBvIGRlIGJ1c2NhIG1lbnUgY2xvc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE0IDE0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6Izc0NzQ3NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmljb24tcGVzcXVpc2EtYmFyPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNTk5LjA2LDg2LjhoLTAuNjNsLTAuMjItLjIyYTUuMiw1LjIsMCwxLDAtLjU2LjU2bDAuMjEsMC4yMlY4OGw0LDQsMS4xOS0xLjE5Wm0tNC44LDBhMy42LDMuNiwwLDEsMSwzLjYtMy42QTMuNiwzLjYsMCwwLDEsMTU5NC4yNiw4Ni44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1ODkuMDYgLTc4KSIvPjwvc3ZnPg==");
 }
-/* line 19, ../../_sass/application/atoms/_atom-search.scss */
-.geo-chat__historic .geo-historic__search input {
-  border: 1px solid #ebeff2;
+/* line 17, ../../_sass/application/atoms/_atom-search.scss */
+.geo-input--search.geo__input--12c div input, .geo-input--search.geo__input--9c div input, .geo-input--search.geo__input--6c div input, .geo-input--search.geo__input--3c div input, .geo-input--search.geo__input--1c div input, .geo-chat__historic .geo-historic__search input {
   box-sizing: border-box;
-  width: 100%;
-  padding: 5px;
 }
 
 /*-------------------------------------------------------
@@ -989,6 +1006,16 @@ table svg:hover path {
 /* line 38, ../../_sass/application/atoms/_atom-table.scss */
 table .geo-table--action {
   text-align: right;
+}
+
+/*-------------------------------------------------------
+
+     Atom name: Toggle
+
+-------------------------------------------------------*/
+/* line 7, ../../_sass/application/atoms/_atom-toggle.scss */
+.geo-toggle {
+  margin: 0 10px 20px;
 }
 
 /*-------------------------------------------------------
@@ -1204,27 +1231,31 @@ table .geo-table--action {
   clear: both;
   height: 0;
 }
+/* line 18, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-columns--right.geo-columns--9c, .geo-content__row .geo-columns--right.geo-columns--6c, .geo-content__row .geo-columns--right.geo-columns--3c {
+  text-align: right;
+}
 
-/* line 21, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 24, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--9c {
-  width: calc(75% - 25px);
+  width: 75%;
 }
-/* line 25, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 28, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--6c {
-  width: calc(50% - 25px);
+  width: 50%;
 }
-/* line 29, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 32, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--3c {
-  width: calc(25% - 25px);
+  width: 25%;
 }
-/* line 33, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 36, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-profile-column {
   display: inline-block;
   margin-left: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 40, ../../_sass/application/molecules/_molecule-columns.scss */
+  /* line 43, ../../_sass/application/molecules/_molecule-columns.scss */
   .geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
     display: block;
     width: calc(100% - 25px);
@@ -1279,34 +1310,42 @@ table .geo-table--action {
 .geo__input--required.geo__input--12c .error:hover .error-alert, .geo__input--required.geo__input--9c .error:hover .error-alert, .geo__input--required.geo__input--6c .error:hover .error-alert, .geo__input--required.geo__input--3c .error:hover .error-alert, .geo__input--required.geo__input--1c .error:hover .error-alert {
   display: block;
 }
-
 /* line 43, ../../_sass/application/molecules/_molecule-input.scss */
+.geo-input--search.geo__input--12c div:after, .geo-input--search.geo__input--9c div:after, .geo-input--search.geo__input--6c div:after, .geo-input--search.geo__input--3c div:after, .geo-input--search.geo__input--1c div:after {
+  right: 10px;
+}
+/* line 49, ../../_sass/application/molecules/_molecule-input.scss */
+.geo-input--datepicker.geo__input--12c div:after, .geo-input--datepicker.geo__input--9c div:after, .geo-input--datepicker.geo__input--6c div:after, .geo-input--datepicker.geo__input--3c div:after, .geo-input--datepicker.geo__input--1c div:after {
+  right: 10px;
+}
+
+/* line 55, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--12c {
   width: calc(100% - 25px);
 }
 
-/* line 48, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 60, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--9c {
   width: calc(75% - 25px);
 }
 
-/* line 54, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 66, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--6c {
   width: calc(50% - 25px);
 }
 
-/* line 59, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 71, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--3c {
   width: calc(25% - 25px);
 }
 
-/* line 64, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 76, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--1c {
   width: calc(8.33333% - 25px);
 }
 
 @media screen and (max-width: 820px) {
-  /* line 70, ../../_sass/application/molecules/_molecule-input.scss */
+  /* line 82, ../../_sass/application/molecules/_molecule-input.scss */
   .geo__input--12c, .geo__input--9c, .geo__input--6c, .geo__input--3c, .geo__input--1c {
     display: block;
     width: calc(100% - 25px);
@@ -1438,15 +1477,14 @@ table .geo-table--action {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  width: 0;
   white-space: nowrap;
   margin: 0 10px 20px;
 }
-/* line 23, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 22, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"] {
   display: none;
 }
-/* line 26, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 25, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"] + .geo__switch--checkbox {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1464,7 +1502,7 @@ table .geo-table--action {
   width: 70px;
   z-index: 0;
 }
-/* line 40, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 39, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"] + .geo__switch--checkbox .geo__switch--status:before {
   content: "Não";
   color: #fff;
@@ -1476,7 +1514,7 @@ table .geo-table--action {
   text-transform: uppercase;
   line-height: 25px;
 }
-/* line 52, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 51, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"] + .geo__switch--checkbox:before {
   position: absolute;
   top: 2px;
@@ -1491,7 +1529,7 @@ table .geo-table--action {
   width: 66px;
   z-index: 1;
 }
-/* line 67, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 66, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"] + .geo__switch--checkbox:after {
   position: absolute;
   top: 2px;
@@ -1506,26 +1544,26 @@ table .geo-table--action {
   content: "";
   z-index: 2;
 }
-/* line 84, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 83, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"]:checked + .geo__switch--checkbox {
   background: #4C87FF;
 }
-/* line 87, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 86, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"]:checked + .geo__switch--checkbox .geo__switch--status:before {
   content: "Sim";
   padding: 0 21px 0 0;
 }
-/* line 92, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 91, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"]:checked + .geo__switch--checkbox:before {
   transform: scale(0);
 }
-/* line 96, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 95, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch input[type="checkbox"]:checked + .geo__switch--checkbox:after {
   left: 47px;
 }
-/* line 103, ../../_sass/application/molecules/_molecule-switch.scss */
+/* line 102, ../../_sass/application/molecules/_molecule-switch.scss */
 .geo__switch .geo__switch--label {
-  padding-right: 15px;
+  padding-right: 5px;
   display: inline-block;
 }
 
@@ -1596,6 +1634,17 @@ table .geo-table--action {
 /* line 17, ../../_sass/application/organisms/_organism-chat__historic.scss */
 .geo-chat__historic .geo-historic__search {
   background-color: #FFFFFF;
+  padding: 24px;
+}
+/* line 21, ../../_sass/application/organisms/_organism-chat__historic.scss */
+.geo-chat__historic .geo-historic__search:after {
+  right: 30px;
+}
+/* line 24, ../../_sass/application/organisms/_organism-chat__historic.scss */
+.geo-chat__historic .geo-historic__search input {
+  border: 1px solid #ebeff2;
+  padding: 5px;
+  width: 100%;
 }
 
 /*-------------------------------------------------------

@@ -15,20 +15,23 @@
 		clear: both;
 		height: 0;
 	}
+	&.geo-columns--right {
+		text-align: right;
+	}
 }
 
 .geo-content__row {
 	.geo-columns--9c {
 		@extend %molecule-column;
-		@include size(75%);
+		width: 75%;
 	}
 	.geo-columns--6c {
 		@extend %molecule-column;
-		@include size(50%);
+		width: 50%;
 	}
 	.geo-columns--3c {
 		@extend %molecule-column;
-		@include size(25%);
+		width: 25%;
 	}
 	.geo-profile-column {
 		display: inline-block;
