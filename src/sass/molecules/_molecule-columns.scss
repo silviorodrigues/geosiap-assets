@@ -1,0 +1,44 @@
+/*-------------------------------------------------------
+
+     Molecule name: Columns
+
+-------------------------------------------------------*/
+
+%molecule-column {
+	float: left;
+	display: inline-block;
+	&:after {
+		visibility: hidden;
+    	display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+}
+
+.geo-content__row {
+	.geo-columns--9c {
+		@extend %molecule-column;
+		@include size(75%);
+	}
+	.geo-columns--6c {
+		@extend %molecule-column;
+		@include size(50%);
+	}
+	.geo-columns--3c {
+		@extend %molecule-column;
+		@include size(25%);
+	}
+	.geo-profile-column {
+		display: inline-block;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+  %molecule-column {
+    display: block;
+    @include size();
+  }
+}

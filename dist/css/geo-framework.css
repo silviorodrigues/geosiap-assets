@@ -506,7 +506,7 @@ th {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-disable.scss */
-[disabled].geo-button, .geo__input--12c input[disabled], .geo__input--9c input[disabled], .geo__input--6c input[disabled], .geo__input--3c input[disabled], .geo__input--1c input[disabled], .geo__input--12c select[disabled], .geo__input--9c select[disabled], .geo__input--6c select[disabled], .geo__input--3c select[disabled], .geo__input--1c select[disabled] {
+[disabled].geo-button, .geo__input--12c input[disabled], .geo__input--9c input[disabled], .geo__input--6c input[disabled], .geo__input--3c input[disabled], .geo__input--1c input[disabled], .geo__input--12c select[disabled], .geo__input--9c select[disabled], .geo__input--6c select[disabled], .geo__input--3c select[disabled], .geo__input--1c select[disabled], .geo__input--12c textarea[disabled], .geo__input--9c textarea[disabled], .geo__input--6c textarea[disabled], .geo__input--3c textarea[disabled], .geo__input--1c textarea[disabled] {
   color: #5d5d5d;
   cursor: not-allowed;
   background-color: #efefef;
@@ -585,7 +585,7 @@ svg {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-input.scss */
-.geo__input--12c input, .geo__input--9c input, .geo__input--6c input, .geo__input--3c input, .geo__input--1c input, .geo__input--12c select, .geo__input--9c select, .geo__input--6c select, .geo__input--3c select, .geo__input--1c select {
+.geo__input--12c input, .geo__input--9c input, .geo__input--6c input, .geo__input--3c input, .geo__input--1c input, .geo__input--12c select, .geo__input--9c select, .geo__input--6c select, .geo__input--3c select, .geo__input--1c select, .geo__input--12c textarea, .geo__input--9c textarea, .geo__input--6c textarea, .geo__input--3c textarea, .geo__input--1c textarea {
   background-color: #FFFFFF;
   border: 2px solid #dfdfdf;
   box-sizing: border-box;
@@ -594,12 +594,11 @@ svg {
   border-radius: 2px;
   color: #5d5d5d;
   font-size: 0.8em;
-  height: 35px;
   width: 100%;
   padding-left: 10px;
 }
-/* line 17, ../../_sass/application/bosons/_boson-input.scss */
-.geo__input--12c input:focus, .geo__input--9c input:focus, .geo__input--6c input:focus, .geo__input--3c input:focus, .geo__input--1c input:focus, .geo__input--12c select:focus, .geo__input--9c select:focus, .geo__input--6c select:focus, .geo__input--3c select:focus, .geo__input--1c select:focus {
+/* line 16, ../../_sass/application/bosons/_boson-input.scss */
+.geo__input--12c input:focus, .geo__input--9c input:focus, .geo__input--6c input:focus, .geo__input--3c input:focus, .geo__input--1c input:focus, .geo__input--12c select:focus, .geo__input--9c select:focus, .geo__input--6c select:focus, .geo__input--3c select:focus, .geo__input--1c select:focus, .geo__input--12c textarea:focus, .geo__input--9c textarea:focus, .geo__input--6c textarea:focus, .geo__input--3c textarea:focus, .geo__input--1c textarea:focus {
   border-color: #4c87ff;
 }
 
@@ -712,31 +711,33 @@ h1 {
 
 /* line 17, ../../_sass/application/atoms/_atom-headers.scss */
 h2 {
+  color: #4C87FF;
+  text-transform: uppercase;
   font-size: 1.118em;
 }
 
-/* line 22, ../../_sass/application/atoms/_atom-headers.scss */
+/* line 24, ../../_sass/application/atoms/_atom-headers.scss */
 h3 {
   font-size: 1.125em;
 }
 
-/* line 27, ../../_sass/application/atoms/_atom-headers.scss */
+/* line 29, ../../_sass/application/atoms/_atom-headers.scss */
 h4 {
   font-size: 0.9em;
 }
 
-/* line 32, ../../_sass/application/atoms/_atom-headers.scss */
+/* line 34, ../../_sass/application/atoms/_atom-headers.scss */
 h5 {
   font-size: 0.9em;
 }
 
-/* line 37, ../../_sass/application/atoms/_atom-headers.scss */
+/* line 39, ../../_sass/application/atoms/_atom-headers.scss */
 h6 {
   font-size: 0.9em;
 }
 
 @media screen and (max-width: 1330px) {
-  /* line 43, ../../_sass/application/atoms/_atom-headers.scss */
+  /* line 45, ../../_sass/application/atoms/_atom-headers.scss */
   h1 {
     font-size: 1em;
   }
@@ -905,6 +906,16 @@ h6 {
   height: 50px;
   width: 50px;
   margin-right: 5px;
+  display: inline-block;
+}
+
+/* line 19, ../../_sass/application/atoms/_atom-profile-picture.scss */
+.atom-profile-picture--big {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  height: 180px;
+  width: 180px;
+  margin-top: 18px;
   display: inline-block;
 }
 
@@ -1176,6 +1187,51 @@ table .geo-table--action {
 
 /*-------------------------------------------------------
 
+     Molecule name: Columns
+
+-------------------------------------------------------*/
+/* line 7, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
+  float: left;
+  display: inline-block;
+}
+/* line 10, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-columns--9c:after, .geo-content__row .geo-columns--6c:after, .geo-content__row .geo-columns--3c:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 21, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-columns--9c {
+  width: calc(75% - 25px);
+}
+/* line 25, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-columns--6c {
+  width: calc(50% - 25px);
+}
+/* line 29, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-columns--3c {
+  width: calc(25% - 25px);
+}
+/* line 33, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-profile-column {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 40, ../../_sass/application/molecules/_molecule-columns.scss */
+  .geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
+    display: block;
+    width: calc(100% - 25px);
+  }
+}
+/*-------------------------------------------------------
+
      Molecule name: Header Info
 
 -------------------------------------------------------*/
@@ -1207,46 +1263,50 @@ table .geo-table--action {
   display: inline-block;
   margin: 0 10px 20px;
 }
-/* line 16, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 13, ../../_sass/application/molecules/_molecule-input.scss */
+.geo__input--12c input, .geo__input--9c input, .geo__input--6c input, .geo__input--3c input, .geo__input--1c input, .geo__input--12c select, .geo__input--9c select, .geo__input--6c select, .geo__input--3c select, .geo__input--1c select {
+  height: 35px;
+}
+/* line 20, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--12c .error-alert, .geo__input--9c .error-alert, .geo__input--6c .error-alert, .geo__input--3c .error-alert, .geo__input--1c .error-alert {
   display: none;
 }
-/* line 23, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 27, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--required.geo__input--12c .error, .geo__input--required.geo__input--9c .error, .geo__input--required.geo__input--6c .error, .geo__input--required.geo__input--3c .error, .geo__input--required.geo__input--1c .error {
   position: relative;
 }
-/* line 29, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 33, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--required.geo__input--12c .error:hover .error-alert, .geo__input--required.geo__input--9c .error:hover .error-alert, .geo__input--required.geo__input--6c .error:hover .error-alert, .geo__input--required.geo__input--3c .error:hover .error-alert, .geo__input--required.geo__input--1c .error:hover .error-alert {
   display: block;
 }
 
-/* line 39, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 43, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--12c {
   width: calc(100% - 25px);
 }
 
-/* line 44, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 48, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--9c {
   width: calc(75% - 25px);
 }
 
-/* line 50, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 54, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--6c {
   width: calc(50% - 25px);
 }
 
-/* line 55, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 59, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--3c {
   width: calc(25% - 25px);
 }
 
-/* line 60, ../../_sass/application/molecules/_molecule-input.scss */
+/* line 64, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--1c {
   width: calc(8.33333% - 25px);
 }
 
 @media screen and (max-width: 820px) {
-  /* line 66, ../../_sass/application/molecules/_molecule-input.scss */
+  /* line 70, ../../_sass/application/molecules/_molecule-input.scss */
   .geo__input--12c, .geo__input--9c, .geo__input--6c, .geo__input--3c, .geo__input--1c {
     display: block;
     width: calc(100% - 25px);

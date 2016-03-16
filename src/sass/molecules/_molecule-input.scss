@@ -12,6 +12,10 @@
   }
   input, select {
     @extend %atom-input;
+    height: 35px;
+  }
+  textarea {
+    @extend %atom-input;
   }
   .error-alert {
     display: none;
