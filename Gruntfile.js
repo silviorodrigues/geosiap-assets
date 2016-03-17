@@ -36,15 +36,19 @@ module.exports = function(grunt) {
       }
     },
     concat: {
-      dist: {
-        src: ['src/js/*.js'],
-        dest: 'dist/js/geo-framework.js'
+      core: {
+        src: ['src/js/core/*.js'],
+        dest: 'dist/js/geo-framework-core.js'
+      },
+      vendors: {
+        src: ['src/js/vendors/*.js'],
+        dest: 'dist/js/geo-framework-vendors.js'
       }
     },
     uglify: {
       js: {
         files: {
-          'dist/js/geo-framework.min.js': ['dist/js/geo-framework.js']
+          'dist/js/geo-framework.min.js': ['dist/js/geo-framework-core.js', 'dist/js/geo-framework-vendors.js']
         }
       }
     }
