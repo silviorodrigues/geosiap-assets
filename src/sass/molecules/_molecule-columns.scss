@@ -7,14 +7,6 @@
 %molecule-column {
 	float: left;
 	display: inline-block;
-	&:after {
-		visibility: hidden;
-    	display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
-	}
 	&.geo-columns--right {
 		text-align: right;
 	}
@@ -24,6 +16,14 @@
 }
 
 .geo-content__row {
+	&:after {
+		visibility: hidden;
+    	display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
 	.geo-columns--9c {
 		@extend %molecule-column;
 		width: 75%;
