@@ -7,4 +7,7 @@
 .geo-toggle {
 	display: inline-block;
 	margin: 0 10px 20px;
+	&.geo-toggle--block {
+		display: block;
+	}
 }

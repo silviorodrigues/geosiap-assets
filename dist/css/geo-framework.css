@@ -1018,6 +1018,10 @@ table .geo-table--action {
   display: inline-block;
   margin: 0 10px 20px;
 }
+/* line 10, ../../_sass/application/atoms/_atom-toggle.scss */
+.geo-toggle.geo-toggle--block {
+  display: block;
+}
 
 /*-------------------------------------------------------
 
