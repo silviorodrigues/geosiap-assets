@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     cssmin: {
       all: {
         src: [
-        'dist/css/geo-framework.css'
+          'dist/css/geo-framework.css'
         ],
         dest: 'dist/css/geo-framework.min.css'
       }
