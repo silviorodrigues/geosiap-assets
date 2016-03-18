@@ -1986,23 +1986,25 @@ table .geo-table--action {
   padding-top: 15px;
   resize: vertical;
   display: inline-block;
+  color: #747474;
+  font-size: .9em;
 }
-/* line 22, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 24, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file {
   display: inline-block;
   float: rigth;
   vertical-align: top;
 }
-/* line 26, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 28, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file svg {
   cursor: pointer;
   padding-right: 0;
 }
-/* line 30, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 32, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file svg:hover path {
   fill: #4C87FF;
 }
-/* line 37, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 39, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-button {
   margin: 24px 0 0 0;
   display: inline-block;

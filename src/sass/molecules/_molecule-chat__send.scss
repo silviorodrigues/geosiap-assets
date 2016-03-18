@@ -17,6 +17,8 @@
 		padding-top: 15px;
 		resize: vertical;
 		display: inline-block;
+		color: $COLOR-FONT;
+		font-size: .9em;
 	}
 	@extend %atom-profile-picture;
 	.geo-chat__send--file {
