@@ -30,6 +30,12 @@ module.exports = function(grunt) {
         cwd: '../geo-framework-doc/images',
         src: '**',
         dest: 'images/'
+      },
+      imagesUI: {
+        expand: true,
+        cwd: '../geo-framework-doc/_sass/images',
+        src: '**',
+        dest: 'dist/css/images/'
       }
     },
     cssmin: {
