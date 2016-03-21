@@ -10,7 +10,7 @@
 	padding: 24px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: nowrap;
 	min-height: calc(100vh - 72px);
 	max-height: calc(100vh - 72px);
@@ -28,7 +28,7 @@
 		flex-wrap: nowrap;
 		p {
 			color: $COLOR-PRIMARY;
-			font-weight: bold;
+			font-weight: lighter;
 			font-size: 24px;
 		}
 	}

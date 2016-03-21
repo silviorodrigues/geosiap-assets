@@ -5,7 +5,7 @@
 -------------------------------------------------------*/
 
 %molecule-nav__footer {
-	background-color: $COLOR-PRIMARY;
+	background-color: $COLOR-DEFAULT;
 	box-sizing: border-box;
 	cursor: pointer;
 	padding: 10px 50px;
@@ -13,7 +13,10 @@
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	color: $COLOR-DEFAULT;
+	color: $COLOR-FONT;
+	&:hover {
+		background-color: $COLOR-GRAY-LIGHT;
+	}
 	&:before {
 		content: "<";
 	}

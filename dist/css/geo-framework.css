@@ -1977,14 +1977,13 @@ table .geo-table--action {
 /* line 7, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send {
   padding: 24px;
-  margin-top: 24px;
   background-color: #FFFFFF;
 }
-/* line 11, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 10, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send img {
   vertical-align: top;
 }
-/* line 14, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 13, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send textarea {
   border: 0;
   width: calc(100% - 125px);
@@ -1994,22 +1993,22 @@ table .geo-table--action {
   color: #747474;
   font-size: .9em;
 }
-/* line 24, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 23, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file {
   display: inline-block;
   float: rigth;
   vertical-align: top;
 }
-/* line 28, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 27, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file svg {
   cursor: pointer;
   padding-right: 0;
 }
-/* line 32, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 31, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file svg:hover path {
   fill: #4C87FF;
 }
-/* line 39, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 38, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-button {
   margin: 24px 0 0 0;
   display: inline-block;
@@ -2166,7 +2165,7 @@ table .geo-table--action {
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/molecules/_molecule-nav__footer.scss */
 .geo-nav .geo-nav__footer {
-  background-color: #4C87FF;
+  background-color: #FFFFFF;
   box-sizing: border-box;
   cursor: pointer;
   padding: 10px 50px;
@@ -2174,9 +2173,13 @@ table .geo-table--action {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: #FFFFFF;
+  color: #747474;
 }
 /* line 17, ../../_sass/application/molecules/_molecule-nav__footer.scss */
+.geo-nav .geo-nav__footer:hover {
+  background-color: #ebeff2;
+}
+/* line 20, ../../_sass/application/molecules/_molecule-nav__footer.scss */
 .geo-nav .geo-nav__footer:before {
   content: "<";
 }
@@ -2193,16 +2196,17 @@ table .geo-table--action {
   padding: 10px 50px;
   text-align: center;
   height: 72px;
+  margin-bottom: 12px;
 }
 
-/* line 18, ../../_sass/application/molecules/_molecule-nav__header.scss */
+/* line 19, ../../_sass/application/molecules/_molecule-nav__header.scss */
 .geo-nav__header--mobile {
   display: none;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 24, ../../_sass/application/molecules/_molecule-nav__header.scss */
+/* line 25, ../../_sass/application/molecules/_molecule-nav__header.scss */
 .geo-nav__header--mobile .geo-mobile__toggle {
   cursor: pointer;
   position: absolute;
@@ -2211,7 +2215,7 @@ table .geo-table--action {
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 32, ../../_sass/application/molecules/_molecule-nav__header.scss */
+  /* line 33, ../../_sass/application/molecules/_molecule-nav__header.scss */
   .geo-nav__header--mobile {
     display: block;
   }
@@ -2232,7 +2236,7 @@ table .geo-table--action {
 /* line 12, ../../_sass/application/molecules/_molecule-nav__menu.scss */
 .geo-nav .geo-nav__menu .geo-menu__button {
   padding: 12px 0;
-  font-weight: bold;
+  font-weight: normal;
 }
 /* line 15, ../../_sass/application/molecules/_molecule-nav__menu.scss */
 .geo-nav .geo-nav__menu .geo-menu__button path {
@@ -2387,7 +2391,7 @@ table .geo-table--action {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   min-height: calc(100vh - 72px);
   max-height: calc(100vh - 72px);
@@ -2409,7 +2413,7 @@ table .geo-table--action {
 /* line 29, ../../_sass/application/organisms/_organism-chat.scss */
 .geo-chat .geo-chat--empty p {
   color: #4C87FF;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 24px;
 }
 
