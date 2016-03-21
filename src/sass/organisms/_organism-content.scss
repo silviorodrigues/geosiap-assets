@@ -7,6 +7,9 @@
   box-sizing: border-box;
   background-color: $COLOR-DEFAULT;
   min-height: calc(100vh - 72px);
+  p, h2 {
+    margin-left: 10px;
+  }
   .geo-content__row {
     padding: 24px;  
   }
