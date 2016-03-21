@@ -1353,6 +1353,11 @@ th {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-icons.scss */
+img[data-svgicon] {
+  display: none !important;
+}
+
+/* line 11, ../../_sass/application/bosons/_boson-icons.scss */
 svg {
   width: 24px;
   height: 24px;
