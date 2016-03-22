@@ -42,3 +42,17 @@
 	@extend %boson-error;
   	padding-right: 36px;
 }
+
+.select2-profile {
+	padding: 10px;
+	@extend %atom-profile-picture;
+	.select2-profile__infos {
+		display: inline-block;
+		position: absolute;
+		margin-left: 10px;
+		.select2-infos__name {
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+	}
+}

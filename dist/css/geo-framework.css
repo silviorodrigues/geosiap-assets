@@ -1215,6 +1215,22 @@ th {
   padding-right: 36px;
 }
 
+/* line 46, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-profile {
+  padding: 10px;
+}
+/* line 49, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-profile .select2-profile__infos {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+}
+/* line 53, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-profile .select2-profile__infos .select2-infos__name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 /*-------------------------------------------------------
 
      Helper name: Size
@@ -1725,7 +1741,7 @@ h6 {
 
 -------------------------------------------------------*/
 /* line 9, ../../_sass/application/atoms/_atom-profile-picture.scss */
-.geo-chat .geo-chat__message .geo-message__header img, .geo-chat__send img, .geo-chat__historic img {
+.select2-profile img, .geo-chat .geo-chat__message .geo-message__header img, .geo-chat__send img, .geo-chat__historic img {
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   height: 50px;
