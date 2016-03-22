@@ -15,7 +15,7 @@
 %boson-button--secundary {
   background-color: $COLOR-DEFAULT;
   color: scale-lightness($COLOR-DISABLE, 50);
-  border: scale-lightness($COLOR-DISABLE, 50) 1px solid!important;
+  border: scale-lightness($COLOR-DISABLE, 50) 1px solid;
   &:hover {
     background-color: scale-lightness($COLOR-DISABLE, 90);
   }

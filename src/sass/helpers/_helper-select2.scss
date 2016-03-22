@@ -37,3 +37,8 @@
 	border: 2px solid #dfdfdf;	
 	height: 36px;	
 }
+
+.error .select2-selection {
+	@extend %boson-error;
+  	padding-right: 36px;
+}

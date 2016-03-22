@@ -102,6 +102,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 /* Text-level semantics
@@ -109,7 +110,7 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 111, ../../_sass/application/_normalize.scss */
+/* line 112, ../../_sass/application/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -117,7 +118,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 119, ../../_sass/application/_normalize.scss */
+/* line 120, ../../_sass/application/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -126,7 +127,7 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 128, ../../_sass/application/_normalize.scss */
+/* line 129, ../../_sass/application/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -135,7 +136,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 137, ../../_sass/application/_normalize.scss */
+/* line 138, ../../_sass/application/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -144,7 +145,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 146, ../../_sass/application/_normalize.scss */
+/* line 147, ../../_sass/application/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -153,7 +154,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 155, ../../_sass/application/_normalize.scss */
+/* line 156, ../../_sass/application/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -161,7 +162,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 163, ../../_sass/application/_normalize.scss */
+/* line 164, ../../_sass/application/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -170,12 +171,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 171, ../../_sass/application/_normalize.scss */
+/* line 172, ../../_sass/application/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 175, ../../_sass/application/_normalize.scss */
+/* line 176, ../../_sass/application/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -185,7 +186,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 186, ../../_sass/application/_normalize.scss */
+/* line 187, ../../_sass/application/_normalize.scss */
 img {
   border: 0;
 }
@@ -193,7 +194,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 194, ../../_sass/application/_normalize.scss */
+/* line 195, ../../_sass/application/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -203,7 +204,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 205, ../../_sass/application/_normalize.scss */
+/* line 206, ../../_sass/application/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
@@ -211,7 +212,7 @@ figure {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 213, ../../_sass/application/_normalize.scss */
+/* line 214, ../../_sass/application/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
@@ -223,7 +224,7 @@ hr {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 226, ../../_sass/application/_normalize.scss */
+/* line 227, ../../_sass/application/_normalize.scss */
 code,
 kbd,
 samp {
@@ -243,7 +244,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 248, ../../_sass/application/_normalize.scss */
+/* line 249, ../../_sass/application/_normalize.scss */
 button,
 input,
 optgroup,
@@ -260,7 +261,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 262, ../../_sass/application/_normalize.scss */
+/* line 263, ../../_sass/application/_normalize.scss */
 button {
   overflow: visible;
 }
@@ -271,7 +272,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 273, ../../_sass/application/_normalize.scss */
+/* line 274, ../../_sass/application/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -284,7 +285,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 286, ../../_sass/application/_normalize.scss */
+/* line 287, ../../_sass/application/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -298,7 +299,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 298, ../../_sass/application/_normalize.scss */
+/* line 299, ../../_sass/application/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -307,7 +308,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 307, ../../_sass/application/_normalize.scss */
+/* line 308, ../../_sass/application/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -318,7 +319,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 318, ../../_sass/application/_normalize.scss */
+/* line 319, ../../_sass/application/_normalize.scss */
 input {
   line-height: normal;
 }
@@ -330,7 +331,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 330, ../../_sass/application/_normalize.scss */
+/* line 331, ../../_sass/application/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -344,7 +345,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 342, ../../_sass/application/_normalize.scss */
+/* line 343, ../../_sass/application/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -354,7 +355,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-/* line 352, ../../_sass/application/_normalize.scss */
+/* line 353, ../../_sass/application/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -367,7 +368,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 363, ../../_sass/application/_normalize.scss */
+/* line 364, ../../_sass/application/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -376,7 +377,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 372, ../../_sass/application/_normalize.scss */
+/* line 373, ../../_sass/application/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -387,7 +388,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 383, ../../_sass/application/_normalize.scss */
+/* line 384, ../../_sass/application/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -398,7 +399,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 392, ../../_sass/application/_normalize.scss */
+/* line 393, ../../_sass/application/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -407,7 +408,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 401, ../../_sass/application/_normalize.scss */
+/* line 402, ../../_sass/application/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
@@ -417,13 +418,13 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 412, ../../_sass/application/_normalize.scss */
+/* line 413, ../../_sass/application/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 417, ../../_sass/application/_normalize.scss */
+/* line 418, ../../_sass/application/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -1209,6 +1210,11 @@ th {
   height: 36px;
 }
 
+/* line 41, ../../_sass/application/helpers/_helper-select2.scss */
+.error .select2-selection {
+  padding-right: 36px;
+}
+
 /*-------------------------------------------------------
 
      Helper name: Size
@@ -1238,7 +1244,7 @@ th {
 .geo-button.geo-button--secundary {
   background-color: #FFFFFF;
   color: #aeaeae;
-  border: #aeaeae 1px solid !important;
+  border: #aeaeae 1px solid;
 }
 /* line 19, ../../_sass/application/bosons/_boson-buttons.scss */
 .geo-button.geo-button--secundary:hover {
@@ -1289,8 +1295,12 @@ th {
 [disabled].geo-button, .geo__input--12c input[disabled], .geo__input--9c input[disabled], .geo__input--6c input[disabled], .geo__input--3c input[disabled], .geo__input--1c input[disabled], .geo__input--12c select[disabled], .geo__input--9c select[disabled], .geo__input--6c select[disabled], .geo__input--3c select[disabled], .geo__input--1c select[disabled], .geo__input--12c textarea[disabled], .geo__input--9c textarea[disabled], .geo__input--6c textarea[disabled], .geo__input--3c textarea[disabled], .geo__input--1c textarea[disabled] {
   color: #5d5d5d;
   cursor: not-allowed;
-  background-color: #efefef;
-  border-color: #dfdfdf;
+  background-color: #ebeff2;
+  border-color: #ebeff2;
+}
+/* line 12, ../../_sass/application/bosons/_boson-disable.scss */
+[disabled].geo-button:hover, .geo__input--12c input[disabled]:hover, .geo__input--9c input[disabled]:hover, .geo__input--6c input[disabled]:hover, .geo__input--3c input[disabled]:hover, .geo__input--1c input[disabled]:hover, .geo__input--12c select[disabled]:hover, .geo__input--9c select[disabled]:hover, .geo__input--6c select[disabled]:hover, .geo__input--3c select[disabled]:hover, .geo__input--1c select[disabled]:hover, .geo__input--12c textarea[disabled]:hover, .geo__input--9c textarea[disabled]:hover, .geo__input--6c textarea[disabled]:hover, .geo__input--3c textarea[disabled]:hover, .geo__input--1c textarea[disabled]:hover {
+  background-color: #ebeff2;
 }
 
 /*-------------------------------------------------------
@@ -1299,7 +1309,7 @@ th {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-error.scss */
-.geo__input--required.geo__input--12c .error input, .geo__input--required.geo__input--9c .error input, .geo__input--required.geo__input--6c .error input, .geo__input--required.geo__input--3c .error input, .geo__input--required.geo__input--1c .error input, .geo__input--required.geo__input--12c .error select, .geo__input--required.geo__input--9c .error select, .geo__input--required.geo__input--6c .error select, .geo__input--required.geo__input--3c .error select, .geo__input--required.geo__input--1c .error select {
+.error .select2-selection, .geo__input--required.geo__input--12c .error input, .geo__input--required.geo__input--9c .error input, .geo__input--required.geo__input--6c .error input, .geo__input--required.geo__input--3c .error input, .geo__input--required.geo__input--1c .error input, .geo__input--required.geo__input--12c .error select, .geo__input--required.geo__input--9c .error select, .geo__input--required.geo__input--6c .error select, .geo__input--required.geo__input--3c .error select, .geo__input--required.geo__input--1c .error select {
   background-color: #fdedec;
   border-color: #e74c3c;
 }
@@ -1397,10 +1407,6 @@ a {
   color: #4C87FF;
   text-decoration: none;
 }
-/* line 10, ../../_sass/application/bosons/_boson-link.scss */
-a:hover {
-  text-decoration: underline;
-}
 
 /*-------------------------------------------------------
 
@@ -1413,7 +1419,7 @@ a:hover {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-shadow.scss */
-.geo-menu, table {
+.geo-menu {
   box-shadow: 0px 0px 5px #bababa;
 }
 
@@ -1774,33 +1780,33 @@ table {
   margin: 12px;
   width: calc(100% - 24px);
 }
-/* line 16, ../../_sass/application/atoms/_atom-table.scss */
+/* line 15, ../../_sass/application/atoms/_atom-table.scss */
 table thead {
   font-weight: bold;
   text-align: left;
 }
-/* line 20, ../../_sass/application/atoms/_atom-table.scss */
+/* line 19, ../../_sass/application/atoms/_atom-table.scss */
 table tr {
   border: 1px solid #ebeff2;
   transition: ease .2s;
 }
-/* line 23, ../../_sass/application/atoms/_atom-table.scss */
+/* line 22, ../../_sass/application/atoms/_atom-table.scss */
 table tr:hover {
   background-color: #ebeff2;
 }
-/* line 27, ../../_sass/application/atoms/_atom-table.scss */
+/* line 26, ../../_sass/application/atoms/_atom-table.scss */
 table th, table td {
   padding: 24px;
 }
-/* line 30, ../../_sass/application/atoms/_atom-table.scss */
+/* line 29, ../../_sass/application/atoms/_atom-table.scss */
 table svg {
   padding: 5px;
 }
-/* line 33, ../../_sass/application/atoms/_atom-table.scss */
+/* line 32, ../../_sass/application/atoms/_atom-table.scss */
 table svg:hover path {
   fill: #4C87FF;
 }
-/* line 38, ../../_sass/application/atoms/_atom-table.scss */
+/* line 37, ../../_sass/application/atoms/_atom-table.scss */
 table .geo-table--action {
   text-align: right;
 }

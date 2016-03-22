@@ -7,6 +7,9 @@
 %boson-disable {
   color: $COLOR-DISABLE;
   cursor: not-allowed;
-  background-color: scale-lightness($COLOR-DISABLE, 90);
-  border-color: scale-lightness($COLOR-DISABLE, 80);
+  background-color: $COLOR-GRAY-LIGHT;
+  border-color: $COLOR-GRAY-LIGHT;
+  &:hover {
+  	background-color: $COLOR-GRAY-LIGHT;
+  }
 }
