@@ -1175,57 +1175,74 @@ th {
 }
 
 /* line 11, ../../_sass/application/helpers/_helper-select2.scss */
-.select2-container--default .select2-selection--single {
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
   border: 2px solid #dfdfdf;
   border-radius: 2px;
   color: #5d5d5d;
-  font-size: 1.2em;
   width: 100%;
   height: 40px;
 }
 
-/* line 20, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 21, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-container--default .select2-selection--single {
+  font-size: 1.2em;
+}
+
+/* line 25, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  font-size: 1em;
+}
+
+/* line 30, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-container--default .select2-search--inline .select2-search__field {
+  margin: 0;
+}
+
+/* line 34, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 32px;
 }
 
-/* line 24, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 38, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 36px;
 }
 
-/* line 28, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 42, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-dropdown {
   border: 2px solid #dfdfdf;
 }
 
-/* line 32, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 46, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-search--dropdown {
   padding: 10px;
 }
 
-/* line 36, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 50, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-container--default .select2-search--dropdown .select2-search__field {
   border: 2px solid #dfdfdf;
   height: 36px;
 }
 
-/* line 41, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 55, ../../_sass/application/helpers/_helper-select2.scss */
 .error .select2-selection {
   padding-right: 36px;
 }
 
-/* line 46, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 60, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-profile {
   padding: 10px;
 }
-/* line 49, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 63, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-profile .select2-profile__infos {
   display: inline-block;
   position: absolute;
   margin-left: 10px;
 }
-/* line 53, ../../_sass/application/helpers/_helper-select2.scss */
+/* line 67, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-profile .select2-profile__infos .select2-infos__name {
   font-weight: bold;
   font-size: 1.2em;
