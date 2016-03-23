@@ -1235,14 +1235,18 @@ th {
 /* line 60, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-profile {
   padding: 10px;
+  height: 50px;
 }
-/* line 63, ../../_sass/application/helpers/_helper-select2.scss */
-.select2-profile .select2-profile__infos {
-  display: inline-block;
-  position: absolute;
-  margin-left: 10px;
+/* line 64, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-profile img {
+  float: left;
 }
 /* line 67, ../../_sass/application/helpers/_helper-select2.scss */
+.select2-profile .select2-profile__infos {
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 70, ../../_sass/application/helpers/_helper-select2.scss */
 .select2-profile .select2-profile__infos .select2-infos__name {
   font-weight: bold;
   font-size: 1.2em;
