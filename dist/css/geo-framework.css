@@ -2647,33 +2647,38 @@ table .geo-table--action {
   margin-right: 10px;
   font-weight: lighter;
 }
-/* line 38, ../../_sass/application/organisms/_organism-login.scss */
+/* line 37, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login .geo-login__box .geo-login__box--options a {
+  font-size: .9em;
+}
+/* line 41, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box .geo-login__box--actions {
   margin-top: 40px;
 }
-/* line 41, ../../_sass/application/organisms/_organism-login.scss */
+/* line 44, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box .geo-login__send--file {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 44, ../../_sass/application/organisms/_organism-login.scss */
+/* line 47, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box .geo-login__send--file img, .geo-login .geo-login__box .geo-login__send--file span {
   cursor: pointer;
 }
-/* line 47, ../../_sass/application/organisms/_organism-login.scss */
+/* line 50, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box .geo-login__send--file span {
   margin-top: 10px;
   display: block;
 }
-/* line 55, ../../_sass/application/organisms/_organism-login.scss */
+/* line 58, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__footer {
   bottom: 30px;
   position: absolute;
   width: 100%;
   font-weight: lighter;
 }
-/* line 60, ../../_sass/application/organisms/_organism-login.scss */
+/* line 63, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__footer a {
+  font-size: .9em;
   margin: 0 20px;
 }
 
