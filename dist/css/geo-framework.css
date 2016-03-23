@@ -1577,25 +1577,26 @@ h2 {
 /* line 24, ../../_sass/application/atoms/_atom-headers.scss */
 h3 {
   font-size: 1.125em;
+  margin-left: 10px;
 }
 
-/* line 29, ../../_sass/application/atoms/_atom-headers.scss */
+/* line 30, ../../_sass/application/atoms/_atom-headers.scss */
 h4 {
   font-size: 0.9em;
 }
 
-/* line 34, ../../_sass/application/atoms/_atom-headers.scss */
+/* line 35, ../../_sass/application/atoms/_atom-headers.scss */
 h5 {
   font-size: 0.9em;
 }
 
-/* line 39, ../../_sass/application/atoms/_atom-headers.scss */
+/* line 40, ../../_sass/application/atoms/_atom-headers.scss */
 h6 {
   font-size: 0.9em;
 }
 
 @media screen and (max-width: 1330px) {
-  /* line 45, ../../_sass/application/atoms/_atom-headers.scss */
+  /* line 46, ../../_sass/application/atoms/_atom-headers.scss */
   h1 {
     font-size: 1em;
   }
