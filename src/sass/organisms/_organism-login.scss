@@ -33,16 +33,30 @@
            display: flex; 
            justify-content: space-between;
            margin-right: 10px;
+           font-weight: lighter;
         }
         .geo-login__box--actions {
             margin-top: 40px;
         }
+        .geo-login__send--file {
+            position: relative;
+            margin-bottom: 30px;
+            img, span {
+                cursor: pointer;
+            }
+            span {
+                margin-top: 10px;
+                display: block;
+            }
+            @extend %atom-file-att;
+        }   
     }
 
     .geo-login__footer {
-        position: absolute;
         bottom: 30px;
+        position: absolute;
         width: 100%;
+        font-weight: lighter;
         a {
             margin: 0 20px;
         }

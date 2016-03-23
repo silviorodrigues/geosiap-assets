@@ -23,8 +23,9 @@
 
 %boson-button--white {
   background-color: transparent;
-  color: $COLOR-DEFAULT;
   border: $COLOR-DEFAULT 1px solid;
+  color: $COLOR-DEFAULT;
+  font-weight: lighter;
   &:hover {
     background-color: rgba(255,255,255, 0.4);
   }
