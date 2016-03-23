@@ -20,10 +20,15 @@
   &.geo-button--error {
     @extend %boson-button--error;
   }
+  
+  &.geo-button--white {
+    @extend %boson-button--white;
+  }
 
   &.geo-button__icon--add {
     @extend %boson-button__icon--add;
   }
+
 }
 
 

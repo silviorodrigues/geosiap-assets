@@ -1289,26 +1289,37 @@ th {
 }
 
 /* line 24, ../../_sass/application/bosons/_boson-buttons.scss */
+.geo-button.geo-button--white {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: #FFFFFF 1px solid;
+}
+/* line 28, ../../_sass/application/bosons/_boson-buttons.scss */
+.geo-button.geo-button--white:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 34, ../../_sass/application/bosons/_boson-buttons.scss */
 .geo-button.geo-button--action {
   background-color: #88d535;
   color: #FFFFFF;
 }
-/* line 27, ../../_sass/application/bosons/_boson-buttons.scss */
+/* line 37, ../../_sass/application/bosons/_boson-buttons.scss */
 .geo-button.geo-button--action:hover {
   background-color: #5f9a20;
 }
 
-/* line 32, ../../_sass/application/bosons/_boson-buttons.scss */
+/* line 42, ../../_sass/application/bosons/_boson-buttons.scss */
 .geo-button.geo-button--error {
   background-color: #e74c3c;
   color: #FFFFFF;
 }
-/* line 35, ../../_sass/application/bosons/_boson-buttons.scss */
+/* line 45, ../../_sass/application/bosons/_boson-buttons.scss */
 .geo-button.geo-button--error:hover {
   background-color: #b52516;
 }
 
-/* line 45, ../../_sass/application/bosons/_boson-buttons.scss */
+/* line 55, ../../_sass/application/bosons/_boson-buttons.scss */
 .geo-button.geo-button__icon--add:before {
   width: 20px;
   height: 20px;
@@ -1357,7 +1368,7 @@ th {
 
 -------------------------------------------------------*/
 /* line 6, ../../_sass/application/bosons/_boson-fonts.scss */
-.geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--12c label, .geo__input--9c label, .geo__input--6c label, .geo__input--3c label, .geo__input--1c label, .geo__switch .geo__switch--label, p, span, pre {
+.geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--12c label, .geo__input--9c label, .geo__input--6c label, .geo__input--3c label, .geo__input--1c label, .geo__switch .geo__switch--label, p, span {
   color: #747474;
   font-size: .9em;
   font-family: sans-serif;
@@ -1365,11 +1376,19 @@ th {
 }
 
 /* line 13, ../../_sass/application/bosons/_boson-fonts.scss */
+pre {
+  color: #747474;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: pre;
+}
+
+/* line 20, ../../_sass/application/bosons/_boson-fonts.scss */
 .geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--12c label, .geo__input--9c label, .geo__input--6c label, .geo__input--3c label, .geo__input--1c label, .geo__switch .geo__switch--label {
   font-weight: bold;
 }
 
-/* line 18, ../../_sass/application/bosons/_boson-fonts.scss */
+/* line 25, ../../_sass/application/bosons/_boson-fonts.scss */
 .geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--1c label:after {
   color: #e74c3c;
 }
@@ -1492,7 +1511,7 @@ a {
 /* line 7, ../../_sass/application/atoms/_atom-button.scss */
 .geo-button {
   border: none;
-  border-radius: 21.5px;
+  border-radius: 0px;
   cursor: pointer;
   display: inline-block;
   font-size: .875em;
@@ -2022,12 +2041,13 @@ table .geo-table--action {
 .geo-chat__send {
   padding: 24px;
   background-color: #FFFFFF;
+  border-top: 1px solid #ebeff2;
 }
-/* line 10, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 11, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send img {
   vertical-align: top;
 }
-/* line 13, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 14, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send textarea {
   border: 0;
   width: calc(100% - 125px);
@@ -2037,22 +2057,22 @@ table .geo-table--action {
   color: #747474;
   font-size: .9em;
 }
-/* line 23, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 24, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file {
   display: inline-block;
   float: rigth;
   vertical-align: top;
 }
-/* line 27, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 28, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file svg {
   cursor: pointer;
   padding-right: 0;
 }
-/* line 31, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 32, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-chat__send--file svg:hover path {
   fill: #4C87FF;
 }
-/* line 38, ../../_sass/application/molecules/_molecule-chat__send.scss */
+/* line 39, ../../_sass/application/molecules/_molecule-chat__send.scss */
 .geo-chat__send .geo-button {
   margin: 24px 0 0 0;
   display: inline-block;
@@ -2583,6 +2603,63 @@ table .geo-table--action {
     display: none;
   }
 }
+/*-------------------------------------------------------
+
+     Organism name: Login
+
+-------------------------------------------------------*/
+/* line 7, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login {
+  background: url("../images/bg_contas_login.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  aling-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+/* line 20, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login .geo__input--12c input, .geo__input--12c .geo-login input, .geo-login .geo__input--9c input, .geo__input--9c .geo-login input, .geo-login .geo__input--6c input, .geo__input--6c .geo-login input, .geo-login .geo__input--3c input, .geo__input--3c .geo-login input, .geo-login .geo__input--1c input, .geo__input--1c .geo-login input, .geo-login .geo__input--12c select, .geo__input--12c .geo-login select, .geo-login .geo__input--9c select, .geo__input--9c .geo-login select, .geo-login .geo__input--6c select, .geo__input--6c .geo-login select, .geo-login .geo__input--3c select, .geo__input--3c .geo-login select, .geo-login .geo__input--1c select, .geo__input--1c .geo-login select, .geo-login .geo__input--12c textarea, .geo__input--12c .geo-login textarea, .geo-login .geo__input--9c textarea, .geo__input--9c .geo-login textarea, .geo-login .geo__input--6c textarea, .geo__input--6c .geo-login textarea, .geo-login .geo__input--3c textarea, .geo__input--3c .geo-login textarea, .geo-login .geo__input--1c textarea, .geo__input--1c .geo-login textarea {
+  border: 0px;
+}
+/* line 23, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login a, .geo-login span, .geo-login h1 {
+  color: #FFFFFF;
+}
+/* line 26, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login h1 {
+  margin-bottom: 70px;
+}
+/* line 30, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login .geo-login__box {
+  max-width: 500px;
+}
+/* line 32, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login .geo-login__box .geo-login__box--options {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+/* line 37, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login .geo-login__box .geo-login__box--actions {
+  margin-top: 40px;
+}
+/* line 42, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login .geo-login__footer {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+/* line 46, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login .geo-login__footer a {
+  margin: 0 20px;
+}
+
 /* line 1, ../../_sass/application/organisms/_organism-messages.scss */
 .geo-messages {
   display: flex;

@@ -1,0 +1,50 @@
+/*-------------------------------------------------------
+
+     Organism name: Login
+
+-------------------------------------------------------*/
+
+.geo-login {
+    background: url('../images/bg_contas_login.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    aling-content: center;
+    min-height: 100vh;
+    text-align: center;
+    %boson-input {
+        border: 0px;
+    }
+    a,span, h1 {
+        color: $COLOR-DEFAULT;
+    }
+    h1 {
+        margin-bottom: 70px;
+    }
+
+    .geo-login__box {
+        max-width: 500px;
+        .geo-login__box--options {
+           display: flex; 
+           justify-content: space-between;
+           margin-right: 10px;
+        }
+        .geo-login__box--actions {
+            margin-top: 40px;
+        }
+    }
+
+    .geo-login__footer {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        a {
+            margin: 0 20px;
+        }
+    }
+}

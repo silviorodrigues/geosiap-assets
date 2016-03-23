@@ -10,6 +10,13 @@
   white-space: normal;
 }
 
+%boson-font-pre {
+  color: $COLOR-FONT;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: pre;
+}
+
 %boson-font-bold {
   @extend %boson-font;
   font-weight: bold;

@@ -21,6 +21,16 @@
   }
 }
 
+%boson-button--white {
+  background-color: transparent;
+  color: $COLOR-DEFAULT;
+  border: $COLOR-DEFAULT 1px solid;
+  &:hover {
+    background-color: rgba(255,255,255, 0.4);
+  }
+}
+
+
 %boson-button--action {
   background-color: $COLOR-SECUNDARY;
   color: $COLOR-DEFAULT;

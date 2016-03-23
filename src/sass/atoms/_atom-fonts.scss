@@ -4,6 +4,10 @@
 
 -------------------------------------------------------*/
 
-p, span, pre {
+p, span {
   @extend %boson-font;
+}
+
+pre {
+  @extend %boson-font-pre;
 }
