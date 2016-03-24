@@ -25,17 +25,19 @@
       @extend %atom-label--required;
     }
   }
-  .error {
-    position: relative;
-    @extend %atom-input--error-alert;
-    input, select {
-      @extend %atom-input--error;
-    }
-    &:hover .error-alert {
-      display: block;
-    }
-    .error-alert {
-      @extend %atom-tooltip--error-right;
+  &.geo__input--error {
+    & div {
+      position: relative;
+      @extend %atom-input--error-alert;
+      input, select {
+        @extend %atom-input--error;
+      }
+      &:hover .error-alert {
+        display: block;
+      }
+      .error-alert {
+        @extend %atom-tooltip--error-right;
+      }
     }
   }
   &.geo-input--search div{
