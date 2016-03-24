@@ -41,18 +41,6 @@
         .geo-login__box--actions {
             margin-top: 40px;
         }
-        .geo-login__send--file {
-            position: relative;
-            margin-bottom: 30px;
-            img, span, label {
-                cursor: pointer;
-            }
-            span {
-                margin-top: 10px;
-                display: block;
-            }
-            @extend %atom-file-att;
-        }   
     }
 
     .geo-login__footer {
@@ -66,3 +54,16 @@
         }
     }
 }
+
+.geo-login__send--file {
+    position: relative;
+    margin-bottom: 30px;
+    img, span, label {
+        cursor: pointer;
+    }
+    span {
+        margin-top: 10px;
+        display: block;
+    }
+    @extend %atom-file-att;
+}   

@@ -1566,7 +1566,7 @@ a {
 
 -------------------------------------------------------*/
 /* line 8, ../../_sass/application/atoms/_atom-fila-att.scss */
-.geo-chat__send .geo-chat__send--file input, .geo-login .geo-login__box .geo-login__send--file input {
+.geo-chat__send .geo-chat__send--file input, .geo-login__send--file input {
   display: none;
 }
 
@@ -2656,31 +2656,32 @@ table .geo-table--action {
 .geo-login .geo-login__box .geo-login__box--actions {
   margin-top: 40px;
 }
-/* line 44, ../../_sass/application/organisms/_organism-login.scss */
-.geo-login .geo-login__box .geo-login__send--file {
-  position: relative;
-  margin-bottom: 30px;
-}
-/* line 47, ../../_sass/application/organisms/_organism-login.scss */
-.geo-login .geo-login__box .geo-login__send--file img, .geo-login .geo-login__box .geo-login__send--file span, .geo-login .geo-login__box .geo-login__send--file label {
-  cursor: pointer;
-}
-/* line 50, ../../_sass/application/organisms/_organism-login.scss */
-.geo-login .geo-login__box .geo-login__send--file span {
-  margin-top: 10px;
-  display: block;
-}
-/* line 58, ../../_sass/application/organisms/_organism-login.scss */
+/* line 46, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__footer {
   bottom: 30px;
   position: absolute;
   width: 100%;
   font-weight: lighter;
 }
-/* line 63, ../../_sass/application/organisms/_organism-login.scss */
+/* line 51, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__footer a {
   font-size: .9em;
   margin: 0 20px;
+}
+
+/* line 58, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login__send--file {
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 61, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login__send--file img, .geo-login__send--file span, .geo-login__send--file label {
+  cursor: pointer;
+}
+/* line 64, ../../_sass/application/organisms/_organism-login.scss */
+.geo-login__send--file span {
+  margin-top: 10px;
+  display: block;
 }
 
 /* line 1, ../../_sass/application/organisms/_organism-messages.scss */
