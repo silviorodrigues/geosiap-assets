@@ -2661,7 +2661,7 @@ table .geo-table--action {
   margin-bottom: 30px;
 }
 /* line 47, ../../_sass/application/organisms/_organism-login.scss */
-.geo-login .geo-login__box .geo-login__send--file img, .geo-login .geo-login__box .geo-login__send--file span {
+.geo-login .geo-login__box .geo-login__send--file img, .geo-login .geo-login__box .geo-login__send--file span, .geo-login .geo-login__box .geo-login__send--file label {
   cursor: pointer;
 }
 /* line 50, ../../_sass/application/organisms/_organism-login.scss */
