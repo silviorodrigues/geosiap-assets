@@ -75,6 +75,11 @@
   @include size(25%);
 }
 
+.geo__input--4c {
+  @extend %geo__input;
+  @include size(33.33333333%);
+}
+
 .geo__input--1c {
   @extend %geo__input;
   @include size(8.33333333%);
