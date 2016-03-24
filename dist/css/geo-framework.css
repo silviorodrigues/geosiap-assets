@@ -2103,8 +2103,12 @@ table .geo-table--action {
 /* line 19, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row.geo-content__row--card {
   background-color: #ebeff2;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  min-height: calc(100vh - 120px);
 }
-/* line 22, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 26, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row:after {
   visibility: hidden;
   display: block;
@@ -2113,30 +2117,30 @@ table .geo-table--action {
   clear: both;
   height: 0;
 }
-/* line 30, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 34, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--12c {
   width: 100%;
 }
-/* line 34, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 38, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--9c {
   width: 75%;
 }
-/* line 38, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 42, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--6c {
   width: 50%;
 }
-/* line 42, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 46, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--3c {
   width: 25%;
 }
-/* line 46, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 50, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-profile-column {
   display: inline-block;
   margin-left: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 53, ../../_sass/application/molecules/_molecule-columns.scss */
+  /* line 57, ../../_sass/application/molecules/_molecule-columns.scss */
   .geo-content__row .geo-columns--12c, .geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
     display: block;
     width: calc(100% - 25px);
