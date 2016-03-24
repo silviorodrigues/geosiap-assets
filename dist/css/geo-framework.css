@@ -2087,16 +2087,16 @@ table .geo-table--action {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/molecules/_molecule-columns.scss */
-.geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
+.geo-content__row .geo-columns--12c, .geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
   float: left;
   display: inline-block;
 }
 /* line 10, ../../_sass/application/molecules/_molecule-columns.scss */
-.geo-content__row .geo-columns--right.geo-columns--9c, .geo-content__row .geo-columns--right.geo-columns--6c, .geo-content__row .geo-columns--right.geo-columns--3c {
+.geo-content__row .geo-columns--right.geo-columns--12c, .geo-content__row .geo-columns--right.geo-columns--9c, .geo-content__row .geo-columns--right.geo-columns--6c, .geo-content__row .geo-columns--right.geo-columns--3c {
   text-align: right;
 }
 /* line 13, ../../_sass/application/molecules/_molecule-columns.scss */
-.geo-content__row .geo-columns--center.geo-columns--9c, .geo-content__row .geo-columns--center.geo-columns--6c, .geo-content__row .geo-columns--center.geo-columns--3c {
+.geo-content__row .geo-columns--center.geo-columns--12c, .geo-content__row .geo-columns--center.geo-columns--9c, .geo-content__row .geo-columns--center.geo-columns--6c, .geo-content__row .geo-columns--center.geo-columns--3c {
   text-align: center;
 }
 
@@ -2110,26 +2110,30 @@ table .geo-table--action {
   height: 0;
 }
 /* line 27, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row .geo-columns--12c {
+  width: 100%;
+}
+/* line 31, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--9c {
   width: 75%;
 }
-/* line 31, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 35, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--6c {
   width: 50%;
 }
-/* line 35, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 39, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--3c {
   width: 25%;
 }
-/* line 39, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 43, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-profile-column {
   display: inline-block;
   margin-left: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 46, ../../_sass/application/molecules/_molecule-columns.scss */
-  .geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
+  /* line 50, ../../_sass/application/molecules/_molecule-columns.scss */
+  .geo-content__row .geo-columns--12c, .geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
     display: block;
     width: calc(100% - 25px);
   }

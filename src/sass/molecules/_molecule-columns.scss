@@ -24,6 +24,10 @@
 		clear: both;
 		height: 0;
 	}
+	.geo-columns--12c {
+		@extend %molecule-column;
+		width: 100%;
+	}
 	.geo-columns--9c {
 		@extend %molecule-column;
 		width: 75%;
