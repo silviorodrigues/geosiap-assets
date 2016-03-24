@@ -1228,7 +1228,7 @@ th {
 }
 
 /* line 55, ../../_sass/application/helpers/_helper-select2.scss */
-.error .select2-selection {
+.geo__input--error .select2-selection {
   padding-right: 36px;
 }
 
@@ -1358,7 +1358,7 @@ th {
 
 -------------------------------------------------------*/
 /* line 7, ../../_sass/application/bosons/_boson-error.scss */
-.error .select2-selection, .geo__input--error.geo__input--12c div input, .geo__input--error.geo__input--9c div input, .geo__input--error.geo__input--6c div input, .geo__input--error.geo__input--3c div input, .geo__input--error.geo__input--1c div input, .geo__input--error.geo__input--12c div select, .geo__input--error.geo__input--9c div select, .geo__input--error.geo__input--6c div select, .geo__input--error.geo__input--3c div select, .geo__input--error.geo__input--1c div select {
+.geo__input--error .select2-selection, .geo__input--error.geo__input--12c div input, .geo__input--error.geo__input--9c div input, .geo__input--error.geo__input--6c div input, .geo__input--error.geo__input--3c div input, .geo__input--error.geo__input--1c div input, .geo__input--error.geo__input--12c div select, .geo__input--error.geo__input--9c div select, .geo__input--error.geo__input--6c div select, .geo__input--error.geo__input--3c div select, .geo__input--error.geo__input--1c div select {
   background-color: #fdedec;
   border-color: #e74c3c;
 }

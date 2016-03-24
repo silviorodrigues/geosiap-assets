@@ -52,7 +52,7 @@
 	height: 36px;	
 }
 
-.error .select2-selection {
+.geo__input--error .select2-selection {
 	@extend %boson-error;
   	padding-right: 36px;
 }
