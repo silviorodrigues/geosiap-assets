@@ -2101,6 +2101,10 @@ table .geo-table--action {
 }
 
 /* line 19, ../../_sass/application/molecules/_molecule-columns.scss */
+.geo-content__row.geo-content__row--card {
+  background-color: #ebeff2;
+}
+/* line 22, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row:after {
   visibility: hidden;
   display: block;
@@ -2109,30 +2113,30 @@ table .geo-table--action {
   clear: both;
   height: 0;
 }
-/* line 27, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 30, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--12c {
   width: 100%;
 }
-/* line 31, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 34, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--9c {
   width: 75%;
 }
-/* line 35, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 38, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--6c {
   width: 50%;
 }
-/* line 39, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 42, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-columns--3c {
   width: 25%;
 }
-/* line 43, ../../_sass/application/molecules/_molecule-columns.scss */
+/* line 46, ../../_sass/application/molecules/_molecule-columns.scss */
 .geo-content__row .geo-profile-column {
   display: inline-block;
   margin-left: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 50, ../../_sass/application/molecules/_molecule-columns.scss */
+  /* line 53, ../../_sass/application/molecules/_molecule-columns.scss */
   .geo-content__row .geo-columns--12c, .geo-content__row .geo-columns--9c, .geo-content__row .geo-columns--6c, .geo-content__row .geo-columns--3c {
     display: block;
     width: calc(100% - 25px);
@@ -2452,6 +2456,29 @@ table .geo-table--action {
 .geo__switch .geo__switch--label {
   padding-right: 5px;
   display: inline-block;
+}
+
+/* line 1, ../../_sass/application/organisms/_organism-card.scss */
+.geo-row__card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 24px;
+  margin-bottom: 24px;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+/* line 3, ../../_sass/application/organisms/_organism-card.scss */
+.geo-row__card .geo-card--header {
+  background-color: #4C87FF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 140px;
+  width: 100%;
+}
+/* line 16, ../../_sass/application/organisms/_organism-card.scss */
+.geo-row__card.geo-row__card--centered {
+  text-align: center;
 }
 
 /*-------------------------------------------------------

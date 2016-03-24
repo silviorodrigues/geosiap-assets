@@ -16,6 +16,9 @@
 }
 
 .geo-content__row {
+	&.geo-content__row--card {
+		background-color: $COLOR-GRAY-LIGHT;
+	}
 	&:after {
 		visibility: hidden;
     	display: block;
