@@ -1381,7 +1381,7 @@ pre {
   color: #747474;
   font-size: .9em;
   font-family: sans-serif;
-  white-space: pre;
+  white-space: pre-line;
 }
 
 /* line 20, ../../_sass/application/bosons/_boson-fonts.scss */
@@ -1988,47 +1988,48 @@ table .geo-table--action {
   -webkit-transition: ease .2s;
   transition: ease .2s;
   min-width: 100%;
+  max-width: 100%;
 }
-/* line 16, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 17, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message:hover {
   background-color: #F5F5F5;
 }
-/* line 20, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 21, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message--reduced.geo-chat__message .geo-message__content {
   height: 30px;
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;
 }
-/* line 27, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 28, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message .geo-message__header {
   cursor: pointer;
   vertical-align: top;
   width: 100%;
   height: 50px;
 }
-/* line 33, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 34, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message .geo-message__header .geo-message__header--name {
   display: inline-block;
   vertical-align: top;
   font-weight: bold;
 }
-/* line 38, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 39, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message .geo-message__header .geo-message__info {
   display: inline-block;
   text-align: right;
   float: right;
 }
-/* line 42, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 43, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message .geo-message__header .geo-message__info .geo-message__info--date, .geo-chat .geo-chat__message .geo-message__header .geo-message__info .geo-message__info--att {
   margin: 0;
 }
-/* line 46, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 47, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message .geo-message__header .geo-message__info .geo-message__info--att svg {
   padding: 0;
   width: 20px;
 }
-/* line 53, ../../_sass/application/molecules/_molecule-chat__message.scss */
+/* line 54, ../../_sass/application/molecules/_molecule-chat__message.scss */
 .geo-chat .geo-chat__message .geo-message__content {
   width: 100%;
 }
