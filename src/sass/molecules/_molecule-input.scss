@@ -21,7 +21,7 @@
     display: none;
   }
   &.geo__input--required {
-    label:after, label abbr {
+    label abbr {
       @extend %atom-label--required;
       border-bottom: 0px;
     }

@@ -1369,7 +1369,7 @@ th {
 
 -------------------------------------------------------*/
 /* line 6, ../../_sass/application/bosons/_boson-fonts.scss */
-.geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--4c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr, .geo__input--12c label, .geo__input--9c label, .geo__input--6c label, .geo__input--3c label, .geo__input--4c label, .geo__input--1c label, .geo__switch .geo__switch--label, p, span {
+.geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr, .geo__input--12c label, .geo__input--9c label, .geo__input--6c label, .geo__input--3c label, .geo__input--4c label, .geo__input--1c label, .geo__switch .geo__switch--label, p, span {
   color: #747474;
   font-size: .9em;
   font-family: sans-serif;
@@ -1385,12 +1385,12 @@ pre {
 }
 
 /* line 20, ../../_sass/application/bosons/_boson-fonts.scss */
-.geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--4c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr, .geo__input--12c label, .geo__input--9c label, .geo__input--6c label, .geo__input--3c label, .geo__input--4c label, .geo__input--1c label, .geo__switch .geo__switch--label {
+.geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr, .geo__input--12c label, .geo__input--9c label, .geo__input--6c label, .geo__input--3c label, .geo__input--4c label, .geo__input--1c label, .geo__switch .geo__switch--label {
   font-weight: bold;
 }
 
 /* line 25, ../../_sass/application/bosons/_boson-fonts.scss */
-.geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--4c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr {
+.geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr {
   color: #e74c3c;
 }
 
@@ -1726,7 +1726,7 @@ h6 {
 
 -------------------------------------------------------*/
 /* line 11, ../../_sass/application/atoms/_atom-label.scss */
-.geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--4c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr {
+.geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr {
   content: "*";
 }
 
@@ -2188,7 +2188,7 @@ table .geo-table--action {
   display: none;
 }
 /* line 24, ../../_sass/application/molecules/_molecule-input.scss */
-.geo__input--required.geo__input--12c label:after, .geo__input--required.geo__input--9c label:after, .geo__input--required.geo__input--6c label:after, .geo__input--required.geo__input--3c label:after, .geo__input--required.geo__input--4c label:after, .geo__input--required.geo__input--1c label:after, .geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr {
+.geo__input--required.geo__input--12c label abbr, .geo__input--required.geo__input--9c label abbr, .geo__input--required.geo__input--6c label abbr, .geo__input--required.geo__input--3c label abbr, .geo__input--required.geo__input--4c label abbr, .geo__input--required.geo__input--1c label abbr {
   border-bottom: 0px;
 }
 /* line 30, ../../_sass/application/molecules/_molecule-input.scss */
