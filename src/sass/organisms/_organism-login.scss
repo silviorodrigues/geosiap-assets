@@ -15,9 +15,10 @@
     justify-content: space-around;
     align-items: center;
     aling-content: center;
-    min-height: 100vh;
     text-align: center;
-    padding: 100px 20px;
+    min-height: 100vh;
+    padding: 100px 0;
+    box-sizing: border-box;
     %boson-input {
         border: 0px;
     }

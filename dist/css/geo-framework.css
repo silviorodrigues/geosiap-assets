@@ -2666,64 +2666,65 @@ table .geo-table--action {
   justify-content: space-around;
   align-items: center;
   aling-content: center;
-  min-height: 100vh;
   text-align: center;
-  padding: 100px 20px;
+  min-height: 100vh;
+  padding: 100px 0;
+  box-sizing: border-box;
 }
-/* line 21, ../../_sass/application/organisms/_organism-login.scss */
+/* line 22, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo__input--12c input, .geo__input--12c .geo-login input, .geo-login .geo__input--9c input, .geo__input--9c .geo-login input, .geo-login .geo__input--6c input, .geo__input--6c .geo-login input, .geo-login .geo__input--3c input, .geo__input--3c .geo-login input, .geo-login .geo__input--4c input, .geo__input--4c .geo-login input, .geo-login .geo__input--1c input, .geo__input--1c .geo-login input, .geo-login .geo__input--12c select, .geo__input--12c .geo-login select, .geo-login .geo__input--9c select, .geo__input--9c .geo-login select, .geo-login .geo__input--6c select, .geo__input--6c .geo-login select, .geo-login .geo__input--3c select, .geo__input--3c .geo-login select, .geo-login .geo__input--4c select, .geo__input--4c .geo-login select, .geo-login .geo__input--1c select, .geo__input--1c .geo-login select, .geo-login .geo__input--12c textarea, .geo__input--12c .geo-login textarea, .geo-login .geo__input--9c textarea, .geo__input--9c .geo-login textarea, .geo-login .geo__input--6c textarea, .geo__input--6c .geo-login textarea, .geo-login .geo__input--3c textarea, .geo__input--3c .geo-login textarea, .geo-login .geo__input--4c textarea, .geo__input--4c .geo-login textarea, .geo-login .geo__input--1c textarea, .geo__input--1c .geo-login textarea {
   border: 0px;
 }
-/* line 24, ../../_sass/application/organisms/_organism-login.scss */
+/* line 25, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login a, .geo-login span, .geo-login h1 {
   color: #FFFFFF;
 }
-/* line 27, ../../_sass/application/organisms/_organism-login.scss */
+/* line 28, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login h1 {
   margin-bottom: 70px;
 }
-/* line 31, ../../_sass/application/organisms/_organism-login.scss */
+/* line 32, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box {
   max-width: 500px;
 }
-/* line 33, ../../_sass/application/organisms/_organism-login.scss */
+/* line 34, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box .geo-login__box--options {
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
   font-weight: lighter;
 }
-/* line 38, ../../_sass/application/organisms/_organism-login.scss */
+/* line 39, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box .geo-login__box--options a {
   font-size: .9em;
 }
-/* line 42, ../../_sass/application/organisms/_organism-login.scss */
+/* line 43, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__box .geo-login__box--actions {
   margin-top: 40px;
 }
-/* line 47, ../../_sass/application/organisms/_organism-login.scss */
+/* line 48, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__footer {
   bottom: 30px;
   position: absolute;
   width: 100%;
   font-weight: lighter;
 }
-/* line 52, ../../_sass/application/organisms/_organism-login.scss */
+/* line 53, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login .geo-login__footer a {
   font-size: .9em;
   margin: 0 20px;
 }
 
-/* line 59, ../../_sass/application/organisms/_organism-login.scss */
+/* line 60, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login__send--file {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 62, ../../_sass/application/organisms/_organism-login.scss */
+/* line 63, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login__send--file img, .geo-login__send--file span, .geo-login__send--file label {
   cursor: pointer;
 }
-/* line 65, ../../_sass/application/organisms/_organism-login.scss */
+/* line 66, ../../_sass/application/organisms/_organism-login.scss */
 .geo-login__send--file span {
   margin-top: 10px;
   display: block;
