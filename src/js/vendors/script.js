@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
     //ICON ATOM
-    $('[data-svgicon]').shapeSvgConvert();
+    $('[data-svgicon]').shapeSvgConvert( {
+        onComplete: function() {
+            if ($(document).has($('[data-svgicon]'))) {
+                $('[data-svgicon]').shapeSvgConvert();
+            }
+        }
+    });
 
 
     // MENU ATOM
@@ -14,8 +20,13 @@ $(document).ready(function(){
 
 
         e.stopPropagation();
-        $('[data-geo-for]').hide();
-        gmFor.show();
+        if(gmFor.is(':hidden')) {
+            $('[data-geo-for]').hide();
+            gmFor.show();
+        } else {
+            $('[data-geo-for]').hide();
+            gmFor.hide();
+        }
 
         if(gmFor.hasClass('geo-menu--bottom-right')) {
             gmFor.css({top: gmTop + gmId.height(), left: gmLeft + gmId.width()});
@@ -69,7 +80,6 @@ $(document).ready(function(){
     });
 
     //MESSAGES REDUCED
-    
     $('.geo-chat').on('click', '.geo-message__header', function() {
         $(this).parent('.geo-chat__message').toggleClass('geo-chat__message--reduced');  
     });
