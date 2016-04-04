@@ -2547,7 +2547,7 @@ table .geo-table--action {
   overflow: hidden;
 }
 /* line 52, ../../_sass/application/organisms/_organism-chat.scss */
-.geo-att_list span, .geo-att_list img {
+.geo-att_list span, .geo-att_list img, .geo-att_list span > * {
   float: left;
   width: initial;
   margin-right: 10px;
@@ -2557,7 +2557,7 @@ table .geo-table--action {
   height: 100px;
 }
 /* line 60, ../../_sass/application/organisms/_organism-chat.scss */
-.geo-att_list span .uploading, .geo-att_list img .uploading {
+.geo-att_list span .uploading, .geo-att_list img .uploading, .geo-att_list span > * .uploading {
   opacity: 0.3;
 }
 /* line 64, ../../_sass/application/organisms/_organism-chat.scss */

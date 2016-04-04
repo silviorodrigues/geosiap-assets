@@ -49,7 +49,7 @@
 	.geo-att_list {
 		margin: 0;
   		overflow: hidden;
-  		span, img {
+  		span, img, span > * {
 	  		float: left;
 		    width: initial;
 		    margin-right: 10px;
