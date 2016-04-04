@@ -46,9 +46,25 @@
 	.geo-chat__send {
 		@extend %molecule-chat__send;
 	}
-	.geo-att_list a{
-		display: block;
-		width: 100%;
+	.geo-att_list {
+		margin: 0;
+  		overflow: hidden;
+  		span, img {
+	  		float: left;
+		    width: initial;
+		    margin-right: 10px;
+		    -webkit-clip-path: none;
+		    clip-path: none;
+		    width: 100px;
+		    height: 100px;
+		    .uploading {
+		      opacity: 0.3;
+		    }
+  		}
+		a {
+			display: block;
+			width: 100%;
+		}
 	}
 
 @media screen and (max-width: 1200px) {

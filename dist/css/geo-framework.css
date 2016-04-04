@@ -2542,13 +2542,32 @@ table .geo-table--action {
 }
 
 /* line 49, ../../_sass/application/organisms/_organism-chat.scss */
+.geo-att_list {
+  margin: 0;
+  overflow: hidden;
+}
+/* line 52, ../../_sass/application/organisms/_organism-chat.scss */
+.geo-att_list span, .geo-att_list img {
+  float: left;
+  width: initial;
+  margin-right: 10px;
+  -webkit-clip-path: none;
+  clip-path: none;
+  width: 100px;
+  height: 100px;
+}
+/* line 60, ../../_sass/application/organisms/_organism-chat.scss */
+.geo-att_list span .uploading, .geo-att_list img .uploading {
+  opacity: 0.3;
+}
+/* line 64, ../../_sass/application/organisms/_organism-chat.scss */
 .geo-att_list a {
   display: block;
   width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 55, ../../_sass/application/organisms/_organism-chat.scss */
+  /* line 71, ../../_sass/application/organisms/_organism-chat.scss */
   .geo-chat, .geo-chat--empty {
     min-height: calc(100vh - 144px);
     max-height: calc(100vh - 144px);
