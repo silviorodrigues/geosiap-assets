@@ -2520,12 +2520,10 @@ table .geo-table--action {
   justify-content: flex-start;
   flex-wrap: nowrap;
   min-height: calc(100vh - 72px);
-  max-height: calc(100vh - 72px);
-  overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
 }
-/* line 20, ../../_sass/application/organisms/_organism-chat.scss */
+/* line 18, ../../_sass/application/organisms/_organism-chat.scss */
 .geo-chat .geo-chat--empty {
   min-height: calc(100vh - 200px);
   text-align: center;
@@ -2536,21 +2534,21 @@ table .geo-table--action {
   align-content: center;
   flex-wrap: nowrap;
 }
-/* line 29, ../../_sass/application/organisms/_organism-chat.scss */
+/* line 27, ../../_sass/application/organisms/_organism-chat.scss */
 .geo-chat .geo-chat--empty p {
   color: #4C87FF;
   font-weight: lighter;
   font-size: 24px;
 }
 
-/* line 51, ../../_sass/application/organisms/_organism-chat.scss */
+/* line 49, ../../_sass/application/organisms/_organism-chat.scss */
 .geo-att_list a {
   display: block;
   width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 57, ../../_sass/application/organisms/_organism-chat.scss */
+  /* line 55, ../../_sass/application/organisms/_organism-chat.scss */
   .geo-chat, .geo-chat--empty {
     min-height: calc(100vh - 144px);
     max-height: calc(100vh - 144px);
@@ -2566,19 +2564,17 @@ table .geo-table--action {
   background-color: #FFFFFF;
   min-width: 320px;
   max-width: 320px;
-  max-height: calc(100vh - 72px);
-  overflow-y: scroll;
 }
-/* line 17, ../../_sass/application/organisms/_organism-chat__historic.scss */
+/* line 15, ../../_sass/application/organisms/_organism-chat__historic.scss */
 .geo-chat__historic .geo-historic__search {
   background-color: #FFFFFF;
   padding: 24px;
 }
-/* line 21, ../../_sass/application/organisms/_organism-chat__historic.scss */
+/* line 19, ../../_sass/application/organisms/_organism-chat__historic.scss */
 .geo-chat__historic .geo-historic__search:after {
   right: 30px;
 }
-/* line 24, ../../_sass/application/organisms/_organism-chat__historic.scss */
+/* line 22, ../../_sass/application/organisms/_organism-chat__historic.scss */
 .geo-chat__historic .geo-historic__search input {
   border: 1px solid #ebeff2;
   padding: 5px;
