@@ -1699,6 +1699,20 @@ h6 {
   border-radius: 99px;
   padding: 4px 8px;
 }
+/* line 68, ../../_sass/application/atoms/_atom-historic-item.scss */
+.geo-chat__historic .geo-notification--canceled.geo-historic__item .geo-historic__item--notfication .geo-notification__hour {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+/* line 74, ../../_sass/application/atoms/_atom-historic-item.scss */
+.geo-chat__historic .geo-notification--canceled.geo-historic__item .geo-historic__item--notfication .geo-notification__badge {
+  background-color: #e74c3c;
+  color: #FFFFFF;
+  border-radius: 99px;
+  padding: 4px 8px;
+}
 
 /*-------------------------------------------------------
 

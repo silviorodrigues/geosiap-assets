@@ -13,7 +13,7 @@
 	-webkit-transition: ease .2s;
 	transition: ease .2s;
 	cursor: pointer;
-	
+
 	.geo-historic__item--resume span{
 		&:first-child {
 			font-weight: bold;
@@ -59,6 +59,20 @@
 		}
 		.geo-notification__badge {
 			background-color: $COLOR-PRIMARY;
+			color: $COLOR-DEFAULT;
+			border-radius: 99px;
+			padding: 4px 8px;
+		}
+	}
+	&.geo-notification--canceled  .geo-historic__item--notfication{
+		.geo-notification__hour {
+			color: $COLOR-ERROR;
+			margin-bottom: 10px;
+			display: block;
+			font-weight: bold;
+		}
+		.geo-notification__badge {
+			background-color: $COLOR-ERROR;
 			color: $COLOR-DEFAULT;
 			border-radius: 99px;
 			padding: 4px 8px;
