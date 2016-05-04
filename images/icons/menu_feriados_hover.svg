@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>thin-0021_calendar_month_day_planner</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Picons" sketch:type="MSArtboardGroup" transform="translate(-466.000000, -268.000000)">
+            <g id="thin-0021_calendar_month_day_planner" sketch:type="MSLayerGroup" transform="translate(466.000000, 268.000000)">
+                <g id="Group" stroke="#4C87FF" stroke-width="3" sketch:type="MSShapeGroup">
+                    <path d="M47,5.7572 C47,3.1298 44.87,1 42.2424,1 L5.7576,1 C3.13,1 1,3.1298 1,5.7572 L1,42.243 C1,44.8702 3.13,47 5.7576,47 L42.2424,47 C44.87,47 47,44.8702 47,42.2428 L47,5.7572 L47,5.7572 Z" id="Shape"></path>
+                    <path d="M1,13 L47,13" id="Shape"></path>
+                    <path id="Shape"></path>
+                    <path id="Shape"></path>
+                    <path d="M28.8782,22.5428 L33.0154,21.016 L33.0154,38.8452" id="Shape"></path>
+                    <path d="M13.341,21.016 L24.0286,21.016 L17.084,29.5366 C17.084,29.5366 24.787,28.9364 24.0286,35.0036 C23.2898,40.9138 14.6214,39.584 12.7006,36.0378" id="Shape"></path>
+                </g>
+                <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="0" width="48" height="48"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
