@@ -21,56 +21,20 @@
 <path id="Shape_14_" fill="none" stroke="#B8BDC4" stroke-width="3" d="M0.985,0"/>
 <path id="Shape_15_" fill="none" stroke="#B8BDC4" stroke-width="3" d="M0.985,0"/>
 <g>
-	<g id="Rectangle-path">
-		<path fill="#B8BDC4" d="M35,49H14V0h21V49z M17,46h15V3H17V46z"/>
-	</g>
-	<g id="Rectangle-path_1_">
-		<path fill="#B8BDC4" d="M29,49h-9v-9h9V49z M23,46h3v-3h-3V46z"/>
-	</g>
-	<g id="Rectangle-path_2_">
-		<path fill="#B8BDC4" d="M17,49H0V8h17V49z M3,46h11V11H3V46z"/>
-	</g>
-	<g id="Rectangle-path_3_">
-		<path fill="#B8BDC4" d="M49,49H32V12h17V49z M35,46h11V15H35V46z"/>
-	</g>
-	<g id="Shape_16_">
-		<rect x="6.501" y="14" fill="#B8BDC4" width="4.245" height="3"/>
-	</g>
-	<g id="Shape_17_">
-		<rect x="6.501" y="18" fill="#B8BDC4" width="4.245" height="3"/>
-	</g>
-	<g id="Shape_18_">
-		<rect x="6.501" y="22.001" fill="#B8BDC4" width="4.245" height="3"/>
-	</g>
-	<g id="Shape_19_">
-		<rect x="6.501" y="26.002" fill="#B8BDC4" width="4.245" height="3"/>
-	</g>
-	<g id="Shape_20_">
-		<rect x="6.501" y="30.002" fill="#B8BDC4" width="4.245" height="3"/>
-	</g>
-	<g id="Shape_21_">
-		<rect x="6.501" y="34.002" fill="#B8BDC4" width="4.245" height="3"/>
-	</g>
-	<g id="Shape_22_">
-		<rect x="6.501" y="38.002" fill="#B8BDC4" width="4.245" height="3"/>
-	</g>
-	<g id="Shape_23_">
-		<rect x="38.504" y="18" fill="#B8BDC4" width="4.244" height="3"/>
-	</g>
-	<g id="Shape_24_">
-		<rect x="38.504" y="22.001" fill="#B8BDC4" width="4.244" height="3"/>
-	</g>
-	<g id="Shape_25_">
-		<rect x="38.504" y="26.002" fill="#B8BDC4" width="4.244" height="3"/>
-	</g>
-	<g id="Shape_26_">
-		<rect x="38.504" y="30.002" fill="#B8BDC4" width="4.244" height="3"/>
-	</g>
-	<g id="Shape_27_">
-		<rect x="38.504" y="34.002" fill="#B8BDC4" width="4.244" height="3"/>
-	</g>
-	<g id="Shape_28_">
-		<rect x="38.504" y="38.002" fill="#B8BDC4" width="4.244" height="3"/>
-	</g>
+	<path fill="#B8BDC4" d="M35,12V0H14v8H0v41h14h3h3h9h3h3h14V12H35z M14,46H3V11h11V46z M23,46v-3h3v3H23z M32,46h-3v-6h-9v6h-3V8V3
+		h15v9V46z M46,46H35V15h11V46z"/>
+	<rect x="6.501" y="14" fill="#B8BDC4" width="4.245" height="3"/>
+	<rect x="6.501" y="18" fill="#B8BDC4" width="4.245" height="3"/>
+	<rect x="6.501" y="22.001" fill="#B8BDC4" width="4.245" height="3"/>
+	<rect x="6.501" y="26.002" fill="#B8BDC4" width="4.245" height="3"/>
+	<rect x="6.501" y="30.002" fill="#B8BDC4" width="4.245" height="3"/>
+	<rect x="6.501" y="34.002" fill="#B8BDC4" width="4.245" height="3"/>
+	<rect x="6.501" y="38.002" fill="#B8BDC4" width="4.245" height="3"/>
+	<rect x="38.504" y="18" fill="#B8BDC4" width="4.244" height="3"/>
+	<rect x="38.504" y="22.001" fill="#B8BDC4" width="4.244" height="3"/>
+	<rect x="38.504" y="26.002" fill="#B8BDC4" width="4.244" height="3"/>
+	<rect x="38.504" y="30.002" fill="#B8BDC4" width="4.244" height="3"/>
+	<rect x="38.504" y="34.002" fill="#B8BDC4" width="4.244" height="3"/>
+	<rect x="38.504" y="38.002" fill="#B8BDC4" width="4.244" height="3"/>
 </g>
 </svg>
