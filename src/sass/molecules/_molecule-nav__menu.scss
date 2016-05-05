@@ -4,6 +4,13 @@
 
 -------------------------------------------------------*/
 
+@media screen and (min-width: 1200px) {
+  .geo-nav .geo-nav__menu {
+    height: calc(100% - 120px);
+    overflow-y: auto;
+  }
+}
+
 %molecule-nav__menu {
 	padding: 0 24px;
 	a:hover {
