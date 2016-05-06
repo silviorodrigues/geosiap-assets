@@ -15,8 +15,10 @@ table {
 		text-align: left;
 	}
 	tr {
+  	background-color: $COLOR-DEFAULT;
 		border: 1px solid $COLOR-GRAY-LIGHT;
 		transition: ease .2s;
+}
 		&:hover {
 			background-color: $COLOR-GRAY-LIGHT;
 		}
