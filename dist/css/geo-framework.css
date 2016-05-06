@@ -2468,19 +2468,17 @@ table .geo-table--action {
 /* line 89, ../../_sass/application/molecules/_molecule-input.scss */
 .geo__input--action {
   display: inline-block;
-}
-/* line 91, ../../_sass/application/molecules/_molecule-input.scss */
-.geo__input--action svg {
   padding: 0;
   vertical-align: middle;
 }
-/* line 94, ../../_sass/application/molecules/_molecule-input.scss */
-.geo__input--action svg:hover {
-  fill: #4C87FF;
+/* line 93, ../../_sass/application/molecules/_molecule-input.scss */
+.geo__input--action img {
+  height: 30px;
+  width: 30px;
 }
 
 @media screen and (max-width: 820px) {
-  /* line 101, ../../_sass/application/molecules/_molecule-input.scss */
+  /* line 100, ../../_sass/application/molecules/_molecule-input.scss */
   .geo__input--12c, .geo__input--9c, .geo__input--6c, .geo__input--3c, .geo__input--4c, .geo__input--1c {
     display: block;
     width: calc(100% - 25px);

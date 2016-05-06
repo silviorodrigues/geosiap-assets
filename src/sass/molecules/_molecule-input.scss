@@ -88,12 +88,11 @@
 
 .geo__input--action {
   display: inline-block;
-  svg {
-    padding: 0;
-    vertical-align: middle;
-    &:hover {
-      fill: $COLOR-PRIMARY;
-    }
+  padding: 0;
+  vertical-align: middle;
+  img {
+    height: 30px;
+    width: 30px;
   }
 }
 
