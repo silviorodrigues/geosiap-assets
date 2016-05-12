@@ -10,9 +10,20 @@ table {
 	font-size: .9em;
 	margin: 12px;
 	width: calc(100% - 24px);
+  a {
+    color: $COLOR-FONT;
+    &:hover {
+      color: $COLOR-PRIMARY;
+    }
+  }
 	thead {
 		font-weight: bold;
 		text-align: left;
+    tr {
+  		&:hover {
+  			background-color: $COLOR-DEFAULT;
+  		}
+    }
 	}
 	tr {
   	background-color: $COLOR-DEFAULT;
