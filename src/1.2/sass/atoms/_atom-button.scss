@@ -1,0 +1,24 @@
+/*-------------------------------------------------------
+
+     Atom name: Button
+
+-------------------------------------------------------*/
+
+%atom-button {
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .875em;
+  font-weight: 600;
+  height: 43px;
+  line-height: 43px;
+  min-width: 170px;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  &[disabled] {
+    @extend %boson-disable;
+  }
+}

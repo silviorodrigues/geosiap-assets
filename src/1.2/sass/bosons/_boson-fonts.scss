@@ -1,0 +1,28 @@
+/*-------------------------------------------------------
+
+     Boson name: Fonts
+
+-------------------------------------------------------*/
+%boson-font {
+  color: $COLOR-FONT;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: normal;
+}
+
+%boson-font-pre {
+  color: $COLOR-FONT;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: pre-line;
+}
+
+%boson-font-bold {
+  @extend %boson-font;
+  font-weight: bold;
+}
+
+%boson-font--error {
+  @extend %boson-font-bold;
+  color: $COLOR-ERROR;
+}

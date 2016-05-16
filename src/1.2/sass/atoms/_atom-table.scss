@@ -1,0 +1,55 @@
+/*-------------------------------------------------------
+
+     Atom name: Table
+
+-------------------------------------------------------*/
+table {
+	border: 1px solid $COLOR-GRAY-LIGHT;
+	box-sizing: border-box;
+	color: $COLOR-DISABLE;
+	font-size: .9em;
+	margin: 12px;
+	width: calc(100% - 24px);
+  a {
+    color: $COLOR-FONT;
+    &:hover {
+      color: $COLOR-PRIMARY;
+    }
+  }
+	thead {
+		font-weight: bold;
+		text-align: left;
+    tr {
+  		&:hover {
+  			background-color: $COLOR-DEFAULT;
+  		}
+    }
+	}
+	tr {
+  	background-color: $COLOR-DEFAULT;
+		border: 1px solid $COLOR-GRAY-LIGHT;
+		transition: ease .2s;
+		&:hover {
+			background-color: $COLOR-GRAY-LIGHT;
+		}
+		&.inative {
+      background-color: #DFDFDF;
+      color: #A6A6A6;
+      text-decoration: line-through;
+    }
+	}
+	th, td {
+		padding: 24px;
+	}
+	svg {
+		padding: 5px;
+		&:hover {
+			path {
+				fill: $COLOR-PRIMARY;
+			}
+		}
+	}
+	.geo-table--action {
+		text-align: right;
+	}
+}

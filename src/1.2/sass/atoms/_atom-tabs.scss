@@ -1,0 +1,62 @@
+/*-------------------------------------------------------
+
+     Atom name: Tabs
+
+-------------------------------------------------------*/
+
+.geo-tabs {
+  padding: 0 30px ;
+  display: block;
+
+  .items {
+    padding: 0;
+    margin: 0;
+    border-bottom: solid 1px #ccc;
+  }
+
+  .item {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    margin-right: calc(40px + 1em);
+    padding-bottom: 11px;
+    margin-top: 1em;
+  }
+
+  .item-link {
+    cursor: pointer;
+    color:$COLOR-FONT;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 8px;
+
+    &.active {
+      color: $COLOR-PRIMARY;
+      border-bottom: 4px solid $COLOR-PRIMARY;
+    }
+  }
+
+  .badge, .edit {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+  }
+
+  .badge {
+    left: calc(100% + 0.5em);
+    display: inline-block;
+    color: #FFF;
+    background-color:$COLOR-PRIMARY;
+    line-height: 1em;
+    padding:.25em .5em;
+    font-weight: 700;
+    font-size: .875em;
+    border-radius: 50%;
+  }
+
+  .edit {
+    right: -30px;
+  }
+}

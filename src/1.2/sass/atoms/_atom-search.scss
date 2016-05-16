@@ -1,0 +1,20 @@
+/*-------------------------------------------------------
+
+     Atom name: Search
+
+-------------------------------------------------------*/
+
+ %atom-search {
+ 	position: relative;
+	&:after {
+		@extend %boson-icon-inside;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0iXzAxXy1fY2FtcG9fZGVfYnVzY2FfbWVudV9jbG9zZSIgZGF0YS1uYW1lPSIwMSAtIGNhbXBvIGRlIGJ1c2NhIG1lbnUgY2xvc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE0IDE0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6Izc0NzQ3NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmljb24tcGVzcXVpc2EtYmFyPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNTk5LjA2LDg2LjhoLTAuNjNsLTAuMjItLjIyYTUuMiw1LjIsMCwxLDAtLjU2LjU2bDAuMjEsMC4yMlY4OGw0LDQsMS4xOS0xLjE5Wm0tNC44LDBhMy42LDMuNiwwLDEsMSwzLjYtMy42QTMuNiwzLjYsMCwwLDEsMTU5NC4yNiw4Ni44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1ODkuMDYgLTc4KSIvPjwvc3ZnPg==');
+		margin-top: -8px;
+		top: 50%;
+		width: 16px;
+		height: 16px;
+	}
+	input {
+		box-sizing: border-box;
+	}
+}

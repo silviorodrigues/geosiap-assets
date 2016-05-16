@@ -1,0 +1,34 @@
+/*-------------------------------------------------------
+
+     Molecule name: Buttons
+
+-------------------------------------------------------*/
+
+.geo-button {
+  margin: 0 10px 20px;
+  @extend %atom-button;
+  @extend %boson-button--primary;
+
+  &.geo-button--secundary {
+    @extend %boson-button--secundary;
+  }
+
+  &.geo-button--action {
+    @extend %boson-button--action;
+  }
+
+  &.geo-button--error {
+    @extend %boson-button--error;
+  }
+  
+  &.geo-button--white {
+    @extend %boson-button--white;
+  }
+
+  &.geo-button__icon--add {
+    @extend %boson-button__icon--add;
+  }
+
+}
+
+

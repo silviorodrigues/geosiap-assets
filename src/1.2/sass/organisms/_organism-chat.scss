@@ -1,0 +1,75 @@
+/*-------------------------------------------------------
+
+     Organism name: Chat
+
+-------------------------------------------------------*/
+
+.geo-chat {
+	box-sizing: border-box;
+	background-color: $COLOR-GRAY-LIGHT;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	min-height: calc(100vh - 72px);
+	overflow-x: hidden;
+	width: 100%;
+	.geo-chat--empty {
+		min-height: calc(100vh - 200px);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: nowrap;
+		p {
+			color: $COLOR-PRIMARY;
+			font-weight: lighter;
+			font-size: 24px;
+		}
+	}
+	.geo-chat__content {
+		@extend %molecule-chat__content;	
+	}
+	.geo-chat__header {
+		@extend %molecule-chat__header;		
+	}
+	.geo-chat__message{
+		@extend %molecule-chat__message;
+	}
+	.geo-chat__alert {
+		@extend %molecule-chat__alert;
+	}
+}
+	.geo-chat__send {
+		@extend %molecule-chat__send;
+	}
+	.geo-att_list {
+		margin: 0;
+  		overflow: hidden;
+  		span, img, span > * {
+	  		float: left;
+		    width: initial;
+		    margin-right: 10px;
+		    -webkit-clip-path: none;
+		    clip-path: none;
+		    width: 100px;
+		    height: 100px;
+		    .uploading {
+		      opacity: 0.3;
+		    }
+  		}
+		a {
+			display: block;
+			width: 100%;
+		}
+	}
+
+@media screen and (max-width: 1200px) {
+  .geo-chat, .geo-chat--empty {
+    min-height: calc(100vh - 144px);
+    max-height: calc(100vh - 144px);
+  }
+}

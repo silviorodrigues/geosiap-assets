@@ -1,0 +1,19 @@
+/*-------------------------------------------------------
+
+     Boson name: Input
+
+-------------------------------------------------------*/
+
+%boson-input {
+  background-color: #FFFFFF;
+  border: 2px solid scale-lightness($COLOR-DISABLE, 80);
+  box-sizing: border-box;
+  @include border-radius(2px);
+  color: $COLOR-DISABLE;
+  font-size: 0.8em;
+  width: 100%;
+  padding-left: 10px;
+  &:focus {
+    border-color: $COLOR-FOCUS;
+  }
+}

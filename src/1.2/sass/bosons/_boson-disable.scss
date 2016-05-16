@@ -1,0 +1,15 @@
+/*-------------------------------------------------------
+
+     Boson name: Disable
+
+-------------------------------------------------------*/
+
+%boson-disable {
+  color: $COLOR-DISABLE;
+  cursor: not-allowed;
+  background-color: $COLOR-GRAY-LIGHT;
+  border-color: $COLOR-GRAY-LIGHT;
+  &:hover {
+  	background-color: $COLOR-GRAY-LIGHT;
+  }
+}

@@ -1,0 +1,81 @@
+/*-------------------------------------------------------
+
+     Atom name: Historic Item
+
+-------------------------------------------------------*/
+
+%atom-historic-item {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid $COLOR-GRAY-LIGHT;
+	flex-wrap: nowrap;
+	padding: 24px 12px;
+	-webkit-transition: ease .2s;
+	transition: ease .2s;
+	cursor: pointer;
+
+	.geo-historic__item--resume span{
+		&:first-child {
+			font-weight: bold;
+			font-size: 16px;
+		}
+		display: block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		max-width: 160px;
+	}
+	&:hover {
+		background-color: #F5F5F5;
+	}
+	&.active {
+		background-color: #E0E0E0;
+	}
+	.geo-historic__item--notfication {
+		text-align: right;
+		font-size: 12px;
+		min-width: 54px;
+	}
+	&.geo-historic__item--notified .geo-historic__item--notfication{
+		font-weight: bold;
+		.geo-notification__hour {
+			color: $COLOR-SECUNDARY;
+			margin-bottom: 10px;
+			display: block;
+		}
+		.geo-notification__badge {
+			background-color: $COLOR-SECUNDARY;
+			color: $COLOR-DEFAULT;
+			border-radius: 99px;
+			padding: 4px 8px;
+		}
+	}
+	&.geo-notification--solved  .geo-historic__item--notfication{
+		.geo-notification__hour {
+			color: $COLOR-PRIMARY;
+			margin-bottom: 10px;
+			display: block;
+			font-weight: bold;
+		}
+		.geo-notification__badge {
+			background-color: $COLOR-PRIMARY;
+			color: $COLOR-DEFAULT;
+			border-radius: 99px;
+			padding: 4px 8px;
+		}
+	}
+	&.geo-notification--canceled  .geo-historic__item--notfication{
+		.geo-notification__hour {
+			color: $COLOR-ERROR;
+			margin-bottom: 10px;
+			display: block;
+			font-weight: bold;
+		}
+		.geo-notification__badge {
+			background-color: $COLOR-ERROR;
+			color: $COLOR-DEFAULT;
+			border-radius: 99px;
+			padding: 4px 8px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+/*-------------------------------------------------------
+
+     Boson name: Buttons
+
+-------------------------------------------------------*/
+
+%boson-button--primary {
+  background-color: $COLOR-PRIMARY;
+  color: $COLOR-DEFAULT;
+  &:hover {
+    background-color: scale-lightness($COLOR-PRIMARY, -30);
+  }
+}
+
+%boson-button--secundary {
+  background-color: $COLOR-DEFAULT;
+  color: scale-lightness($COLOR-DISABLE, 50);
+  border: scale-lightness($COLOR-DISABLE, 50) 1px solid;
+  &:hover {
+    background-color: scale-lightness($COLOR-DISABLE, 90);
+  }
+}
+
+%boson-button--white {
+  background-color: transparent;
+  border: $COLOR-DEFAULT 1px solid;
+  color: $COLOR-DEFAULT;
+  font-weight: lighter;
+  &:hover {
+    background-color: rgba(255,255,255, 0.4);
+  }
+}
+
+
+%boson-button--action {
+  background-color: $COLOR-SECUNDARY;
+  color: $COLOR-DEFAULT;
+  &:hover {
+    background-color: scale-lightness($COLOR-SECUNDARY, -30);
+  }
+}
+
+%boson-button--error {
+  background-color: $COLOR-ERROR;
+  color: $COLOR-DEFAULT;
+  &:hover {
+    background-color: scale-lightness($COLOR-ERROR, -30);
+  }
+}
+
+%boson-button--disable {
+  @extend %boson-disable;
+}
+
+%boson-button__icon--add {
+  padding-left: 40px;
+  &:before {
+    @extend %boson-icon-inside;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjYuMTY3cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI2LjE2NyAyNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjYuMTY3IDI2IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTMuMjU0LDI0LjY2OGMtNi41NjcsMC0xMS45MDktNS4zNDQtMTEuOTA5LTExLjkxMmMwLTYuNTY1LDUuMzQyLTExLjkwOCwxMS45MDktMTEuOTA4DQoJCQljNi41NjgsMCwxMS45MTMsNS4zNDIsMTEuOTEzLDExLjkwOEMyNS4xNjcsMTkuMzI1LDE5LjgyMywyNC42NjgsMTMuMjU0LDI0LjY2OHogTTEzLjI1NCwyLjIzDQoJCQljLTUuODA1LDAtMTAuNTI4LDQuNzIyLTEwLjUyOCwxMC41MjZjMCw1LjgwNyw0LjcyMywxMC41MzEsMTAuNTI4LDEwLjUzMWM1LjgwNywwLDEwLjUzMS00LjcyNSwxMC41MzEtMTAuNTMxDQoJCQlDMjMuNzg2LDYuOTUyLDE5LjA2MiwyLjIzLDEzLjI1NCwyLjIzeiIvPg0KCTwvZz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEzLjI1NiwxOS45NTVjLTAuMzgxLDAtMC42OS0wLjMxLTAuNjktMC42OVY2LjI1M2MwLTAuMzgyLDAuMzA5LTAuNjkxLDAuNjktMC42OTENCgkJCWMwLjM4MiwwLDAuNjkxLDAuMzA5LDAuNjkxLDAuNjkxdjEzLjAxMUMxMy45NDcsMTkuNjQ1LDEzLjYzOCwxOS45NTUsMTMuMjU2LDE5Ljk1NXoiLz4NCgk8L2c+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xOS43NjEsMTMuNDQ5SDYuNzUxYy0wLjM4MiwwLTAuNjkxLTAuMzEtMC42OTEtMC42OWMwLTAuMzgyLDAuMzA5LTAuNjksMC42OTEtMC42OWgxMy4wMQ0KCQkJYzAuMzgxLDAsMC42OTEsMC4zMDksMC42OTEsMC42OUMyMC40NTIsMTMuMTM5LDIwLjE0MywxMy40NDksMTkuNzYxLDEzLjQ0OXoiLz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==');
+  }
+}

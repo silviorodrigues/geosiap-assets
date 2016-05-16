@@ -1,0 +1,26 @@
+/*-------------------------------------------------------
+
+     Atom name: Profile Picture
+
+-------------------------------------------------------*/
+
+
+%atom-profile-picture {	
+	img {
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
+		height: 50px;
+		width: 50px;
+		margin-right: 5px;
+		display: inline-block;
+	}
+}
+
+.atom-profile-picture--big {	
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	height: 180px;
+	width: 180px;
+	margin-top: 18px;
+	display: inline-block;
+}
