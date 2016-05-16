@@ -3,8 +3,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     watch: {
       css: {
-        files: ['dist/1.2/sass/**/*.scss'],
-        tasks: ['sass_globbing', 'sass'],
+        files: ['dist/1.2/sass/**/*.scss', 'dist/1.2/js/**/*.js'],
+        tasks: ['sass_globbing', 'sass', 'concat'],
         options: {
           spawn: false
         }
@@ -83,6 +83,6 @@ grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-sass-globbing');
 
 
-grunt.registerTask('dev', ['sass_globbing', 'sass', 'watch']);
+grunt.registerTask('dev', ['sass_globbing', 'sass','concat', 'watch']);
 grunt.registerTask('build', ['clean', 'cssmin', 'concat', 'uglify']);
 };
