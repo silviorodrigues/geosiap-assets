@@ -23,7 +23,7 @@
     display: none;
 
     + .geo__switch--checkbox {
-      @include transition(all 0.3s ease);
+      transition: all 0.3s ease;
       background: #d4d4d4;
       border-radius: $switch-height;
       border: none;

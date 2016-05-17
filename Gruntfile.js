@@ -3,8 +3,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     watch: {
       css: {
-        files: ['dist/1.2/sass/**/*.scss', 'dist/1.2/js/**/*.js'],
-        tasks: ['sass_globbing', 'sass', 'concat'],
+        files: ['src/1.2/sass/**/*.scss', 'src/1.2/js/**/*.js'],
+        tasks: ['sass_globbing', 'sass', 'concat', 'svgstore'],
         options: {
           spawn: false
         }
@@ -34,6 +34,35 @@ module.exports = function(grunt) {
         options: {
           useSingleQuotes: false
         }
+      }
+    },
+
+    svgstore: {
+      options: {
+        prefix : 'icon-',
+        svg: {
+          xmlns: "http://www.w3.org/2000/svg",
+          xlink: "http://www.w3.org/1999/xlink"
+        },
+        formatting : {
+          indent_size : 2
+        }
+      },
+      default : {
+        files: {
+          'images/icons.svg': ['images/compressed/*.svg'],
+        }
+      }
+    },
+
+    'remove-svg-properties': {
+      options: {
+        namespaces: ['i', 'sketch', 'inkscape'],
+        properties: ['fill']
+      },
+      all: {
+        src: 'images/icons/*.svg',
+        dest: 'images/compressed'
       }
     },
 
@@ -81,8 +110,11 @@ grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-sass-globbing');
+grunt.loadNpmTasks('grunt-svgstore');
+grunt.loadNpmTasks('remove-svg-properties');
 
 
-grunt.registerTask('dev', ['sass_globbing', 'sass','concat', 'watch']);
+grunt.registerTask('dev', ['sass_globbing', 'sass','concat', 'svgstore', 'watch']);
+grunt.registerTask('compress', ['remove-svg-properties']);
 grunt.registerTask('build', ['clean', 'cssmin', 'concat', 'uglify']);
 };

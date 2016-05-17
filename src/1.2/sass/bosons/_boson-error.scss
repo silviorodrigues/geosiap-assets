@@ -1,10 +1,10 @@
-/*-------------------------------------------------------
+/*---------------------------------------------------------
 
      Boson name: Error
 
 -------------------------------------------------------*/
 
 %boson-error {
-  background-color: scale-lightness($COLOR-ERROR, 90);
+  background-color: $COLOR-ERROR-LIGHT;
   border-color: $COLOR-ERROR;
 }

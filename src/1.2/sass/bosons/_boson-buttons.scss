@@ -8,16 +8,16 @@
   background-color: $COLOR-PRIMARY;
   color: $COLOR-DEFAULT;
   &:hover {
-    background-color: scale-lightness($COLOR-PRIMARY, -30);
+    background-color: #1565C0;
   }
 }
 
 %boson-button--secundary {
   background-color: $COLOR-DEFAULT;
-  color: scale-lightness($COLOR-DISABLE, 50);
-  border: scale-lightness($COLOR-DISABLE, 50) 1px solid;
+  color: #9E9E9E;
+  border: #9E9E9E 1px solid;
   &:hover {
-    background-color: scale-lightness($COLOR-DISABLE, 90);
+    background-color: $COLOR-GRAY-LIGHT;
   }
 }
 
@@ -36,7 +36,7 @@
   background-color: $COLOR-SECUNDARY;
   color: $COLOR-DEFAULT;
   &:hover {
-    background-color: scale-lightness($COLOR-SECUNDARY, -30);
+    background-color: #558B2F;
   }
 }
 
@@ -44,7 +44,7 @@
   background-color: $COLOR-ERROR;
   color: $COLOR-DEFAULT;
   &:hover {
-    background-color: scale-lightness($COLOR-ERROR, -30);
+    background-color: #C62828;
   }
 }
 
@@ -53,7 +53,7 @@
 }
 
 %boson-button__icon--add {
-  padding-left: 40px;
+  padding: 0 50px;
   &:before {
     @extend %boson-icon-inside;
     width: 20px;

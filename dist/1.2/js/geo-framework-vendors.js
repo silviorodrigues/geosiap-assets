@@ -1,15 +1,5 @@
 $(document).ready(function(){
 
-    //ICON ATOM
-    $('[data-svgicon]').shapeSvgConvert( {
-        onComplete: function() {
-            if ($(document).has($('[data-svgicon]'))) {
-                $('[data-svgicon]').shapeSvgConvert();
-            }
-        }
-    });
-
-
     // MENU ATOM
     $('.geo-menu__button').click(function( e ){
         var gm = this.id,
@@ -42,7 +32,7 @@ $(document).ready(function(){
     $('body').click(function(){
         $('[data-geo-for]').hide();
     });
-    
+
     window.document.onkeydown = function (e) {
         if (!e) e = event;
         if (e.keyCode == 27) {
@@ -81,7 +71,7 @@ $(document).ready(function(){
 
     //MESSAGES REDUCED
     $('.geo-chat').on('click', '.geo-message__header', function() {
-        $(this).parent('.geo-chat__message').toggleClass('geo-chat__message--reduced');  
+        $(this).parent('.geo-chat__message').toggleClass('geo-chat__message--reduced');
     });
 
     //INPUT FOCUS

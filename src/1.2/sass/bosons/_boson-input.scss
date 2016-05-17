@@ -6,9 +6,9 @@
 
 %boson-input {
   background-color: #FFFFFF;
-  border: 2px solid scale-lightness($COLOR-DISABLE, 80);
+  border: 2px solid $COLOR-GRAY-LIGHT;
   box-sizing: border-box;
-  @include border-radius(2px);
+  border-radius: 2px;
   color: $COLOR-DISABLE;
   font-size: 0.8em;
   width: 100%;
