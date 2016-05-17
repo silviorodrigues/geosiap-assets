@@ -21,57 +21,65 @@
 </head>
 <body>
 
-  <header class="geo-header">
-    <h1>Título da página que a pessoa está navegando que é grande</h1>
-
-    <div class="geo-header__info">
-      <span>Nome do lugar que está sendo trabalhado</span>
-      <div class="geo-menu__button" id="menu-user">
-        <svg><use xlink:href='images/icons.svg#icon-usuario_info'/></svg>
-      </div>
-    </div>
-  </header>
-
-  <ul class="geo-menu geo-menu--bottom-left" data-geo-for="menu-user">
-    <li class="geo-menu__item"><a href="#">Editar perfil</a></li>
-    <li class="geo-menu__item"><a href="#">Sair</a></li>
-  </ul>
-
-  <div class="geo-nav__header--mobile">
+  <!-- <div class="geo-nav__header--mobile">
     <span class="geo-mobile__toggle"><img src="images/icons/menu.svg" alt="Abrir menu"></span>
     <img src="images/logo_geosiap.png" alt="Logo Geosiap">
   </div>
-  <div class="geo-nav__overlay"></div>
+  <div class="geo-nav__overlay"></div> -->
 
-  <nav class="geo-nav">
-    <div class="geo-nav__header">
-      <img src="images/logo_geosiap.png" alt="Logo Geosiap" data-logo="expand">
-      <img src="images/logo_geosiap-reduced.png" alt="Logo Geosiap" data-logo="reduced">
-    </div>
-    <div class="geo-nav__menu">
-      <div class="geo-menu__button" id="menu01">
-        <a href="#">
-          <svg><use xlink:href='images/icons.svg#icon-menu_locais'/></svg>
-          <span>Locais de Trabalho</span>
-        </a>
+  <div class="geo-framework">
+    <nav class="geo-nav">
+      <div class="geo-nav__header">
+        <img src="images/logo_geosiap.png" alt="Logo Geosiap" data-logo="expand">
+        <img src="images/logo_geosiap-reduced.png" alt="Logo Geosiap" data-logo="reduced">
       </div>
-      <div class="geo-menu__button" id="menu02">
-        <svg><use xlink:href='images/icons.svg#icon-menu_jornadas'/></svg>
-        <span>Jornadas e horários</span>
+      <div class="geo-nav__menu">
+        <div class="geo-menu__button" id="menu01">
+          <a href="#">
+            <svg><use xlink:href='images/icons.svg#icon-menu_locais'/></svg>
+            <span>Locais de Trabalho</span>
+          </a>
+        </div>
+        <div class="geo-menu__button" id="menu02">
+          <svg><use xlink:href='images/icons.svg#icon-menu_jornadas'/></svg>
+          <span>Jornadas e horários</span>
+        </div>
+        <div class="geo-menu__button" id="menu01">
+          <a href="#">
+            <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
+            <span>Locais de Trabalho</span>
+          </a>
+        </div>
+        <div class="geo-menu__button" id="menu01">
+          <a href="#">
+            <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
+            <span>Test</span>
+          </a>
+        </div>
       </div>
-      <div class="geo-menu__button" id="menu01">
-        <a href="#">
-          <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-          <span>Locais de Trabalho</span>
-        </a>
-      </div>
-    </div>
-    <div class="geo-nav__footer">
+      <div class="geo-nav__footer"></div>
+    </nav>
 
-    </div>
-  </nav>
+    <main>
+      <header class="geo-header">
+        <h1>Título da página que a pessoa está navegando que é grande</h1>
 
-  <ul class="geo-menu geo-menu--bottom-right" data-geo-for="menu01">
+        <div class="geo-header__info">
+          <span>Nome do lugar que está sendo trabalhado</span>
+          <div class="geo-menu__button" id="menu-user">
+            <svg><use xlink:href='images/icons.svg#icon-usuario_info'/></svg>
+          </div>
+        </div>
+      </header>
+
+      <div class="geo-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aliquam aut cumque, officia repellat at culpa itaque qui voluptatibus, voluptates modi dicta minima praesentium id, eligendi beatae! Sunt, earum, ipsum.</p>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- <ul class="geo-menu geo-menu--bottom-right" data-geo-for="menu01">
     <li class="geo-menu__item"><a href="#">Nome da categoria que pode ser bem grande</a></li>
     <li class="geo-menu__item"><a href="#">Sair</a></li>
   </ul>
@@ -81,141 +89,9 @@
     <li class="geo-menu__item"><a href="#">Sair</a></li>
   </ul>
 
-  <div class="geo-content">
-    <div class="geo-content__row">
-      <div class="geo__input--9c geo__input--required">
-        <label for="name">Nome <abbr>*</abbr></label>
-        <div>
-          <span class="error-alert">Insira um nome</span>
-          <select disabled>
-            <option value="" label="Selecione um candidato" selected="selected">Aeroporto</option>
-            <option value="number:1" label="Aeroporto">Aeroporto</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="geo__input--3c geo__input--required">
-        <label for="name">Nome</label>
-        <div class="error">
-          <span class="error-alert">Insira um nome</span>
-          <select>
-            <option value="" label="Selecione um candidato" selected="selected">Aeroporto</option>
-            <option value="number:1" label="Aeroporto">Aeroporto</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="geo__input--3c geo__input--required">
-        <label for="name">Nome</label>
-        <div class="error">
-          <span class="error-alert">Insira um nome</span>
-          <input type="text" placeholder="Nome">
-        </div>
-      </div>
-
-      <div class="geo__input--3c">
-        <label for="name">Nome</label>
-        <div class="error">
-          <span class="error-alert">Insira um nome</span>
-          <input type="text" placeholder="Nome">
-        </div>
-      </div>
-
-      <br>
-      <div class="geo__input--6c">
-        <label for="name">Sem erro</label>
-        <div class="error">
-          <span class="error-alert">Insira um nome</span>
-          <input type="text" placeholder="Nome">
-        </div>
-      </div>
-
-      <div class="geo__input--6c geo__input--error">
-        <label for="name">Com erro <abbr>*</abbr></label>
-        <div>
-          <span class="error-alert">Insira um nome</span>
-          <input type="text" placeholder="Nome">
-        </div>
-      </div>
-
-      <label class="geo__switch">
-        <span class="geo__switch--label">Mudar</span>
-        <input type="checkbox">
-        <div class="geo__switch--checkbox">
-          <span class="geo__switch--status"></span>
-        </div>
-      </label>
-      <br><br>
-      <label class="geo__switch">
-        <span class="geo__switch--label">Mudar</span>
-        <input type="checkbox" checked>
-        <div class="geo__switch--checkbox">
-          <span class="geo__switch--status"></span>
-        </div>
-      </label>
-
-      <br><br>
-      <button type="submit" class="geo-button"  >Default</button>
-      <button  type="submit" class="geo-button geo-button__icon--add">Primary</button>
-      <button  type="submit" class="geo-button geo-button--secundary geo-button__icon--add">Secundary</button>
-      <button  type="submit" class="geo-button geo-button--action geo-button__icon--add">Action</button>
-      <button  type="submit" class="geo-button geo-button--error geo-button__icon--add">Adicionar algo com o título grande</button>
-      <br>
-
-      <button type="submit" class="geo-button" disabled >Default</button>
-      <button disabled type="submit" class="geo-button geo-button__icon--add">Primary</button>
-      <button disabled type="submit" class="geo-button geo-button--secundary geo-button__icon--add">Secundary</button>
-      <button disabled type="submit" class="geo-button geo-button--action geo-button__icon--add">Action</button>
-      <button disabled type="submit" class="geo-button geo-button--error geo-button__icon--add">Error</button>
-      <br>
-
-      <div class="geo-toggle">
-        <input id="test" type="checkbox" name="checkbox" value="value">
-        <label for="test"><span>Text</span></label>
-      </div>
-
-      <div class="geo-toggle">
-        <input type="checkbox" name="checkbox" value="value">
-        <span>Text</span>
-      </div>
-
-      <div class="geo-toggle">
-        <input type="checkbox" name="checkbox" value="value">
-        <span>Text</span>
-      </div>
-
-
-      <br><br>
-
-      <div class="geo-toggle">
-        <input type="radio" name="checkbox" value="value">
-        <span>Text</span>
-      </div>
-
-      <div class="geo-toggle">
-        <input type="radio" name="checkbox" value="value">
-        <span>Text</span>
-      </div>
-
-      <div class="geo-toggle">
-        <input type="radio" name="checkbox" value="value">
-        <span>Text</span>
-      </div>
-      <br><br>
-
-      <div class="geo__input--3c geo-input--datepicker">
-        <label for="name">Data</label>
-        <div>
-          <span class="error-alert">Insira uma data</span>
-          <input type="text" placeholder="__/__/____">
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="site-footer">
-
-
-
-  </footer>
+  <ul class="geo-menu geo-menu--bottom-left" data-geo-for="menu-user">
+    <li class="geo-menu__item"><a href="#">Editar perfil</a></li>
+    <li class="geo-menu__item"><a href="#">Sair</a></li>
+  </ul> -->
 
 </body>

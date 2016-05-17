@@ -5,69 +5,101 @@
 -------------------------------------------------------*/
 
 .geo-nav {
-  background: $COLOR-DEFAULT;
-  box-sizing: border-box;
-  box-shadow: 1px 0px 0px scale-lightness($COLOR-FONT, 80);
-  display: block;
-  width: $NAV-WIDTH;
-  height: 100%;
-  position: fixed;
-  transition: ease .1s; 
-  top: 0;
-  left: 0;
-  z-index: 999;
+  display: flex;
+  flex-direction: column;
+
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100%;
+  max-height: 100%;
+
+  border-right: 2px solid $gray-light;
+  transition: ease all .2s;
+
   .geo-nav__header {
-    @extend %molecule-nav__header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    max-height: 70px;
+    padding: 20px;
+
+    background-color: $blue;
+
+    img {
+      max-height: 35px;
+    }
   }
   .geo-nav__menu {
-    @extend %molecule-nav__menu;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    background-color: $white;
+
+    .geo-menu__button {
+      display: flex;
+
+      box-sizing: border-box;
+      cursor: pointer;
+      padding: 15px 15px 15px 30px;
+      width: 100%;
+      span, a {
+        text-decoration: none;
+        color: $gray;
+        font-size: .95em;
+      }
+      svg {
+        padding-right: 10px;
+        fill: $gray;
+        vertical-align: middle;
+      }
+      &:hover, &.active {
+        background-color: $gray-light;
+        span, a {
+          color: $blue;
+        }
+        svg {
+          fill: $blue;
+        }
+      }
+    }
   }
   .geo-nav__footer {
-    @extend %molecule-nav__footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    max-height: 70px;
+    padding: 20px;
+
+    background-color: $white;
+    color: $gray;
+    cursor: pointer;
+
+    &:before {
+      content: "<";
+    }
   }
-  &.geo-nav--reduced { 
-    width: $NAV-WIDTH-REDUCED;
-    .geo-menu__button span {
-      display: none;
+
+  &.geo-nav--reduced {
+    min-width: 75px;
+    max-width: 75px;
+    .geo-nav__menu {
+      .geo-menu__button {
+        span {
+          display: none;
+        }
+      }
     }
     .geo-nav__footer {
-      padding: 10px 0;
       &:before {
-        content: '>';
+        content: ">";
       }
     }
-    .geo-nav__header {
-      padding: 10px 0;
-    }
-  }
-}
-
-.geo-nav__overlay {
-  @extend %molecule-nav__overlay;
-}
-
-@media screen and (max-width: 1200px) {
-  .geo-nav {
-      z-index: 998;
-      left: -100%;
-      transition: ease .5s;
-      position: absolute;
-      &.geo-nav--active {
-        left: 0;
-      }
-    .geo-nav__header, .geo-nav__footer { 
-      display: none;
-    }
-    .geo-nav__menu {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .geo-nav__overlay.active  {
-    display: none;
   }
 }

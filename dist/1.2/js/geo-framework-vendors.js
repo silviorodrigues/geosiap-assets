@@ -45,14 +45,10 @@ $(document).ready(function(){
     $('.geo-nav__footer').click( function(){
         if ($('.geo-nav').hasClass('geo-nav--reduced')) {
             $('.geo-nav').removeClass('geo-nav--reduced');
-            $('.geo-header').removeClass('geo-header--reduced');
-            $('.geo-content').removeClass('geo-content--reduced');
             $('[data-logo="expand"]').show();
             $('[data-logo="reduced"]').hide();
         } else {
             $('.geo-nav').addClass('geo-nav--reduced');
-            $('.geo-header').addClass('geo-header--reduced');
-            $('.geo-content').addClass('geo-content--reduced');
             $('[data-logo="expand"]').hide();
             $('[data-logo="reduced"]').show();
         }

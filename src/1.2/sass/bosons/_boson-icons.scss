@@ -7,9 +7,8 @@
 svg {
 	width: 24px;
 	height: 24px;
-  padding: 0 10px;
-  fill: $COLOR-PRIMARY;
+  fill: $blue;
   &:hover {
-    fill: $COLOR-DISABLE;
+    fill: $gray;
   }
 }
