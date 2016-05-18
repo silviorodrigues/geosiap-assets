@@ -4,4 +4,17 @@
 
 -------------------------------------------------------*/
 .geo-content {
+  flex-grow: 2;
+
+  box-sizing: border-box;
+  background-color: $white;
+  padding: 12px;
+  &.geo-content-gray {
+    padding: 12px;
+    background-color: $gray-light;
+  }
+  .geo-content__row {
+    padding: 12px;
+    background-color: $white;
+  }
 }

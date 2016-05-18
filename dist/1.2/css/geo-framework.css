@@ -1133,6 +1133,36 @@ svg:hover {
 /* generated with grunt-sass-globbing */
 /*-------------------------------------------------------
 
+     Atom name: Menu
+
+-------------------------------------------------------*/
+.geo-menu__button {
+  cursor: pointer;
+  max-height: 50px;
+}
+
+.geo-menu {
+  background: #FFFFFF;
+  border: 2px solid #edf0f4;
+  display: none;
+  list-style: none;
+  padding: 12px 24px;
+  position: absolute;
+  z-index: 999;
+}
+.geo-menu li {
+  padding: 10px 0;
+}
+.geo-menu a {
+  color: #747474;
+  text-decoration: none;
+}
+.geo-menu a:hover {
+  color: #4C87FF;
+}
+
+/*-------------------------------------------------------
+
      Atom name: Profile Picture
 
 -------------------------------------------------------*/
@@ -1161,16 +1191,78 @@ svg:hover {
   min-height: 100vh;
 }
 
+.geo-framework__content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+  .geo-framework {
+    flex-direction: column;
+  }
+}
 /*-------------------------------------------------------
 
      Organism name: Header
 
 -------------------------------------------------------*/
+.geo-content {
+  flex-grow: 2;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  padding: 12px;
+}
+.geo-content.geo-content-gray {
+  padding: 12px;
+  background-color: #edf0f4;
+}
+.geo-content .geo-content__row {
+  padding: 12px;
+  background-color: #FFFFFF;
+}
+
 /*-------------------------------------------------------
 
      Organism name: Header
 
 -------------------------------------------------------*/
+.geo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  max-height: 70px;
+  background-color: #FFFFFF;
+  border-bottom: solid 2px #edf0f4;
+  padding: 0 20px;
+}
+.geo-header .geo-header__title {
+  color: #4C87FF;
+}
+.geo-header .geo-header__info {
+  display: flex;
+  align-items: center;
+  color: #BCC0C7;
+}
+.geo-header .geo-header__info svg {
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .geo-header {
+    font-size: .9em;
+  }
+  .geo-header .geo-header__title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 80%;
+  }
+  .geo-header .geo-header__info span {
+    display: none;
+  }
+}
 /*-------------------------------------------------------
 
      Organism name: Header
@@ -1181,10 +1273,13 @@ svg:hover {
   flex-direction: column;
   min-width: 250px;
   max-width: 250px;
-  min-height: 100%;
-  max-height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
   border-right: 2px solid #edf0f4;
   transition: ease all .2s;
+}
+.geo-nav ::-webkit-scrollbar {
+  display: none;
 }
 .geo-nav .geo-nav__header {
   display: flex;
@@ -1205,15 +1300,16 @@ svg:hover {
   justify-content: flex-start;
   flex-direction: column;
   background-color: #FFFFFF;
+  overflow: auto;
 }
 .geo-nav .geo-nav__menu .geo-menu__button {
   display: flex;
+  align-items: center;
   box-sizing: border-box;
   cursor: pointer;
   padding: 15px 15px 15px 30px;
+  min-height: 50px;
   width: 100%;
-}
-.geo-nav .geo-nav__menu .geo-menu__button span, .geo-nav .geo-nav__menu .geo-menu__button a {
   text-decoration: none;
   color: #BCC0C7;
   font-size: .95em;
@@ -1221,12 +1317,9 @@ svg:hover {
 .geo-nav .geo-nav__menu .geo-menu__button svg {
   padding-right: 10px;
   fill: #BCC0C7;
-  vertical-align: middle;
 }
 .geo-nav .geo-nav__menu .geo-menu__button:hover, .geo-nav .geo-nav__menu .geo-menu__button.active {
   background-color: #edf0f4;
-}
-.geo-nav .geo-nav__menu .geo-menu__button:hover span, .geo-nav .geo-nav__menu .geo-menu__button:hover a, .geo-nav .geo-nav__menu .geo-menu__button.active span, .geo-nav .geo-nav__menu .geo-menu__button.active a {
   color: #4C87FF;
 }
 .geo-nav .geo-nav__menu .geo-menu__button:hover svg, .geo-nav .geo-nav__menu .geo-menu__button.active svg {
@@ -1243,12 +1336,22 @@ svg:hover {
   color: #BCC0C7;
   cursor: pointer;
 }
+.geo-nav .geo-nav__footer:hover {
+  background-color: #edf0f4;
+}
 .geo-nav .geo-nav__footer:before {
   content: "<";
 }
 .geo-nav.geo-nav--reduced {
   min-width: 75px;
   max-width: 75px;
+}
+.geo-nav.geo-nav--reduced .geo-nav__menu .geo-menu__button {
+  padding: 0;
+  justify-content: center;
+}
+.geo-nav.geo-nav--reduced .geo-nav__menu .geo-menu__button svg {
+  padding-right: 0;
 }
 .geo-nav.geo-nav--reduced .geo-nav__menu .geo-menu__button span {
   display: none;
@@ -1257,6 +1360,58 @@ svg:hover {
   content: ">";
 }
 
+.geo-nav__header--mobile, .geo-nav__overlay {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .geo-nav {
+    box-sizing: border-box;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: initial;
+    border-right: 0px;
+  }
+  .geo-nav .geo-nav__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    transition: ease all .3s;
+  }
+  .geo-nav .geo-nav__menu.geo-nav--active {
+    left: 0;
+  }
+  .geo-nav .geo-nav__menu .geo-menu__button {
+    padding: 15px 20px;
+  }
+  .geo-nav .geo-nav__footer {
+    display: none;
+  }
+
+  .geo-nav__header--mobile {
+    display: block;
+  }
+  .geo-nav__header--mobile .geo-mobile__toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .geo-nav__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: ease all .2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .geo-nav__overlay.active {
+    display: block;
+  }
+}
 /*! jQuery UI - v1.11.4 - 2015-03-11
 * http://jqueryui.com
 * Includes: core.css, accordion.css, autocomplete.css, button.css, datepicker.css, dialog.css, draggable.css, menu.css, progressbar.css, resizable.css, selectable.css, selectmenu.css, slider.css, sortable.css, spinner.css, tabs.css, tooltip.css, theme.css

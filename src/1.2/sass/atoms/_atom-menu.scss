@@ -1,0 +1,30 @@
+/*-------------------------------------------------------
+
+     Atom name: Menu
+
+-------------------------------------------------------*/
+
+.geo-menu__button {
+  cursor: pointer;
+  max-height: 50px;
+}
+
+.geo-menu {
+  background: $white;
+  border: 2px solid $gray-light;
+  display: none;
+  list-style: none;
+  padding: 12px 24px;
+  position: absolute;
+  z-index: 999;
+  li {
+    padding: 10px 0;
+  }
+  a {
+    color: $black-light;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+}

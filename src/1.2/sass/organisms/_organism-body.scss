@@ -3,3 +3,14 @@
 
   min-height: 100vh;
 }
+
+.geo-framework__content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+  .geo-framework {
+    flex-direction: column;
+  }
+}

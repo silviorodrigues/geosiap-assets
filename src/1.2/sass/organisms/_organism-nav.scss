@@ -10,12 +10,15 @@
 
   min-width: 250px;
   max-width: 250px;
-  min-height: 100%;
-  max-height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
 
   border-right: 2px solid $gray-light;
   transition: ease all .2s;
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .geo-nav__header {
     display: flex;
     align-items: center;
@@ -40,28 +43,27 @@
 
     background-color: $white;
 
+    overflow: auto;
+
     .geo-menu__button {
       display: flex;
+      align-items: center;
 
       box-sizing: border-box;
       cursor: pointer;
       padding: 15px 15px 15px 30px;
+      min-height: 50px;
       width: 100%;
-      span, a {
-        text-decoration: none;
-        color: $gray;
-        font-size: .95em;
-      }
+      text-decoration: none;
+      color: $gray;
+      font-size: .95em;
       svg {
         padding-right: 10px;
         fill: $gray;
-        vertical-align: middle;
       }
       &:hover, &.active {
         background-color: $gray-light;
-        span, a {
-          color: $blue;
-        }
+        color: $blue;
         svg {
           fill: $blue;
         }
@@ -80,7 +82,9 @@
     background-color: $white;
     color: $gray;
     cursor: pointer;
-
+    &:hover {
+      background-color: $gray-light;
+    }
     &:before {
       content: "<";
     }
@@ -91,6 +95,11 @@
     max-width: 75px;
     .geo-nav__menu {
       .geo-menu__button {
+        padding: 0;
+        justify-content: center;
+        svg {
+          padding-right: 0;
+        }
         span {
           display: none;
         }
@@ -100,6 +109,58 @@
       &:before {
         content: ">";
       }
+    }
+  }
+}
+
+.geo-nav__header--mobile, .geo-nav__overlay {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .geo-nav {
+    box-sizing: border-box;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: initial;
+    border-right: 0px;
+    .geo-nav__menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      transition: ease all .3s;
+      &.geo-nav--active {
+        left: 0;
+      }
+      .geo-menu__button {
+        padding: 15px 20px;
+      }
+    }
+    .geo-nav__footer {
+      display: none;
+    }
+  }
+
+  .geo-nav__header--mobile {
+    display: block;
+    .geo-mobile__toggle {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  }
+  .geo-nav__overlay {
+    background-color: rgba(0,0,0, 0.5);
+    transition: ease all .2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    &.active {
+      display: block;
     }
   }
 }
