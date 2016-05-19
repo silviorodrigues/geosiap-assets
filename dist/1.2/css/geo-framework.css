@@ -1124,6 +1124,12 @@ svg:hover {
   height: 50px;
 }
 .select2-profile img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  height: 50px;
+  width: 50px;
+  margin-right: 5px;
+  display: inline-block;
   float: left;
 }
 .select2-profile .select2-profile__infos {
@@ -1211,7 +1217,29 @@ h6 {
      Atom name: Profile Picture
 
 -------------------------------------------------------*/
-.select2-profile img {
+.geo-send-file {
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+}
+.geo-send-file img, .geo-send-file span, .geo-send-file label {
+  cursor: pointer;
+  color: #747474;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: normal;
+  font-weight: bold;
+}
+.geo-send-file span {
+  margin-top: 10px;
+  display: block;
+}
+.geo-send-file input {
+  display: none;
+}
+
+.atom-profile-picture {
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   height: 50px;
@@ -1584,6 +1612,9 @@ h6 {
 }
 .geo-content__row .geo-columns--center.geo-columns--12c, .geo-content__row .geo-columns--center.geo-columns--9c, .geo-content__row .geo-columns--center.geo-columns--6c, .geo-content__row .geo-columns--center.geo-columns--3c {
   text-align: center;
+}
+.geo-content__row .geo-columns--middle.geo-columns--12c, .geo-content__row .geo-columns--middle.geo-columns--9c, .geo-content__row .geo-columns--middle.geo-columns--6c, .geo-content__row .geo-columns--middle.geo-columns--3c {
+  align-self: center;
 }
 
 .geo-content__row {

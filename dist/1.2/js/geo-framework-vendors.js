@@ -63,6 +63,24 @@ $(document).ready(function(){
     }
 
 });
+function readURL(input, picture) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          $(picture).attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$(document).ready(function(){
+  $("[data-picture]").change(function(){
+    readURL($(this).find('input').get([0]), $(this).find('img').get([0]));
+  });
+});
 $(document).ready(function(){
 
     $('.geo-input--12c, .geo-input--9c, .geo-input--6c, .geo-input--3c, .geo-input--1c').click(function(){

@@ -69,8 +69,13 @@
 .select2-profile {
 	padding: 10px;
 	height: 50px;
-	@extend %atom-profile-picture;
 	img {
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
+		height: 50px;
+		width: 50px;
+		margin-right: 5px;
+		display: inline-block;
 		float: left;
 	}
 	.select2-profile__infos {

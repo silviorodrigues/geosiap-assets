@@ -12,6 +12,9 @@
   &.geo-columns--center {
     text-align: center;
   }
+  &.geo-columns--middle {
+    align-self: center;
+  }
 }
 
 .geo-content__row {
