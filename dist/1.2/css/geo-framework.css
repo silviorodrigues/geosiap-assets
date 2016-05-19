@@ -1229,6 +1229,113 @@ h6 {
   display: inline-block;
 }
 
+/*-------------------------------------------------------
+
+     Atom name: Switch
+
+-------------------------------------------------------*/
+.geo-switch {
+  border-radius: 25px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  margin: 0 10px 10px;
+}
+.geo-switch input[type="checkbox"] {
+  display: none;
+}
+.geo-switch input[type="checkbox"] + .geo-switch--checkbox {
+  transition: all 0.3s ease;
+  background: #BCC0C7;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 70px;
+  z-index: 0;
+}
+.geo-switch input[type="checkbox"] + .geo-switch--checkbox .geo-switch--status:before {
+  content: "Não";
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: .8em;
+  padding: 0 0 0 21px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+.geo-switch input[type="checkbox"] + .geo-switch--checkbox:before {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  content: "";
+  height: 21px;
+  width: 66px;
+  z-index: 1;
+}
+.geo-switch input[type="checkbox"] + .geo-switch--checkbox:after {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  transition: all 0.3s ease;
+  height: 21px;
+  width: 21px;
+  background: #FFFFFF;
+  border-radius: 21px;
+  content: "";
+  z-index: 2;
+}
+.geo-switch input[type="checkbox"]:checked + .geo-switch--checkbox {
+  background: #4C87FF;
+}
+.geo-switch input[type="checkbox"]:checked + .geo-switch--checkbox .geo-switch--status:before {
+  content: "Sim";
+  padding: 0 21px 0 0;
+}
+.geo-switch input[type="checkbox"]:checked + .geo-switch--checkbox:before {
+  transform: scale(0);
+}
+.geo-switch input[type="checkbox"]:checked + .geo-switch--checkbox:after {
+  left: 47px;
+}
+.geo-switch .geo-switch--label {
+  color: #747474;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: normal;
+  font-weight: bold;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+/*-------------------------------------------------------
+
+     Atom name: Toggle
+
+-------------------------------------------------------*/
+.geo-toggle {
+  display: inline-block;
+  margin: 0 10px 10px;
+  color: #747474;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: normal;
+  font-weight: bold;
+}
+
 /* generated with grunt-sass-globbing */
 /*-------------------------------------------------------
 
