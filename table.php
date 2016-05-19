@@ -1,0 +1,115 @@
+<?php include('head.php'); ?>
+<body>
+  <div class="geo-framework">
+    <?php include('nav.php'); ?>
+    <main class="geo-framework__content">
+      <?php include('header.php'); ?>
+
+      <div class="geo-content">
+        <div class="geo-content__row geo-row--title">
+          <h1>Tables</h1>
+        </div>
+        <div class="geo-content__row">
+          <h2>Default</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th class="small">Small</th>
+                <th class="small">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Default</td>
+                <td>--</td>
+                <td class="geo-table--action">
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-edit'/></svg>
+                  </a>
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-trash'/></svg>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="has-link"><a href="#">Has link</a></td>
+                <td class="has-link"><a href="#">--</a></td>
+                <td class="geo-table--action">
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-edit'/></svg>
+                  </a>
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-trash'/></svg>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tbody data-collapse>
+              <tr>
+                <td><span class="geo-arrow"></span>Collapse</td>
+                <td>--</td>
+                <td class="geo-table--action">
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-edit'/></svg>
+                  </a>
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-trash'/></svg>
+                  </a>
+                </td>
+              </tr>
+              <tr class="description">
+                <td colspan="100%">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusamus dolorem sequi. Nihil molestiae consequatur quos magni omnis nulla quis temporibus ad eum, voluptatum quo perspiciatis error quidem voluptas, similique.</p>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="geo-input--12c">
+                    <div>
+                      <input type="text" placeholder="Input">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="geo-input--12c">
+                    <div>
+                      <input type="text" placeholder="Input">
+                    </div>
+                  </div>
+                </td>
+                <td class="geo-table--action">
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-edit'/></svg>
+                  </a>
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-trash'/></svg>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr class="inative">
+                <td>Inative</td>
+                <td>--</td>
+                <td class="geo-table--action">
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-edit'/></svg>
+                  </a>
+                  <a href="#">
+                    <svg><use xlink:href='images/icons.svg#icon-trash'/></svg>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>

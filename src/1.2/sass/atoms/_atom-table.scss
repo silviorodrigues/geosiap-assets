@@ -1,0 +1,84 @@
+/*-------------------------------------------------------
+
+     Atom name: Table
+
+-------------------------------------------------------*/
+
+table {
+  background-color: $white;
+  border: 1px solid $gray-light;
+  box-sizing: border-box;
+  color: $black-light;
+  font-size: .9em;
+  margin: 12px 0;
+  width: 100%;
+  thead {
+    font-weight: bold;
+    text-align: left;
+    tr {
+      th {
+        border: 1px solid $gray-light;
+      }
+    }
+  }
+  tbody {
+    tr {
+      border: 1px solid $gray-light;
+      transition: ease .2s;
+      &:hover {
+        background-color: $gray-light;
+      }
+      &.inative {
+        background-color: $gray-light;
+        color: $gray;
+        text-decoration: line-through;
+      }
+      &.description {
+        display: none;
+        &.active {
+          display: table-row;
+        }
+      }
+      .has-link {
+        padding: 0;
+        a {
+          box-sizing: border-box;
+          color: $black-light;
+          display: inline-block;
+          padding: 15px;
+          text-decoration: none;
+          width: 100%;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+    &[data-collapse] {
+      cursor: pointer;
+      transition: ease .2s all;
+    }
+    .geo-table--action {
+      text-align: right;
+      a {
+        text-decoration: none;
+        color: transparent;
+        svg {
+          fill: $black-light;
+          width: 20px;
+          height: 20px;
+          padding: 0 10px;
+          &:hover {
+            fill: $blue;
+          }
+        }
+      }
+    }
+  }
+  th, td {
+    padding: 15px;
+    &.small {
+      width: 100px;
+    }
+  }
+}

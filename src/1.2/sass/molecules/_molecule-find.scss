@@ -1,0 +1,125 @@
+.geo-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.geo-search--big {
+  position: relative;
+
+  .atom-profile-picture--small {
+    position: absolute;
+    left: 30px;
+    top: 1.5rem;
+  }
+
+  input {
+    height: 6rem;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    box-sizing: border-box;
+    border-bottom: solid 1px $gray-light;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-left: calc(60px + 3rem);
+    padding-right: calc(60px + 1.5rem);
+  }
+
+  .angucomplete-dropdown-visible input {
+    border-bottom: 1px solid $blue;
+  }
+
+  .angucomplete-searching {
+    padding: 30px;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .angucomplete-row {
+    padding: 15px 0;
+    position: relative;
+    border-bottom: solid 1px $gray-light;
+    cursor: pointer;
+
+    &.angucomplete-selected-row {
+      background-color: $gray-light;
+    }
+
+    .angucomplete-image-holder {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      margin-top: -1.5em;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .angucomplete-title {
+      font-size: 1.3em;
+      font-weight: 300;
+      padding-left: calc(60px + 3rem);
+    }
+
+    .angucomplete-description {
+      padding-left: calc(60px + 3rem);
+      font-weight: 300;
+      color: $gray;
+    }
+  }
+}
+
+.geo-search--info {
+  box-sizing: border-box;
+  height: 6rem;
+  padding: 15px;
+  position: relative;
+  border-bottom: solid 2px $gray-light;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &:not(.readonly):hover {
+    &:after {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iXzAxXy1fY2FtcG9fZGVfYnVzY2FfbWVudV9jbG9zZSIgZGF0YS1uYW1lPSIwMSAtIGNhbXBvIGRlIGJ1c2NhIG1lbnUgY2xvc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE0IDE0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6Izc0NzQ3NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmljb24tcGVzcXVpc2EtYmFyPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNTk5LjA2LDg2LjhoLTAuNjNsLTAuMjItLjIyYTUuMiw1LjIsMCwxLDAtLjU2LjU2bDAuMjEsMC4yMlY4OGw0LDQsMS4xOS0xLjE5Wm0tNC44LDBhMy42LDMuNiwwLDEsMSwzLjYtMy42QTMuNiwzLjYsMCwwLDEsMTU5NC4yNiw4Ni44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1ODkuMDYgLTc4KSIvPjwvc3ZnPg==);
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 30px;
+      top: 2rem;
+    }
+  }
+
+  .atom-profile-picture--small {
+    position: absolute;
+    left: 30px;
+    top: 1.5rem;
+  }
+
+  .description {
+    padding-left: calc(60px + 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-size: 1.3em;
+      font-weight: 300;
+      margin: 20px 0 0 10px;
+    }
+    .informations {
+      display: flex;
+      justify-content: space-around;
+      color: $gray;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.geo-breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    font-size: .8em;
+    &:nth-child(n+2) {
+      margin-left: 10px;
+      &:before {
+        content: ">";
+        margin-right: 10px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: $blue;
+
+      &.active {
+        color: $gray;
+        cursor: default;
+      }
+    }
+  }
+}

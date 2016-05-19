@@ -173,7 +173,7 @@
 
           <div class="geo-send-file" data-picture>
             <label for="file">
-              <img src="images/profile-picture.jpg" class="atom-profile-picture--big">
+              <img src="images/profile-picture.jpg" class="profile-picture--big">
               <span>Your text here</span>
             </label>
             <input id="file" type="file">
@@ -182,7 +182,7 @@
           <div class="geo-columns--6c geo-columns--center geo-columns--middle">
             <div class="geo-send-file" data-picture>
               <label for="file-2">
-                <img src="images/profile-picture.jpg" class="atom-profile-picture">
+                <img src="images/profile-picture.jpg" class="profile-picture">
                 <span>Your text here</span>
               </label>
               <input id="file-2" type="file">
