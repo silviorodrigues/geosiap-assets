@@ -5,7 +5,8 @@
 -------------------------------------------------------*/
 
 .select2-container {
-	width: 100%!important;
+	color: $black-light;
+	font-size: .9em;
 }
 
 .select2-container--default .select2-selection--single,
@@ -52,9 +53,17 @@
 	height: 36px;
 }
 
-.geo__input--error .select2-selection {
-	@extend %boson-error;
-  	padding-right: 36px;
+.geo-input--error .select2-selection {
+	background-color: $red-light;
+  border-color: $red;
+  padding-right: 36px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	border: 0;
+	color: $black-light;
+	margin-top: 7px;
+	padding: 3px;
 }
 
 .select2-profile {

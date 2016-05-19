@@ -13,7 +13,6 @@
   min-height: 100vh;
   max-height: 100vh;
 
-  border-right: 2px solid $gray-light;
   transition: ease all .2s;
 
   ::-webkit-scrollbar {
@@ -25,6 +24,7 @@
     justify-content: center;
 
     box-sizing: border-box;
+    min-height: 70px;
     max-height: 70px;
     padding: 20px;
 
@@ -42,6 +42,7 @@
     flex-direction: column;
 
     background-color: $white;
+    border-right: 2px solid $gray-light;
 
     overflow: auto;
 
@@ -80,6 +81,7 @@
     padding: 20px;
 
     background-color: $white;
+    border-right: 2px solid $gray-light;
     color: $gray;
     cursor: pointer;
     &:hover {
@@ -123,8 +125,8 @@
     min-width: 100%;
     max-width: 100%;
     min-height: initial;
-    border-right: 0px;
     .geo-nav__menu {
+      border-right: 0px;
       position: fixed;
       top: 0;
       left: -100%;
