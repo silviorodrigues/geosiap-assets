@@ -13,7 +13,9 @@
             padding: 20px;
           }
         </style>
-
+        <div class="geo-content__row geo-row--title">
+          <h1>Flex grid</h1>
+        </div>
         <div class="geo-content__row">
           <div class="geo-columns--12c">
             12

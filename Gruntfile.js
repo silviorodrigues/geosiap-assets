@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: ['src/1.2/sass/**/*.scss', 'src/1.2/js/**/*.js'],
-        tasks: ['sass_globbing', 'sass', 'concat', 'svgstore'],
+        tasks: ['sass_globbing', 'sass', 'concat'],
         options: {
           spawn: false
         }
@@ -69,6 +69,9 @@ module.exports = function(grunt) {
     clean: {
       build: {
         src: ['dist/1.2/**']
+      },
+      svg: {
+        src: ['images/compressed/**']
       }
     },
     cssmin: {
@@ -112,7 +115,7 @@ grunt.loadNpmTasks('grunt-svgstore');
 grunt.loadNpmTasks('remove-svg-properties');
 
 
-grunt.registerTask('dev', ['sass_globbing', 'sass','concat', 'svgstore', 'watch']);
-grunt.registerTask('compress', ['remove-svg-properties']);
+grunt.registerTask('dev', ['sass_globbing', 'sass','concat', 'watch']);
+grunt.registerTask('svg', ['clean:svg', 'remove-svg-properties', 'svgstore']);
 grunt.registerTask('build', ['clean', 'cssmin', 'concat', 'uglify']);
 };

@@ -9,6 +9,10 @@
       <img src="images/logo_geosiap-reduced.png" alt="Logo Geosiap" data-logo="reduced">
     </div>
     <div class="geo-nav__menu">
+      <a href="logo.php" class="geo-menu__button">
+        <svg><use xlink:href='images/icons.svg#icon-geo-ball'/></svg>
+        <span>Logos</span>
+      </a>
       <a href="flex-grid.php" class="geo-menu__button">
         <svg><use xlink:href='images/icons.svg#icon-grid'/></svg>
         <span>Flex Grid</span>
