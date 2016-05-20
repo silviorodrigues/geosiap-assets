@@ -1,0 +1,186 @@
+
+<div class="geo-content">
+  <div class="geo-content__row geo-row--title">
+    <h1>Inputs</h1>
+  </div>
+
+  <div class="geo-content__row">
+    <h2>Sizes</h2>
+
+    <div class="geo-input--1c">
+      <label>Size 1</label>
+      <div>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+
+    <div class="geo-input--3c">
+      <label>Size 3</label>
+      <div>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+
+    <div class="geo-input--4c">
+      <label>Size 4</label>
+      <div>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+
+    <div class="geo-input--6c">
+      <label>Size 6</label>
+      <div>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+
+    <div class="geo-input--12c">
+      <label>Size 12</label>
+      <div>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="geo-content__row">
+    <h2>Types</h2>
+    <div class="geo-input--3c">
+      <label>Text</label>
+      <div>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <div class="geo-input--3c">
+      <label>Select</label>
+      <div>
+        <select>
+          <option value="" label="Selecione um candidato" selected="selected">Aeroporto</option>
+          <option value="number:1" label="Aeroporto">Aeroporto</option>
+        </select>
+      </div>
+    </div>
+    <script>
+    $(function() {
+      $( "#datepicker" ).datepicker();
+    });
+    </script>
+    <div class="geo-input--3c geo-input--datepicker">
+      <label>Datepicker</label>
+      <div>
+        <input type="text" id="datepicker">
+      </div>
+    </div>
+    <div class="geo-input--3c geo-input--search">
+      <label>Search</label>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+
+  <div class="geo-content__row">
+    <h2>Disabled</h2>
+    <div class="geo-input--3c">
+      <label>Text</label>
+      <div>
+        <input disabled type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <div class="geo-input--3c">
+      <label>Select</label>
+      <div>
+        <select disabled>
+          <option value="" label="Selecione um candidato" selected="selected">Aeroporto</option>
+          <option value="number:1" label="Aeroporto">Aeroporto</option>
+        </select>
+      </div>
+    </div>
+    <div class="geo-input--3c geo-input--datepicker">
+      <label>Datepicker</label>
+      <div>
+        <input disabled type="text">
+      </div>
+    </div>
+    <div class="geo-input--3c geo-input--search">
+      <label>Search</label>
+      <div>
+        <input disabled type="text">
+      </div>
+    </div>
+  </div>
+
+  <div class="geo-content__row">
+    <h2>Error</h2>
+    <div class="geo-input--3c geo-input--error">
+      <label>Text <abbr>*</abbr></label>
+      <div>
+        <span class="error-alert">Error description</span>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <div class="geo-input--3c geo-input--error">
+      <label>Select <abbr>*</abbr></label>
+      <div>
+        <span class="error-alert">Error description</span>
+        <select>
+          <option value="" label="Selecione um candidato" selected="selected">Aeroporto</option>
+          <option value="number:1" label="Aeroporto">Aeroporto</option>
+        </select>
+      </div>
+    </div>
+    <div class="geo-input--3c geo-input--datepicker geo-input--error">
+      <label>Datepicker <abbr>*</abbr></label>
+      <div>
+        <span class="error-alert">Error description</span>
+        <input type="text">
+      </div>
+    </div>
+    <div class="geo-input--3c geo-input--search geo-input--error">
+      <label>Search</label>
+      <div>
+        <span class="error-alert">Error description</span>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+
+  <div class="geo-content__row">
+    <h2>Others</h2>
+    <script type="text/javascript">
+    $(function() {
+      $("#select2").select2();
+    });
+    </script>
+
+    <div class="geo-input--12c">
+      <label>Select2</label>
+      <div>
+        <select id="select2" multiple="multiple">
+          <option value="AL">Alabama</option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </div>
+    </div>
+    <div class="geo-columns--6c geo-columns--center">
+
+      <div class="geo-send-file" data-picture>
+        <label for="file">
+          <img src="images/profile-picture.jpg" class="profile-picture--big">
+          <span>Your text here</span>
+        </label>
+        <input id="file" type="file">
+      </div>
+    </div>
+    <div class="geo-columns--6c geo-columns--center geo-columns--middle">
+      <div class="geo-send-file" data-picture>
+        <label for="file-2">
+          <img src="images/profile-picture.jpg" class="profile-picture">
+          <span>Your text here</span>
+        </label>
+        <input id="file-2" type="file">
+      </div>
+    </div>
+  </div>
+</div>
