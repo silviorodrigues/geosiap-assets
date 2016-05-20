@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         dest: 'dist/1.2/js/geo-framework-core.js'
       },
       plugins: {
-        src: ['src/js/plugins/*.js'],
+        src: ['src/1.2/js/plugins/*.js'],
         dest: 'dist/1.2/js/geo-framework-plugins.js'
       },
       vendors: {

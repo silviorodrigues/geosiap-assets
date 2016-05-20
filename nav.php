@@ -29,9 +29,9 @@
         <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
         <span>Tables</span>
       </a>
-      <a href="" class="geo-menu__button">
+      <a href="alert.php" class="geo-menu__button">
         <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
+        <span>Alerts</span>
       </a>
       <a href="" class="geo-menu__button">
         <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
