@@ -2442,6 +2442,16 @@ svg:hover {
      Helper name: Size
 
 -------------------------------------------------------*/
+/*-------------------------------------------------------
+
+     Helper name: Select2
+
+-------------------------------------------------------*/
+.sa-button-container .sa-confirm-button-container .confirm {
+  background-color: #4C87FF !important;
+  border-radius: 0;
+}
+
 /* generated with grunt-sass-globbing */
 .geo-arrow {
   position: relative;
