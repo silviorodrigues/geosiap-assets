@@ -8,10 +8,20 @@
   display: flex;
   flex-direction: column;
   flex-grow: 2;
+  margin-left: 250px;
+  &.reduced {
+    margin-left: 75px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .geo-framework {
     flex-direction: column;
+  }
+  .geo-framework__content {
+    margin-left: 0;
+    &.reduced {
+      margin-left: 0;
+    }
   }
 }

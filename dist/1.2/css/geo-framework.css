@@ -3513,11 +3513,22 @@ table th.small, table td.small {
   display: flex;
   flex-direction: column;
   flex-grow: 2;
+  margin-left: 250px;
+}
+.geo-framework__content.reduced {
+  margin-left: 75px;
 }
 
 @media screen and (max-width: 1200px) {
   .geo-framework {
     flex-direction: column;
+  }
+
+  .geo-framework__content {
+    margin-left: 0;
+  }
+  .geo-framework__content.reduced {
+    margin-left: 0;
   }
 }
 /*-------------------------------------------------------
@@ -3590,6 +3601,9 @@ table th.small, table td.small {
 .geo-nav {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
@@ -3691,6 +3705,7 @@ table th.small, table td.small {
     min-width: 100%;
     max-width: 100%;
     min-height: initial;
+    position: initial;
   }
   .geo-nav .geo-nav__menu {
     border-right: 0px;
