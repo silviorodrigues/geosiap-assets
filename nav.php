@@ -10,68 +10,28 @@
     </div>
     <div class="geo-nav__menu">
       <a href="flex-grid.php" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_locais'/></svg>
+        <svg><use xlink:href='images/icons.svg#icon-grid'/></svg>
         <span>Flex Grid</span>
       </a>
       <a href="input.php" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_jornadas'/></svg>
+        <svg><use xlink:href='images/icons.svg#icon-input'/></svg>
         <span>Inputs</span>
       </a>
       <a href="button.php" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
+        <svg><use xlink:href='images/icons.svg#icon-button'/></svg>
         <span>Buttons</span>
       </a>
       <a href="toggle.php" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
+        <svg><use xlink:href='images/icons.svg#icon-toggle'/></svg>
         <span>Toggles</span>
       </a>
       <a href="table.php" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
+        <svg><use xlink:href='images/icons.svg#icon-table'/></svg>
         <span>Tables</span>
       </a>
       <a href="alert.php" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
+        <svg><use xlink:href='images/icons.svg#icon-alert'/></svg>
         <span>Alerts</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Test</span>
-      </a>
-      <a href="" class="geo-menu__button">
-        <svg><use xlink:href='images/icons.svg#icon-menu_feriados'/></svg>
-        <span>Last item</span>
       </a>
     </div>
     <div class="geo-nav__footer"></div>

@@ -2451,6 +2451,9 @@ svg:hover {
   background-color: #4C87FF !important;
   border-radius: 0;
 }
+.sa-button-container .cancel {
+  border-radius: 0;
+}
 
 /* generated with grunt-sass-globbing */
 .geo-arrow {
@@ -3333,7 +3336,7 @@ table th.small, table td.small {
 -------------------------------------------------------*/
 .geo-input--12c, .geo-input--9c, .geo-input--6c, .geo-input--4c, .geo-input--3c, .geo-input--1c {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   margin-right: 20px;
 }
 .geo-input--12c label, .geo-input--9c label, .geo-input--6c label, .geo-input--4c label, .geo-input--3c label, .geo-input--1c label {
@@ -3566,8 +3569,9 @@ table th.small, table td.small {
   border-bottom: solid 2px #edf0f4;
   padding: 0 20px;
 }
-.geo-header .geo-header__title {
+.geo-header .geo-header__title, .geo-header .geo-header__title a {
   color: #4C87FF;
+  text-decoration: none;
 }
 .geo-header .geo-header__info {
   display: flex;
@@ -3652,11 +3656,14 @@ table th.small, table td.small {
   padding-right: 10px;
   fill: #BCC0C7;
 }
-.geo-nav .geo-nav__menu .geo-menu__button:hover, .geo-nav .geo-nav__menu .geo-menu__button.active {
+.geo-nav .geo-nav__menu .geo-menu__button:hover {
+  background-color: #edf0f4;
+}
+.geo-nav .geo-nav__menu .geo-menu__button.active {
   background-color: #edf0f4;
   color: #4C87FF;
 }
-.geo-nav .geo-nav__menu .geo-menu__button:hover svg, .geo-nav .geo-nav__menu .geo-menu__button.active svg {
+.geo-nav .geo-nav__menu .geo-menu__button.active svg {
   fill: #4C87FF;
 }
 .geo-nav .geo-nav__footer {

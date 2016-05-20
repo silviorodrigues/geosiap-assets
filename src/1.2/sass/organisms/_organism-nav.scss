@@ -65,7 +65,10 @@
         padding-right: 10px;
         fill: $gray;
       }
-      &:hover, &.active {
+      &:hover {
+        background-color: $gray-light;
+      }
+      &.active {
         background-color: $gray-light;
         color: $blue;
         svg {
