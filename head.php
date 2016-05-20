@@ -7,6 +7,7 @@
 
   <title>Geo Framework</title>
   <meta name="description" content="Framework Geosiap">
+  <link rel="shortcut icon" href="images/favicon.png">
 
 
   <script src="dist/1.2/js/geo-framework-core.js"></script>
