@@ -5,7 +5,7 @@
 
   <nav class="geo-nav">
     <div class="geo-nav__header">
-      <img src="images/logo_geosiap.png" alt="Logo Geosiap" data-logo="expand">
+      <svg data-logo="expand"><use xlink:href='images/icons.svg#icon-assets'/></svg>
       <img src="images/logo_geosiap-reduced.png" alt="Logo Geosiap" data-logo="reduced">
     </div>
     <div class="geo-nav__menu">

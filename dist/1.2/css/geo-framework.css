@@ -3637,8 +3637,10 @@ table th.small, table td.small {
   padding: 20px;
   background-color: #4C87FF;
 }
-.geo-nav .geo-nav__header img {
-  max-height: 35px;
+.geo-nav .geo-nav__header svg {
+  height: 35px;
+  width: 132px;
+  fill: #FFFFFF;
 }
 .geo-nav .geo-nav__menu {
   flex-grow: 2;
