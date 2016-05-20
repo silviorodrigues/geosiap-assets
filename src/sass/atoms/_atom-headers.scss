@@ -1,0 +1,49 @@
+/*-------------------------------------------------------
+
+     Atom name: Headers
+
+-------------------------------------------------------*/
+
+%atom-headers {
+  font-weight: 400;
+}
+
+h1 {
+  @extend %atom-headers;
+  color: $COLOR-PRIMARY;
+  font-size: 1.313em;
+}
+
+h2 {
+  color: $COLOR-PRIMARY;
+  text-transform: uppercase;
+  font-size: 1.118em;
+  @extend %atom-headers;
+}
+
+h3 {
+  font-size: 1.125em;
+  margin-left: 10px;
+  @extend %atom-headers;
+}
+
+h4 {
+  font-size: 0.9em;
+  @extend %atom-headers;
+}
+
+h5 {
+  font-size: 0.9em;
+  @extend %atom-headers;
+}
+
+h6 {
+  font-size: 0.9em;
+  @extend %atom-headers;
+}
+
+@media screen and (max-width: 1330px) {
+  h1 {
+    font-size: 1em;
+  }
+}

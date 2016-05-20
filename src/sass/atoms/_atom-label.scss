@@ -1,0 +1,14 @@
+/*-------------------------------------------------------
+
+     Atom name: Label
+
+-------------------------------------------------------*/
+
+%atom-label {
+  @extend %boson-font-bold;
+}
+
+%atom-label--required{
+  @extend %boson-font--error;
+  content: "*";
+}

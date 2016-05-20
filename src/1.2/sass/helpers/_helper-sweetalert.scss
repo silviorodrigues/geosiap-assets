@@ -1,0 +1,17 @@
+/*-------------------------------------------------------
+
+     Helper name: Select2
+
+-------------------------------------------------------*/
+
+.sa-button-container {
+  .sa-confirm-button-container {
+    .confirm {
+      background-color: $blue!important;
+      border-radius: 0;
+    }
+  }
+  .cancel {
+    border-radius: 0;
+  }
+}

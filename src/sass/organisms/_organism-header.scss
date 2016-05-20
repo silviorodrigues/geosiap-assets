@@ -1,0 +1,46 @@
+/*-------------------------------------------------------
+
+     Organism name: Header
+
+-------------------------------------------------------*/
+
+.geo-header {
+  background-color: $COLOR-DEFAULT;
+  box-sizing: border-box;
+  border-bottom: 1px solid $COLOR-GRAY-LIGHT;
+  height: 72px;
+  padding: 24px;
+  margin-left: $NAV-WIDTH;
+  & h1, & .geo-header__info{
+    margin: 0;
+    display: inline-block;
+  }
+  & .geo-header__info {
+    @extend %header__info;
+  }
+  &.geo-header--reduced {
+    margin-left: $NAV-WIDTH-REDUCED;
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .geo-header, .geo-header.geo-header--reduced {
+    margin-top: 72px;
+    margin-left: 0;
+    padding: 24px 12px;
+    width: 100%;
+    h1 {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 80%;
+    }
+    .geo-header__info {
+      span {
+        display: none;
+      }
+    }
+  }
+}

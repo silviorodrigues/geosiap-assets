@@ -1,0 +1,41 @@
+/*-------------------------------------------------------
+
+     Atom name: Profile Picture
+
+-------------------------------------------------------*/
+
+.geo-send-file {
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+  img, span, label {
+    cursor: pointer;
+    @include boson-font-bold;
+  }
+  span {
+      margin-top: 10px;
+      display: block;
+  }
+  input {
+  	display: none;
+  }
+}
+
+.profile-picture {
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	height: 50px;
+	width: 50px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.profile-picture--big {
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	height: 180px;
+	width: 180px;
+	margin-top: 18px;
+	display: inline-block;
+}

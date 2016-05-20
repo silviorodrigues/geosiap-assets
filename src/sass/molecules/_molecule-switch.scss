@@ -1,0 +1,107 @@
+/*-------------------------------------------------------
+
+     Molecule name: Switch
+
+-------------------------------------------------------*/
+
+.geo__switch {
+
+  $switch-width: 70px;
+  $switch-padding: 2px;
+  $switch-height: 25px;
+  $knob-size: $switch-height - ($switch-padding * 2);
+  $knob-radius: $switch-height - ($switch-padding * 2);
+
+  border-radius: $switch-height;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  margin: 0 10px 20px;
+
+  input[type="checkbox"] {
+    display: none;
+
+    + .geo__switch--checkbox {
+      @include transition(all 0.3s ease);
+      background: #d4d4d4;
+      border-radius: $switch-height;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      height: $switch-height;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: $switch-width;
+      z-index: 0;
+
+      .geo__switch--status:before {
+        content: "Não";
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: .875em;
+        padding: 0 0 0 $knob-size;
+        text-transform: uppercase;
+        line-height: $switch-height;
+      }
+
+      &:before {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        left: 2px;
+        transform: scale(1);
+        transition: all 0.3s ease;
+        border-radius: $switch-height;
+        content: "";
+        height: $knob-radius;
+        width: $switch-width - ($switch-padding * 2);
+        z-index: 1;
+      }
+
+      &:after {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        left: 2px;
+        transition: all 0.3s ease;
+        height: 21px;
+        width: 21px;
+        background: $COLOR-DEFAULT;
+        border-radius: $knob-radius;
+        content: "";
+        z-index: 2;
+      }
+    }
+
+    &:checked {
+      + .geo__switch--checkbox {
+        background: $COLOR-PRIMARY;
+
+        .geo__switch--status:before {
+          content: "Sim";
+          padding: 0 $knob-size 0 0;
+        }
+
+        &:before {
+          transform: scale(0);
+        }
+
+        &:after {
+          left: $switch-width - $knob-size - ($switch-padding);
+        }
+      }
+    }
+  }
+
+  .geo__switch--label {
+    @extend %atom-label;
+    padding-right: 5px;
+    display: inline-block;
+  }
+}

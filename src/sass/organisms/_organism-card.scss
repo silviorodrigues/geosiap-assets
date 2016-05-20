@@ -1,0 +1,19 @@
+.geo-row__card {
+	position: relative;
+	.geo-card--header {
+		background-color: $COLOR-PRIMARY;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 140px;
+		width: 100%;
+	}
+	box-sizing: border-box;
+	padding: 24px;
+	margin-bottom: 24px;
+	background-color: $COLOR-DEFAULT;
+	width: 100%;
+	&.geo-row__card--centered {
+		text-align: center;
+	}
+}

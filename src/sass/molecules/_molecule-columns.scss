@@ -1,0 +1,64 @@
+/*-------------------------------------------------------
+
+     Molecule name: Columns
+
+-------------------------------------------------------*/
+
+@mixin molecule-column {
+	float: left;
+	display: inline-block;
+	&.geo-columns--right {
+		text-align: right;
+	}
+	&.geo-columns--center {
+		text-align: center;
+	}
+}
+
+.geo-content__row {
+	&.geo-content__row--card {
+		background-color: $COLOR-GRAY-LIGHT;
+		flex-direction: column;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		min-height: calc(100vh - 120px);
+	}
+	&.geo-row--title {
+
+	}
+	&:after {
+		visibility: hidden;
+    	display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+	.geo-columns--12c {
+		@include molecule-column;
+		width: 100%;
+	}
+	.geo-columns--9c {
+		@include molecule-column;
+		width: 75%;
+	}
+	.geo-columns--6c {
+		@include molecule-column;
+		width: 50%;
+	}
+	.geo-columns--3c {
+		@include molecule-column;
+		width: 25%;
+	}
+	.geo-profile-column {
+		display: inline-block;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+  %molecule-column {
+    display: block;
+    @include size();
+  }
+}

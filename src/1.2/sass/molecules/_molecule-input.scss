@@ -1,0 +1,163 @@
+/*-------------------------------------------------------
+
+     Molecule name: Input
+
+-------------------------------------------------------*/
+
+%geo-input {
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  label {
+    @include boson-font-bold;
+  }
+  div {
+    margin-top: 5px;
+  }
+  input, select, textarea {
+    background-color: $white;
+    border: 2px solid $gray-light;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: $black-light;
+    font-size: .8em;
+    width: 100%;
+    padding-left: 10px;
+    height: 35px;
+    min-height: 35px;
+    &:focus {
+      border-color: $blue;
+    }
+    &[disabled] {
+      color: $gray;
+      cursor: not-allowed;
+      background-color: $gray-light;
+      border-color: $gray-light;
+    }
+  }
+  .error-alert {
+    display: none;
+  }
+  abbr {
+    @include boson-font--error;
+    border-bottom: 0px;
+  }
+  &.geo-input--error {
+    & > div {
+      position: relative;
+      &:after {
+        @include boson-icon-inside;
+        width: 16px;
+        height: 16px;
+        right: 20px;
+        top: 50%;
+        margin-top: -8px;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzguNXB4IiBoZWlnaHQ9IjM0Ljc1cHgiIHZpZXdCb3g9IjAgMCAzOC41IDM0Ljc1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzOC41IDM0Ljc1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRjZGNkYiIGQ9Ik0zNy44OTksMjcuNzExTDIzLjYwOSwyLjUzNmMtMC44NDctMS40OTEtMi4zNzgtMi4zODMtNC4wOTktMi4zODNjLTEuNzIsMC0zLjI1LDAuODkyLTQuMDk3LDIuMzgzDQoJCUwxLjEyNCwyNy43MTFjLTAuODM4LDEuNDc0LTAuODI3LDMuMjI5LDAuMDI1LDQuNjk2YzAuODU2LDEuNDY3LDIuMzc5LDIuMzQzLDQuMDcxLDIuMzQzSDMzLjhjMS42OTYsMCwzLjIxNS0wLjg3Niw0LjA3MS0yLjM0Mw0KCQlDMzguNzI0LDMwLjk0LDM4LjczNSwyOS4xODUsMzcuODk5LDI3LjcxMXogTTM2LjQ5OCwzMS42MDhjLTAuNTY2LDAuOTc0LTEuNTc1LDEuNTU1LTIuNjk3LDEuNTU1SDUuMjIxDQoJCWMtMS4xMjMsMC0yLjEzMS0wLjU4MS0yLjY5Ny0xLjU1NWMtMC41NjUtMC45NzQtMC41NzMtMi4xMzctMC4wMjEtMy4xMTFsMTQuMjktMjUuMTc4YzAuNTYyLTAuOTg4LDEuNTc5LTEuNTc4LDIuNzE4LTEuNTc4DQoJCWMxLjE0MywwLDIuMTU3LDAuNTksMi43MTgsMS41NzhMMzYuNTIsMjguNDk3QzM3LjA3MiwyOS40NzIsMzcuMDY1LDMwLjYzNSwzNi40OTgsMzEuNjA4eiIvPg0KCTxwYXRoIGZpbGw9IiNGRjZGNkYiIGQ9Ik0xOS41MSw5Ljg5M2MtMC40MzksMC0wLjc5MiwwLjM1NC0wLjc5MiwwLjc5NHYxMS40MDFjMCwwLjQzOCwwLjM1NCwwLjc5NSwwLjc5MiwwLjc5NQ0KCQljMC40MzksMCwwLjc5NS0wLjM1NiwwLjc5NS0wLjc5NVYxMC42ODdDMjAuMzA1LDEwLjI0NywxOS45NSw5Ljg5MywxOS41MSw5Ljg5M3oiLz4NCgk8cGF0aCBmaWxsPSIjRkY2RjZGIiBkPSJNMTkuNTEsMjYuMjcyYy0wLjQzOSwwLTAuNzkyLDAuMzU0LTAuNzkyLDAuNzkzdjAuMzk2YzAsMC40MzgsMC4zNTQsMC43OTIsMC43OTIsMC43OTINCgkJYzAuNDM5LDAsMC43OTUtMC4zNTQsMC43OTUtMC43OTJ2LTAuMzk2QzIwLjMwNSwyNi42MjYsMTkuOTUsMjYuMjcyLDE5LjUxLDI2LjI3MnoiLz4NCjwvZz4NCjwvc3ZnPg0K');
+      }
+      input, select, textarea {
+        background-color: $red-light;
+        border-color: $red;
+        padding-right: 36px;
+      }
+      &:hover .error-alert {
+        display: block;
+      }
+      .error-alert {
+        background-color: $red;
+        border-radius: 3px;
+        bottom: calc(100% + 10px);
+        color: $white;
+        display: none;
+        font-size: .8em;
+        font-weight: bold;
+        padding: 5px 10px;
+        position: absolute;
+        right: 0;
+        white-space: nowrap;
+        z-index: 10000;
+        &:before {
+          border-top: 9px solid $red;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          content: "";
+          position: absolute;
+          right: 15px;
+          top: 100%;
+        }
+      }
+    }
+  }
+  &.geo-input--search div{
+    position: relative;
+    &:after {
+      @include boson-icon-inside;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0iXzAxXy1fY2FtcG9fZGVfYnVzY2FfbWVudV9jbG9zZSIgZGF0YS1uYW1lPSIwMSAtIGNhbXBvIGRlIGJ1c2NhIG1lbnUgY2xvc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE0IDE0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6Izc0NzQ3NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmljb24tcGVzcXVpc2EtYmFyPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNTk5LjA2LDg2LjhoLTAuNjNsLTAuMjItLjIyYTUuMiw1LjIsMCwxLDAtLjU2LjU2bDAuMjEsMC4yMlY4OGw0LDQsMS4xOS0xLjE5Wm0tNC44LDBhMy42LDMuNiwwLDEsMSwzLjYtMy42QTMuNiwzLjYsMCwwLDEsMTU5NC4yNiw4Ni44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1ODkuMDYgLTc4KSIvPjwvc3ZnPg==');
+      margin-top: -8px;
+      top: 50%;
+      right: 10px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.geo-input--datepicker div{
+    position: relative;
+    &:after {
+      @include boson-icon-inside;
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTIxLjEwNzQsMjRIMi43MzczQzEuMTUxNCwyNCwwLDIyLjgyMDMsMCwyMS4xOTUzVjIuNzY0NkMwLDEuMTYyNiwxLjE1MTQsMCwyLjczNzMsMGgxOC4zNzAxDQoJCUMyMi43NTY4LDAsMjQsMS4xODg1LDI0LDIuNzY0NnYxOC40Mjk3QzI0LDIyLjc2NzYsMjIuNzI5NSwyNCwyMS4xMDc0LDI0eiBNMi43MzczLDFDMS42OTgyLDEsMSwxLjcwOSwxLDIuNzY0NnYxOC40MzA3DQoJCUMxLDIyLjI1NzgsMS43MTQ0LDIzLDIuNzM3MywyM2gxOC4zNzAxQzIyLjE4NjUsMjMsMjMsMjIuMjIzNiwyMywyMS4xOTQzVjIuNzY0NkMyMywxLjc1ODgsMjIuMTg2NSwxLDIxLjEwNzQsMUgyLjczNzN6Ii8+DQoJPHJlY3QgeD0iMC41IiB5PSI3IiB3aWR0aD0iMjMiIGhlaWdodD0iMSIvPg0KCTxyZWN0IHg9IjQiIHk9IjcuNDUyMSIgd2lkdGg9IjEiIGhlaWdodD0iMTYuMDQ3OSIvPg0KCTxyZWN0IHg9IjkiIHk9IjcuNDUyMSIgd2lkdGg9IjEiIGhlaWdodD0iMTYuMDQ3OSIvPg0KCTxyZWN0IHg9IjE0IiB5PSI3LjQ1MjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjE2LjA0NzkiLz4NCgk8cmVjdCB4PSIxOSIgeT0iNy40NTIxIiB3aWR0aD0iMSIgaGVpZ2h0PSIxNi4wNDc5Ii8+DQoJPHJlY3QgeD0iMC41IiB5PSIxOSIgd2lkdGg9IjIzIiBoZWlnaHQ9IjEiLz4NCgk8cmVjdCB4PSIwLjUiIHk9IjE1IiB3aWR0aD0iMjMiIGhlaWdodD0iMSIvPg0KCTxyZWN0IHg9IjAuNSIgeT0iMTEiIHdpZHRoPSIyMyIgaGVpZ2h0PSIxIi8+DQoJPHBhdGggZD0iTTcuNjQxNiw0Ljg5NjVjLTAuNzM0NCwwLTEuMzMyLTAuNTk3Ny0xLjMzMi0xLjMzMmMwLTAuNzM0OSwwLjU5NzctMS4zMzI1LDEuMzMyLTEuMzMyNQ0KCQljMC43MzQ5LDAsMS4zMzI1LDAuNTk3NywxLjMzMjUsMS4zMzI1QzguOTc0MSw0LjI5ODgsOC4zNzY1LDQuODk2NSw3LjY0MTYsNC44OTY1eiBNNy42NDE2LDMuMjMxOQ0KCQljLTAuMTgzMSwwLTAuMzMyLDAuMTQ4OS0wLjMzMiwwLjMzMjVjMCwwLjE4MzEsMC4xNDg5LDAuMzMyLDAuMzMyLDAuMzMyYzAuMTgzNiwwLDAuMzMyNS0wLjE0ODksMC4zMzI1LTAuMzMyDQoJCUM3Ljk3NDEsMy4zODA5LDcuODI1MiwzLjIzMTksNy42NDE2LDMuMjMxOXoiLz4NCgk8cGF0aCBkPSJNMTYuMzU4NCw0Ljg5NjVjLTAuNzM0NCwwLTEuMzMyLTAuNTk3Ny0xLjMzMi0xLjMzMmMwLTAuNzM0OSwwLjU5NzctMS4zMzI1LDEuMzMyLTEuMzMyNXMxLjMzMiwwLjU5NzcsMS4zMzIsMS4zMzI1DQoJCUMxNy42OTA0LDQuMjk4OCwxNy4wOTI4LDQuODk2NSwxNi4zNTg0LDQuODk2NXogTTE2LjM1ODQsMy4yMzE5Yy0wLjE4MjYsMC0wLjMzMiwwLjE0ODktMC4zMzIsMC4zMzI1DQoJCWMwLDAuMTgzMSwwLjE0OTQsMC4zMzIsMC4zMzIsMC4zMzJzMC4zMzItMC4xNDg5LDAuMzMyLTAuMzMyQzE2LjY5MDQsMy4zODA5LDE2LjU0MSwzLjIzMTksMTYuMzU4NCwzLjIzMTl6Ii8+DQo8L2c+DQo8cmVjdCBmaWxsPSJub25lIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4NCjwvc3ZnPg0K');
+      margin-top: -8px;
+      top: 50%;
+      right: 10px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.geo-input--12c {
+  @extend %geo-input;
+  @include size();
+}
+
+.geo-input--9c {
+  @extend %geo-input;
+  @include size(75%);
+}
+
+
+.geo-input--6c {
+  @extend %geo-input;
+  @include size(50%);
+}
+
+.geo-input--4c {
+  @extend %geo-input;
+  @include size(33.33333333%);
+}
+
+.geo-input--3c {
+  @extend %geo-input;
+  @include size(25%);
+}
+
+.geo-input--1c {
+  @extend %geo-input;
+  @include size(8.33333333%);
+}
+
+.geo-input--action {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  %geo-input {
+    display: block;
+    margin-right: 0;
+    @include size(100%, 0px);
+  }
+}

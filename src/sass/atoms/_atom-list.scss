@@ -1,0 +1,25 @@
+/*-------------------------------------------------------
+
+     Atom name: List
+
+-------------------------------------------------------*/
+
+.geo-list {
+  list-style: none;
+  color: $COLOR-FONT;
+  font-size: .9em;
+  li {
+    position: relative;
+  }
+  .geo-list__item--result {
+    margin-top: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 200px;
+      top: -10px;
+      background-color: $COLOR-FONT;
+    }
+  }
+}

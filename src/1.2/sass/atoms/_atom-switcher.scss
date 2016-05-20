@@ -1,0 +1,107 @@
+/*-------------------------------------------------------
+
+     Atom name: Switch
+
+-------------------------------------------------------*/
+
+.geo-switch {
+
+  $switch-width: 70px;
+  $switch-padding: 2px;
+  $switch-height: 25px;
+  $knob-size: $switch-height - ($switch-padding * 2);
+  $knob-radius: $switch-height - ($switch-padding * 2);
+
+  border-radius: $switch-height;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  margin: 0 10px 10px;
+
+  input[type="checkbox"] {
+    display: none;
+
+    + .geo-switch--checkbox {
+      transition: all 0.3s ease;
+      background: $gray;
+      border-radius: $switch-height;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      height: $switch-height;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: $switch-width;
+      z-index: 0;
+
+      .geo-switch--status:before {
+        content: "Não";
+        color: $white;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: .8em;
+        padding: 0 0 0 $knob-size;
+        text-transform: uppercase;
+        line-height: $switch-height;
+      }
+
+      &:before {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        left: 2px;
+        transform: scale(1);
+        transition: all 0.3s ease;
+        border-radius: $switch-height;
+        content: "";
+        height: $knob-radius;
+        width: $switch-width - ($switch-padding * 2);
+        z-index: 1;
+      }
+
+      &:after {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        left: 2px;
+        transition: all 0.3s ease;
+        height: 21px;
+        width: 21px;
+        background: $white;
+        border-radius: $knob-radius;
+        content: "";
+        z-index: 2;
+      }
+    }
+
+    &:checked {
+      + .geo-switch--checkbox {
+        background: $blue;
+
+        .geo-switch--status:before {
+          content: "Sim";
+          padding: 0 $knob-size 0 0;
+        }
+
+        &:before {
+          transform: scale(0);
+        }
+
+        &:after {
+          left: $switch-width - $knob-size - ($switch-padding);
+        }
+      }
+    }
+  }
+
+  .geo-switch--label {
+    @include boson-font-bold;
+    padding-right: 5px;
+    display: inline-block;
+  }
+}

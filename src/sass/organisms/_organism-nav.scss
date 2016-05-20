@@ -1,0 +1,73 @@
+/*-------------------------------------------------------
+
+     Organism name: Header
+
+-------------------------------------------------------*/
+
+.geo-nav {
+  background: $COLOR-DEFAULT;
+  box-sizing: border-box;
+  box-shadow: 1px 0px 0px scale-lightness($COLOR-FONT, 80);
+  display: block;
+  width: $NAV-WIDTH;
+  height: 100%;
+  position: fixed;
+  transition: ease .1s; 
+  top: 0;
+  left: 0;
+  z-index: 999;
+  .geo-nav__header {
+    @extend %molecule-nav__header;
+  }
+  .geo-nav__menu {
+    @extend %molecule-nav__menu;
+  }
+  .geo-nav__footer {
+    @extend %molecule-nav__footer;
+  }
+  &.geo-nav--reduced { 
+    width: $NAV-WIDTH-REDUCED;
+    .geo-menu__button span {
+      display: none;
+    }
+    .geo-nav__footer {
+      padding: 10px 0;
+      &:before {
+        content: '>';
+      }
+    }
+    .geo-nav__header {
+      padding: 10px 0;
+    }
+  }
+}
+
+.geo-nav__overlay {
+  @extend %molecule-nav__overlay;
+}
+
+@media screen and (max-width: 1200px) {
+  .geo-nav {
+      z-index: 998;
+      left: -100%;
+      transition: ease .5s;
+      position: absolute;
+      &.geo-nav--active {
+        left: 0;
+      }
+    .geo-nav__header, .geo-nav__footer { 
+      display: none;
+    }
+    .geo-nav__menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .geo-nav__overlay.active  {
+    display: none;
+  }
+}

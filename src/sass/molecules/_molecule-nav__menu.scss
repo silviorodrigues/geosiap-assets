@@ -1,0 +1,38 @@
+/*-------------------------------------------------------
+
+     Organism name: Nav menu
+
+-------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+  .geo-nav .geo-nav__menu {
+    height: calc(100% - 120px);
+    overflow-y: auto;
+  }
+}
+
+%molecule-nav__menu {
+	padding: 0 24px;
+	a:hover {
+		text-decoration: none;
+	}
+	.geo-menu__button {
+		padding: 12px 0;
+		font-weight: normal;
+		& path {
+	    	fill: $COLOR-FONT;
+	  	}
+	  	svg {
+	  		padding: 0 12px 0 0;
+	  		vertical-align: middle;
+	  	}
+	  	&:hover {
+	  		span {
+	  			color: $COLOR-PRIMARY;
+	  		}
+	    	path {
+	      		fill: $COLOR-PRIMARY;
+	    	}
+	    }
+	}
+}

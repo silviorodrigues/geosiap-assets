@@ -1,0 +1,44 @@
+/*-------------------------------------------------------
+
+     Molecule name: Chat Send
+
+-------------------------------------------------------*/
+
+%molecule-chat__send {
+	padding: 24px;
+	background-color: $COLOR-DEFAULT;
+	border-top: 1px solid $COLOR-GRAY-LIGHT;
+	img {
+		vertical-align: top;
+	}
+	textarea {
+		border: 0;
+		width: calc(100% - 125px);
+		padding-top: 15px;
+		resize: vertical;
+		display: inline-block;
+		color: $COLOR-FONT;
+		font-size: .9em;
+	}
+	@extend %atom-profile-picture;
+	.geo-chat__send--file {
+		display: inline-block;
+		float: rigth;
+		vertical-align: top;
+		svg {
+			cursor: pointer;
+			padding-right: 0;
+			&:hover {
+				path {
+					fill: $COLOR-PRIMARY;
+				}
+			}
+		}
+		@extend %atom-file-att;
+	}
+	.geo-button {
+		margin: 24px 0 0 0;
+		display: inline-block;
+		float: right;
+	}
+}

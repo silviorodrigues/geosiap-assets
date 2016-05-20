@@ -1,0 +1,104 @@
+/*-------------------------------------------------------
+
+     Molecule name: Input
+
+-------------------------------------------------------*/
+
+%geo__input {
+  display: inline-block;
+  margin: 0 10px 20px;
+  label {
+    @extend %atom-label;
+  }
+  input, select {
+    @extend %atom-input;
+    height: 35px;
+  }
+  textarea {
+    @extend %atom-input;
+  }
+  .error-alert {
+    display: none;
+  }
+  &.geo__input--required {
+    label abbr {
+      @extend %atom-label--required;
+      border-bottom: 0px;
+    }
+  }
+  &.geo__input--error {
+    & div {
+      position: relative;
+      @extend %atom-input--error-alert;
+      input, select {
+        @extend %atom-input--error;
+      }
+      &:hover .error-alert {
+        display: block;
+      }
+      .error-alert {
+        @extend %atom-tooltip--error-right;
+      }
+    }
+  }
+  &.geo-input--search div{
+    @extend %atom-search;
+    &:after {
+      right: 10px;
+    }
+  }
+  &.geo-input--datepicker div{
+    @extend %atom-datepicker;
+    &:after {
+      right: 10px;
+    }
+  }
+}
+
+.geo__input--12c {
+  @extend %geo__input;
+  @include size();
+}
+
+.geo__input--9c {
+  @extend %geo__input;
+  @include size(75%);
+}
+
+
+.geo__input--6c {
+  @extend %geo__input;
+  @include size(50%);
+}
+
+.geo__input--3c {
+  @extend %geo__input;
+  @include size(25%);
+}
+
+.geo__input--4c {
+  @extend %geo__input;
+  @include size(33.33333333%);
+}
+
+.geo__input--1c {
+  @extend %geo__input;
+  @include size(8.33333333%);
+}
+
+.geo__input--action {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  %geo__input {
+    display: block;
+    @include size();
+  }
+}

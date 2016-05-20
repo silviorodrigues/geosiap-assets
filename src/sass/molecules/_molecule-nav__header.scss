@@ -1,0 +1,36 @@
+/*-------------------------------------------------------
+
+     Organism name: Header
+
+-------------------------------------------------------*/
+
+%molecule-nav__header {
+	background-color: $COLOR-PRIMARY;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	text-align: center;
+	height: 72px;
+	margin-bottom: 12px;
+	img {
+		@extend %atom-logo;
+	}
+}
+
+.geo-nav__header--mobile {
+	display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @extend %molecule-nav__header;
+    .geo-mobile__toggle {
+    	cursor: pointer;
+    	position: absolute;
+    	top: 17px;
+    	left: 15px;
+    }
+  }
+@media screen and (max-width: 1200px) {
+	.geo-nav__header--mobile {
+		display: block;
+	}
+}

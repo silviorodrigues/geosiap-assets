@@ -1,0 +1,28 @@
+/*-------------------------------------------------------
+
+     Boson name: Fonts
+
+-------------------------------------------------------*/
+@mixin boson-font {
+  color: $black-light;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: normal;
+}
+
+@mixin boson-font-pre {
+  color: $black-light;
+  font-size: .9em;
+  font-family: sans-serif;
+  white-space: pre-line;
+}
+
+@mixin boson-font-bold {
+  @include boson-font;
+  font-weight: bold;
+}
+
+@mixin boson-font--error {
+  @include boson-font-bold;
+  color: $red;
+}

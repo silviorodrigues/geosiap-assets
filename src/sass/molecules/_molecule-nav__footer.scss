@@ -1,0 +1,23 @@
+/*-------------------------------------------------------
+
+     Organism name: Nav footer
+
+-------------------------------------------------------*/
+
+%molecule-nav__footer {
+	background-color: $COLOR-DEFAULT;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding: 10px 50px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: $COLOR-FONT;
+	&:hover {
+		background-color: $COLOR-GRAY-LIGHT;
+	}
+	&:before {
+		content: "<";
+	}
+}
