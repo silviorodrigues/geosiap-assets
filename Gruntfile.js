@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: ['src/1.2/sass/**/*.scss', 'src/1.2/js/**/*.js'],
-        tasks: ['clean:build', 'sass_globbing', 'sass', 'concat', 'cssmin', 'uglify'],
+        tasks: ['clean:build', 'sass_globbing', 'sass', 'concat', 'cssmin', 'uglify', 'copy'],
         options: {
           spawn: false
         }
@@ -74,6 +74,15 @@ module.exports = function(grunt) {
         src: ['images/compressed/**']
       }
     },
+
+    copy: {
+      images: {
+        expand: true,
+        cwd: 'src/1.2/sass/images/',
+        src: '**',
+        dest: 'dist/1.2/css/images/'
+      },
+    },
     cssmin: {
       all: {
         src: ['dist/1.2/css/geo-framework.css'],
@@ -115,7 +124,7 @@ grunt.loadNpmTasks('grunt-svgstore');
 grunt.loadNpmTasks('remove-svg-properties');
 
 
-grunt.registerTask('dev', ['clean:build', 'sass_globbing', 'sass','concat', 'cssmin', 'uglify', 'watch']);
+grunt.registerTask('dev', ['clean:build', 'sass_globbing', 'sass','concat', 'cssmin', 'uglify', 'copy', 'watch']);
 grunt.registerTask('svg', ['clean:svg', 'remove-svg-properties', 'svgstore']);
 grunt.registerTask('build', ['clean:build', 'cssmin', 'concat', 'uglify']);
 };
