@@ -11,8 +11,6 @@ function readURL(input, picture) {
     }
 }
 
-$(document).ready(function(){
-  $("[data-picture]").change(function(){
+$(document).on('change', '[data-picture]', function() {
     readURL($(this).find('input').get([0]), $(this).find('img').get([0]));
-  });
 });
