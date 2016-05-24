@@ -2712,7 +2712,7 @@ h6 {
   display: inline-block;
   position: relative;
   white-space: nowrap;
-  margin: 0 10px 10px;
+  margin: 0 10px 10px 0;
 }
 .geo-switch input[type="checkbox"] {
   display: none;
