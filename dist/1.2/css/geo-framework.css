@@ -3494,27 +3494,27 @@ table th.small, table td.small {
 }
 
 .geo-input--12c {
-  width: calc(100% - 20px);
+  width: calc(100% - 25px);
 }
 
 .geo-input--9c {
-  width: calc(75% - 20px);
+  width: calc(75% - 25px);
 }
 
 .geo-input--6c {
-  width: calc(50% - 20px);
+  width: calc(50% - 25px);
 }
 
 .geo-input--4c {
-  width: calc(33.33333% - 20px);
+  width: calc(33.33333% - 25px);
 }
 
 .geo-input--3c {
-  width: calc(25% - 20px);
+  width: calc(25% - 25px);
 }
 
 .geo-input--1c {
-  width: calc(8.33333% - 20px);
+  width: calc(8.33333% - 25px);
 }
 
 .geo-input--action {
