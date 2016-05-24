@@ -4,6 +4,6 @@
 
 -------------------------------------------------------*/
 
-@mixin size ($width:100%, $gutter:20px) {
+@mixin size ($width:100%, $gutter:25px) {
   width: calc(#{$width} - #{$gutter});
 }
