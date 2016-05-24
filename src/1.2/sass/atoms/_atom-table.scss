@@ -19,6 +19,9 @@ table {
       th {
         border: 1px solid $gray-light;
       }
+      &:hover {
+        background-color: $white;
+      }
     }
   }
   tbody {
@@ -50,6 +53,42 @@ table {
           width: 100%;
           &:hover {
             color: $blue;
+          }
+        }
+      }
+      & > td > .geo-arrow {
+        position: relative;
+        &:before {
+          content: "";
+          cursor: pointer;
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-top: 6px solid transparent;
+          border-bottom: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-left: 6px solid $gray;
+          margin-right: 10px;
+        }
+        &:hover {
+          &:before {
+            border-left: 6px solid $blue;
+          }
+        }
+      }
+      &.geo-arrow--down > td {
+        & > .geo-arrow {
+          top: 5px;
+          &:before {
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-top: 6px solid $gray;
+          }
+          &:hover {
+            &:before {
+              border-top: 6px solid $blue;
+            }
           }
         }
       }
