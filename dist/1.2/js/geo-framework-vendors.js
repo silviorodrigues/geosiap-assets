@@ -168,6 +168,8 @@ $.fn.select2.defaults.defaults.language.searching = function () {
 }
 
 $(document).on('click', '[data-collapse] tr', function() {
-  $(this).toggleClass('geo-arrow--down');
-  $(this).next().toggleClass('active');
+  if (!$(this).hasClass("description")) {
+    $(this).toggleClass('geo-arrow--down');
+    $(this).nextAll('.description').toggleClass('active');
+  };
 });
