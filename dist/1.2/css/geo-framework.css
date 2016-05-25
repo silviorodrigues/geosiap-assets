@@ -2883,6 +2883,7 @@ table th.small, table td.small {
 .geo-tabs {
   padding: 0 30px 0 0;
   display: block;
+  width: 100%;
 }
 .geo-tabs .items {
   padding: 0;
