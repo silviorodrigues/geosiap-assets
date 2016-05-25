@@ -2952,7 +2952,7 @@ table th.small, table td.small {
 
 -------------------------------------------------------*/
 .geo-button {
-  margin: 0 10px 20px;
+  margin: 0 10px 20px 0;
   border-radius: 0px;
   cursor: pointer;
   display: inline-block;
@@ -3001,7 +3001,7 @@ table th.small, table td.small {
 }
 
 .geo-button--secundary {
-  margin: 0 10px 20px;
+  margin: 0 10px 20px 0;
   border-radius: 0px;
   cursor: pointer;
   display: inline-block;
@@ -3053,7 +3053,7 @@ table th.small, table td.small {
 }
 
 .geo-button--action {
-  margin: 0 10px 20px;
+  margin: 0 10px 20px 0;
   border-radius: 0px;
   cursor: pointer;
   display: inline-block;
@@ -3101,7 +3101,7 @@ table th.small, table td.small {
 }
 
 .geo-button--error {
-  margin: 0 10px 20px;
+  margin: 0 10px 20px 0;
   border-radius: 0px;
   cursor: pointer;
   display: inline-block;
@@ -3149,7 +3149,7 @@ table th.small, table td.small {
 }
 
 .geo-button--white {
-  margin: 0 10px 20px;
+  margin: 0 10px 20px 0;
   border-radius: 0px;
   cursor: pointer;
   display: inline-block;
