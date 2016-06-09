@@ -26,3 +26,11 @@
   @include boson-font-bold;
   color: $red;
 }
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+p {
+  color: $black-light;
+}

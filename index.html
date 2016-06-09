@@ -12,7 +12,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
-  <script src="js/application.js"></script>
+  <script src="/node_modules/angular-gist/angular-gist.min.js"></script>
+  <script src="/js/application.js"></script>
 
   <script src="dist/1.2/js/geo-framework.min.js"></script>
   <link rel="stylesheet" href="dist/1.2/css/geo-framework.min.css">
@@ -35,6 +36,10 @@
         <a class="geo-menu__button" ng-href="#/logos" ng-class="{active: page == 'logos'}" ng-click="page = 'logos'">
           <svg><use xlink:href='images/icons.svg#icon-geo-ball'/></svg>
           <span>Logos</span>
+        </a>
+        <a class="geo-menu__button" ng-href="#/icons" ng-class="{active: page == 'icons'}" ng-click="page = 'icons'">
+          <svg><use xlink:href='images/icons.svg#icon-att'/></svg>
+          <span>Icons</span>
         </a>
         <a class="geo-menu__button" ng-href="#/flex-grid" ng-class="{active: page == 'flex-grid'}" ng-click="page = 'flex-grid'">
           <svg><use xlink:href='images/icons.svg#icon-grid'/></svg>

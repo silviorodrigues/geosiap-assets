@@ -2225,6 +2225,15 @@ body.stop-scrolling {
      Boson name: Fonts
 
 -------------------------------------------------------*/
+a {
+  color: #4C87FF;
+  text-decoration: none;
+}
+
+p {
+  color: #747474;
+}
+
 /*-------------------------------------------------------
 
      Boson name: Icon Inside
