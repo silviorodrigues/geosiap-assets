@@ -17,5 +17,8 @@
     "grunt-svg-cleaner": "^1.0.1",
     "grunt-svgstore": "^1.0.0",
     "remove-svg-properties": "^0.3.2"
+  },
+  "dependencies": {
+    "angular-gist": "^1.0.0"
   }
 }

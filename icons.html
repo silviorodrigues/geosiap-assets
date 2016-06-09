@@ -1,0 +1,33 @@
+<style>
+  .myIcon {
+    fill: #0f0;
+  }
+
+  .myIcon:hover {
+    fill: #f00;
+  }
+</style>
+<div class="geo-content">
+  <div class="geo-content__row geo-row--title">
+    <h1>Icons</h1>
+  </div>
+  <div class="geo-content__row">
+    <div class="geo-columns--12c">
+    <p>Para usar a biblioteca de ícones do sitesma <a href="https://cdn.rawgit.com/embras/geosiap-assets/master/images/icon-lib.zip">baixe o pacote</a>, descompacte e selecione quais itens serão usados em sua aplicação.</p>
+    <p>Para exibir os icones em SVG use a tag:</p>
+    <gist id="03b9de96a652a10a2d4a055f0079fade"></gist>
+      <h2>Exemplo:</h2>
+      <p>
+        <svg><use xlink:href='images/thin-0015_fountain_pen.svg#icon'/></svg>
+      </p>
+      <gist id="58eca1820d5670f55e97b03d266bbc75"></gist>
+      <h2>Estilo:</h2>
+      <p>Por padrão, os icones vem com cores e tamanhos pré-definidos. Para definir um novo estilo, basta adicionar uma classe na tag svg e estiliza-la, exemplo:</p>
+      <p>
+        <svg class="myIcon"><use xlink:href='images/thin-0015_fountain_pen.svg#icon'/></svg>
+      </p>
+      <gist id="96b3a072f86517efd508869b3dc763b2"></gist>
+      <gist id="e79aecff715bd15ec12925dbaf435ad1"></gist>
+    </div>
+  </div>
+</div>
