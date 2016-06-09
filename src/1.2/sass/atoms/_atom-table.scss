@@ -30,6 +30,11 @@ table {
       transition: ease .2s;
       &:hover {
         background-color: $gray-light;
+        .has-link {
+           a {
+            color: $blue;
+           }
+        }
       }
       &.inative {
         background-color: $gray-light;
@@ -51,9 +56,6 @@ table {
           padding: 15px;
           text-decoration: none;
           width: 100%;
-          &:hover {
-            color: $blue;
-          }
         }
       }
       & > td > .geo-arrow {
