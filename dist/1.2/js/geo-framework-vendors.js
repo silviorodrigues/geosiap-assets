@@ -167,9 +167,11 @@ $.fn.select2.defaults.defaults.language.searching = function () {
   return 'Pesquisando...';
 }
 
-$(document).on('click', '[data-collapse] tr', function() {
-  if (!$(this).hasClass("description")) {
-    $(this).toggleClass('geo-arrow--down');
-    $(this).nextAll('.description').toggleClass('active');
-  };
+$(document).on('click', '[data-collapse] tr', function(event) {
+  if (!$(event.target).is($('.geo-table--action svg'))) {
+    if (!$(this).hasClass("description")) {
+      $(this).toggleClass('geo-arrow--down');
+      $(this).nextAll('.description').toggleClass('active');
+    };
+  }
 });
