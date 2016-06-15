@@ -2976,14 +2976,15 @@ table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .g
 
 -------------------------------------------------------*/
 .geo-button {
-  margin: 0 10px 20px 0;
   border-radius: 0px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-size: .875em;
   font-weight: 600;
   height: 43px;
   line-height: 43px;
+  margin: 0 10px 20px 0;
   min-width: 170px;
   padding: 0 15px;
   position: relative;
@@ -3025,14 +3026,15 @@ table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .g
 }
 
 .geo-button--secundary {
-  margin: 0 10px 20px 0;
   border-radius: 0px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-size: .875em;
   font-weight: 600;
   height: 43px;
   line-height: 43px;
+  margin: 0 10px 20px 0;
   min-width: 170px;
   padding: 0 15px;
   position: relative;
@@ -3077,14 +3079,15 @@ table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .g
 }
 
 .geo-button--action {
-  margin: 0 10px 20px 0;
   border-radius: 0px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-size: .875em;
   font-weight: 600;
   height: 43px;
   line-height: 43px;
+  margin: 0 10px 20px 0;
   min-width: 170px;
   padding: 0 15px;
   position: relative;
@@ -3125,14 +3128,15 @@ table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .g
 }
 
 .geo-button--error {
-  margin: 0 10px 20px 0;
   border-radius: 0px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-size: .875em;
   font-weight: 600;
   height: 43px;
   line-height: 43px;
+  margin: 0 10px 20px 0;
   min-width: 170px;
   padding: 0 15px;
   position: relative;
@@ -3173,14 +3177,15 @@ table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .g
 }
 
 .geo-button--white {
-  margin: 0 10px 20px 0;
   border-radius: 0px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-size: .875em;
   font-weight: 600;
   height: 43px;
   line-height: 43px;
+  margin: 0 10px 20px 0;
   min-width: 170px;
   padding: 0 15px;
   position: relative;

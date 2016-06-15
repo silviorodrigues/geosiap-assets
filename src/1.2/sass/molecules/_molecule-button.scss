@@ -5,14 +5,15 @@
 -------------------------------------------------------*/
 
 @mixin geo-button {
-  margin: 0 10px 20px 0;
   border-radius: 0px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-size: .875em;
   font-weight: 600;
   height: 43px;
   line-height: 43px;
+  margin: 0 10px 20px 0;
   min-width: 170px;
   padding: 0 15px;
   position: relative;
