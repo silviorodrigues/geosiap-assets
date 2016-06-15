@@ -2898,6 +2898,12 @@ table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .g
   width: 100% !important;
 }
 
+@media screen and (max-width: 1024px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
 /*-------------------------------------------------------
 
      Atom name: Tabs
