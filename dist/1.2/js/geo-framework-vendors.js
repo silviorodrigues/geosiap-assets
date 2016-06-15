@@ -23,7 +23,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
 
-    $('.geo-menu__button').click(function( e ){
+    $('[data-menu]').click(function( e ){
         var gm = this.id,
         gmFor = $('[data-geo-for="' + gm + '"]'),
         gmId = $('#' + gm),
