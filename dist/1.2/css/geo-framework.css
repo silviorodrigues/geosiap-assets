@@ -2780,6 +2780,7 @@ h6 {
 table {
   background-color: #FFFFFF;
   border: 1px solid #edf0f4;
+  border-collapse: collapse;
   box-sizing: border-box;
   color: #747474;
   font-size: .9em;
@@ -2792,10 +2793,17 @@ table thead {
 }
 table thead tr th {
   border: 1px solid #edf0f4;
+  background-color: #F5F5F5;
 }
 table thead tr:hover {
   background-color: #FFFFFF !important;
   cursor: default !important;
+}
+table tbody:nth-child(even) tr {
+  background-color: #FFFFFF;
+}
+table tbody:nth-child(odd) tr {
+  background-color: #F8FAFB;
 }
 table tbody tr {
   border: 1px solid #edf0f4;
@@ -2859,6 +2867,8 @@ table tbody[data-collapse] {
 }
 table tbody .geo-table--action {
   text-align: right;
+  width: 1px;
+  white-space: nowrap;
 }
 table tbody .geo-table--action a {
   text-decoration: none;
@@ -2876,8 +2886,15 @@ table tbody .geo-table--action a svg:hover {
 table th, table td {
   padding: 15px;
 }
+table th .geo-input--12c, table th .geo-input--9c, table th .geo-input--6c, table th .geo-input--4c, table th .geo-input--3c, table th .geo-input--1c, table td .geo-input--12c, table td .geo-input--9c, table td .geo-input--6c, table td .geo-input--4c, table td .geo-input--3c, table td .geo-input--1c {
+  margin: 0 !important;
+}
 table th.small, table td.small {
-  width: 100px;
+  width: 1px;
+  white-space: nowrap;
+}
+table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .geo-input--6c, table th.small .geo-input--4c, table th.small .geo-input--3c, table th.small .geo-input--1c, table td.small .geo-input--12c, table td.small .geo-input--9c, table td.small .geo-input--6c, table td.small .geo-input--4c, table td.small .geo-input--3c, table td.small .geo-input--1c {
+  width: 100% !important;
 }
 
 /*-------------------------------------------------------
