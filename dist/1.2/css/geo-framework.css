@@ -2793,7 +2793,7 @@ table thead {
 }
 table thead tr th {
   border: 1px solid #edf0f4;
-  background-color: #F5F5F5;
+  background-color: #ECEFF1;
 }
 table thead tr:hover {
   background-color: #FFFFFF !important;
@@ -3606,6 +3606,11 @@ table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .g
 .geo-content .geo-content__row {
   padding: 12px;
   background-color: #FFFFFF;
+}
+.geo-content .geo-content__row.geo-row--title {
+  background-color: #F8FAFB;
+  margin: -12px -12px 0;
+  padding: 24px;
 }
 
 /*-------------------------------------------------------

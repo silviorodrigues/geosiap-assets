@@ -16,5 +16,10 @@
   .geo-content__row {
     padding: 12px;
     background-color: $white;
+    &.geo-row--title {
+      background-color: #F8FAFB;
+      margin: -12px -12px 0;
+      padding: 24px;
+    }
   }
 }
