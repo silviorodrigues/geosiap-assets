@@ -2839,6 +2839,7 @@ table tbody tr .has-link a {
 }
 table tbody tr > td > .geo-arrow {
   position: relative;
+  white-space: nowrap;
 }
 table tbody tr > td > .geo-arrow:before {
   content: "";

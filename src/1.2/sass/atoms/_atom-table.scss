@@ -73,6 +73,7 @@ table {
       }
       & > td > .geo-arrow {
         position: relative;
+        white-space: nowrap;
         &:before {
           content: "";
           cursor: pointer;
