@@ -42,7 +42,7 @@ table {
       border: 1px solid $gray-light;
       transition: ease .2s;
       &:hover {
-        background-color: $gray-light;
+        background-color: #F3F8FA;
         .has-link {
            a {
             color: $blue;
@@ -113,6 +113,7 @@ table {
       text-align: right;
       width: 1px;
       white-space: nowrap;
+      border-right: 1px solid $gray-light;
       a {
         text-decoration: none;
         color: transparent;

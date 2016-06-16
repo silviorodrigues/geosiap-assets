@@ -2810,7 +2810,7 @@ table tbody tr {
   transition: ease .2s;
 }
 table tbody tr:hover {
-  background-color: #edf0f4;
+  background-color: #F3F8FA;
 }
 table tbody tr:hover .has-link a {
   color: #4C87FF;
@@ -2874,6 +2874,7 @@ table tbody .geo-table--action {
   text-align: right;
   width: 1px;
   white-space: nowrap;
+  border-right: 1px solid #edf0f4;
 }
 table tbody .geo-table--action a {
   text-decoration: none;
