@@ -50,9 +50,15 @@ table {
         }
       }
       &.inative {
-        background-color: $gray-light;
-        color: $gray;
-        text-decoration: line-through;
+        td {
+          background-color: $gray-light;
+          color: $gray;
+          text-decoration: line-through;
+          a {
+            color: $gray;
+            text-decoration: line-through;
+          }
+        }
       }
       &.description {
         display: none;

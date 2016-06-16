@@ -2815,8 +2815,12 @@ table tbody tr:hover {
 table tbody tr:hover .has-link a {
   color: #4C87FF;
 }
-table tbody tr.inative {
+table tbody tr.inative td {
   background-color: #edf0f4;
+  color: #BCC0C7;
+  text-decoration: line-through;
+}
+table tbody tr.inative td a {
   color: #BCC0C7;
   text-decoration: line-through;
 }
