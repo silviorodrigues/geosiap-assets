@@ -29,18 +29,16 @@ table {
   }
   tbody {
     &:nth-child(even) {
-      tr {
+      > tr:not(.description){
         background-color: $white;
       }
     }
     &:nth-child(odd) {
-      tr {
+      > tr:not(.description) {
         background-color: #F8FAFB;
       }
     }
-    tr {
-      border: 1px solid $gray-light;
-      transition: ease .2s;
+    > tr:not(.description) {
       &:hover {
         background-color: #F3F8FA;
         .has-link {
@@ -49,6 +47,10 @@ table {
            }
         }
       }
+    }
+    tr {
+      border: 1px solid $gray-light;
+      transition: ease .2s;
       &.inative {
         td {
           background-color: $gray-light;
@@ -105,7 +107,7 @@ table {
         }
       }
     }
-    &[data-collapse] {
+    &[data-collapse] > tr:not(.description) {
       cursor: pointer;
       transition: ease .2s all;
     }

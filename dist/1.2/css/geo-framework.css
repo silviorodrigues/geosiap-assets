@@ -2799,21 +2799,21 @@ table thead tr:hover {
   background-color: #FFFFFF !important;
   cursor: default !important;
 }
-table tbody:nth-child(even) tr {
+table tbody:nth-child(even) > tr:not(.description) {
   background-color: #FFFFFF;
 }
-table tbody:nth-child(odd) tr {
+table tbody:nth-child(odd) > tr:not(.description) {
   background-color: #F8FAFB;
+}
+table tbody > tr:not(.description):hover {
+  background-color: #F3F8FA;
+}
+table tbody > tr:not(.description):hover .has-link a {
+  color: #4C87FF;
 }
 table tbody tr {
   border: 1px solid #edf0f4;
   transition: ease .2s;
-}
-table tbody tr:hover {
-  background-color: #F3F8FA;
-}
-table tbody tr:hover .has-link a {
-  color: #4C87FF;
 }
 table tbody tr.inative td {
   background-color: #edf0f4;
@@ -2866,7 +2866,7 @@ table tbody tr.geo-arrow--down > td > .geo-arrow:before {
   border-bottom: 6px solid transparent;
   border-top: 6px solid #BCC0C7;
 }
-table tbody[data-collapse] {
+table tbody[data-collapse] > tr:not(.description) {
   cursor: pointer;
   transition: ease .2s all;
 }
