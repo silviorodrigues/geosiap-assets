@@ -5,6 +5,7 @@
 -------------------------------------------------------*/
 
 .geo-nav {
+  border-right: 2px solid $gray-light;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -40,21 +41,18 @@
     }
   }
   .geo-nav__menu {
-    flex-grow: 2;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     background-color: $white;
-    border-right: 2px solid $gray-light;
+    margin-bottom: 58px;
 
     overflow: auto;
 
     .geo-menu__button {
-      display: flex;
-      align-items: center;
-
       box-sizing: border-box;
       cursor: pointer;
       padding: 15px 15px 15px 30px;
@@ -66,6 +64,9 @@
       svg {
         padding-right: 10px;
         fill: $gray;
+      }
+      span {
+        vertical-align: super;
       }
       &:hover {
         background-color: $gray-light;
@@ -83,13 +84,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     box-sizing: border-box;
     max-height: 70px;
     padding: 20px;
 
     background-color: $white;
-    border-right: 2px solid $gray-light;
     color: $gray;
     cursor: pointer;
     &:hover {
@@ -105,7 +108,9 @@
     max-width: 75px;
     .geo-nav__menu {
       .geo-menu__button {
+        display: flex;
         padding: 0;
+        align-items: center;
         justify-content: center;
         svg {
           padding-right: 0;
@@ -137,12 +142,16 @@
     .geo-nav__menu {
       border-right: 0px;
       position: fixed;
+      flex-direction: column;
+      flex-wrap: nowrap;
       top: 0;
       left: -100%;
+      min-width: 50vw;
       height: 100vh;
       transition: ease all .3s;
       &.geo-nav--active {
         left: 0;
+        z-index: 10;
       }
       .geo-menu__button {
         padding: 15px 20px;
@@ -172,6 +181,7 @@
     width: 100vw;
     &.active {
       display: block;
+      z-index: 9;
     }
   }
 }

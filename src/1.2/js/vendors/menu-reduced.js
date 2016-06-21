@@ -11,6 +11,8 @@ $(document).ready(function(){
             $('.geo-framework__content').addClass('reduced');
             $('[data-logo="expand"]').hide();
             $('[data-logo="reduced"]').show();
+            $('[data-submenu]').children('.geo-arrow').removeClass('geo-arrow--down');
+            $('[data-submenu]').children('.geo-submenu').removeClass('active');
         }
     });
 

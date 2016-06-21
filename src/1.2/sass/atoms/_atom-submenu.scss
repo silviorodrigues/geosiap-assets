@@ -1,0 +1,53 @@
+.geo-submenu {
+  display: none;
+  width: calc(100% + 45px);
+  margin-left: -30px;
+  margin-top: 10px;
+  &.active {
+    display: block;
+  }
+  .geo-submenu__item {
+    box-sizing: border-box;
+    color: $gray;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    padding: 15px 25px 15px 70px;
+    &:before {
+      background-color: $white;
+      border-radius: 50%;
+      border: 1px solid $gray;
+      position: absolute;
+      content: '';
+      height: 12px;
+      width: 12px;
+      left: 35px;
+      top: 16px;
+      z-index: 2;
+    }
+    &:first-of-type {
+      &:after {
+        height: 25px;
+        top: 0px;
+      }
+    }
+    &:after {
+      background-color: $gray;
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 1px;
+      left: 42px;
+      top: -25px;
+      z-index: 1;
+    }
+    &:hover {
+      &:before {
+        background-color: $blue;
+      }
+    }
+  }
+
+}
