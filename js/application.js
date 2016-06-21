@@ -16,5 +16,5 @@ angular.module('app').config(function($routeProvider) {
 
 angular.module('app').controller('InputController', function() {
     $('#select2').select2();
-    $('#datepicker').datepicker();
+    $('#datepicker').MonthPicker();
 })
