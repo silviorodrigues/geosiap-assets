@@ -1,6 +1,6 @@
 $(document).on('click', '[data-submenu]', function() {
-  $('[data-submenu]').children('.geo-arrow').removeClass('geo-arrow--down');
-  $('[data-submenu]').children('.geo-submenu').removeClass('active')
+  $('[data-submenu]').not(this).children('.geo-arrow').removeClass('geo-arrow--down');
+  $('[data-submenu]').not(this).children('.geo-submenu').removeClass('active')
 
 
   $(this).children('.geo-arrow').toggleClass('geo-arrow--down');
