@@ -2983,6 +2983,9 @@ table th.small, table td.small {
 table th.small .geo-input--12c, table th.small .geo-input--9c, table th.small .geo-input--6c, table th.small .geo-input--4c, table th.small .geo-input--3c, table th.small .geo-input--1c, table td.small .geo-input--12c, table td.small .geo-input--9c, table td.small .geo-input--6c, table td.small .geo-input--4c, table td.small .geo-input--3c, table td.small .geo-input--1c {
   width: 100% !important;
 }
+table th.right, table td.right {
+  text-align: right;
+}
 
 @media screen and (max-width: 1024px) {
   table {
