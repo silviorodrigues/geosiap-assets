@@ -44,6 +44,13 @@
       z-index: 1;
     }
     &:hover {
+      color: $black-light;
+      &:before {
+        background-color: $blue;
+      }
+    }
+    &.active {
+      color: $blue;
       &:before {
         background-color: $blue;
       }

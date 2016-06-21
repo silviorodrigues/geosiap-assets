@@ -2767,7 +2767,16 @@ h6 {
   top: -25px;
   z-index: 1;
 }
+.geo-submenu .geo-submenu__item:hover {
+  color: #747474;
+}
 .geo-submenu .geo-submenu__item:hover:before {
+  background-color: #4C87FF;
+}
+.geo-submenu .geo-submenu__item.active {
+  color: #4C87FF;
+}
+.geo-submenu .geo-submenu__item.active:before {
   background-color: #4C87FF;
 }
 
