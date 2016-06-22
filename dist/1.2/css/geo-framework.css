@@ -3740,6 +3740,13 @@ table th.right, table td.right {
   margin: -12px -12px 0;
   padding: 24px;
 }
+.geo-content .geo-content__row.geo-row--title p {
+  font-size: .9em;
+  margin: 5px 0;
+}
+.geo-content .geo-content__row.geo-row--title p strong {
+  margin-right: 5px;
+}
 
 /*-------------------------------------------------------
 

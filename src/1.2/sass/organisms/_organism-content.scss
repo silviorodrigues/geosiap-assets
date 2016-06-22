@@ -20,6 +20,13 @@
       background-color: #F8FAFB;
       margin: -12px -12px 0;
       padding: 24px;
+      p {
+        font-size: .9em;
+        margin: 5px 0;
+        strong {
+          margin-right: 5px;
+        }
+      }
     }
   }
 }
