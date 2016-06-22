@@ -3367,6 +3367,13 @@ table th.right, table td.right {
 .geo-content__row .geo-columns--middle.geo-columns--12c, .geo-content__row .geo-columns--middle.geo-columns--9c, .geo-content__row .geo-columns--middle.geo-columns--6c, .geo-content__row .geo-columns--middle.geo-columns--3c {
   align-self: center;
 }
+.geo-content__row .geo-columns--text.geo-columns--12c p, .geo-content__row .geo-columns--text.geo-columns--9c p, .geo-content__row .geo-columns--text.geo-columns--6c p, .geo-content__row .geo-columns--text.geo-columns--3c p {
+  font-size: .9em;
+  margin: 5px 0;
+}
+.geo-content__row .geo-columns--text.geo-columns--12c p strong, .geo-content__row .geo-columns--text.geo-columns--9c p strong, .geo-content__row .geo-columns--text.geo-columns--6c p strong, .geo-content__row .geo-columns--text.geo-columns--3c p strong {
+  margin-right: 5px;
+}
 
 .geo-content__row {
   display: flex;

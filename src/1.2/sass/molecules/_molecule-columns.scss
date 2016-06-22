@@ -15,6 +15,15 @@
   &.geo-columns--middle {
     align-self: center;
   }
+  &.geo-columns--text {
+    p {
+      font-size: .9em;
+      margin: 5px 0;
+      strong {
+        margin-right: 5px;
+      }
+    }
+  }
 }
 
 .geo-content__row {
