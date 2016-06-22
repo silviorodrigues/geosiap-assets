@@ -2547,6 +2547,32 @@ h6 {
 
 /*-------------------------------------------------------
 
+     Atom name: List
+
+-------------------------------------------------------*/
+.geo-list {
+  list-style: none;
+  color: #747474;
+  font-size: .9em;
+  padding: 0;
+}
+.geo-list li {
+  position: relative;
+}
+.geo-list .geo-list__item--result {
+  margin-top: 20px;
+}
+.geo-list .geo-list__item--result:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 200px;
+  top: -10px;
+  background-color: #747474;
+}
+
+/*-------------------------------------------------------
+
      Atom name: Menu
 
 -------------------------------------------------------*/
