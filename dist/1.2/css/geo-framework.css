@@ -3888,13 +3888,19 @@ table th.right, table td.right {
   fill: #BCC0C7;
 }
 .geo-nav .geo-nav__menu .geo-menu__button span {
+  color: #BCC0C7;
   vertical-align: super;
 }
 .geo-nav .geo-nav__menu .geo-menu__button:hover {
   background-color: #edf0f4;
 }
+.geo-nav .geo-nav__menu .geo-menu__button:hover span {
+  color: #BCC0C7;
+}
 .geo-nav .geo-nav__menu .geo-menu__button.active {
   background-color: #edf0f4;
+}
+.geo-nav .geo-nav__menu .geo-menu__button.active span {
   color: #4C87FF;
 }
 .geo-nav .geo-nav__menu .geo-menu__button.active svg {

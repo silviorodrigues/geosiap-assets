@@ -66,14 +66,20 @@
         fill: $gray;
       }
       span {
+        color: $gray;
         vertical-align: super;
       }
       &:hover {
+        span {
+          color: $gray;
+        }
         background-color: $gray-light;
       }
       &.active {
         background-color: $gray-light;
-        color: $blue;
+        span {
+          color: $blue;
+        }
         svg {
           fill: $blue;
         }
