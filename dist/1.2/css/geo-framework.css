@@ -2230,7 +2230,7 @@ a {
   text-decoration: none;
 }
 
-p {
+p, span {
   color: #747474;
 }
 
