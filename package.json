@@ -1,4 +1,11 @@
 {
+  "name": "geosiap-assets",
+  "version": "0.1.0",
+  "main": "text",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/embras/geosiap-assets"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
