@@ -74,7 +74,6 @@
         <span class="geo-header__title"><a href="#">Nome do lugar que está sendo trabalhado</a></span>
 
         <div class="geo-header__info">
-          <span>Nome do usuário</span>
           <a class="geo-menu__button" id="menu-user" data-menu>
             <svg><use xlink:href='images/icons.svg#icon-usuario_info'/></svg>
           </a>
@@ -85,9 +84,20 @@
 
     </main>
   </div>
-  <ul class="geo-menu geo-menu--bottom-left" data-geo-for="menu-user">
-    <li class="geo-menu__item"><a href="#">Editar perfil</a></li>
-    <li class="geo-menu__item"><a href="#">Sair</a></li>
-  </ul>
+  <div class="geo-menu geo-menu--bottom-left" data-geo-for="menu-user">
+    <div class="geo-menu--full">
+      <div class="menu-full__header">
+        <img src="images/profile-picture.jpg" class="profile-picture">
+        <div class="menu-full__infos">
+          <p><strong>Nome do usuário</strong></p>
+          <p>email@email.com</p>
+        </div>
+      </div>
+      <div class="menu-full__actions">
+        <a href="#">Alterar perfil</a>
+        <a href="#">Sair</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

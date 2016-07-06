@@ -54,6 +54,33 @@
       color: $blue;
     }
   }
+  .geo-menu--full {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    .menu-full__header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .profile-picture {
+        margin: 6px 0 5px 0;
+      }
+      .menu-full__infos {
+        margin-left: 10px;
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+    .menu-full__actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px -24px 0 -24px;
+      padding: 12px 24px 0;
+      border-top: 1px solid $gray-light;
+    }
+  }
 }
 
 

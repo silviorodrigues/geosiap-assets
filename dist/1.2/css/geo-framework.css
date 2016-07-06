@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -2626,6 +2627,33 @@ h6 {
 }
 .geo-menu a:hover {
   color: #4C87FF;
+}
+.geo-menu .geo-menu--full {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+}
+.geo-menu .geo-menu--full .menu-full__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.geo-menu .geo-menu--full .menu-full__header .profile-picture {
+  margin: 6px 0 5px 0;
+}
+.geo-menu .geo-menu--full .menu-full__header .menu-full__infos {
+  margin-left: 10px;
+}
+.geo-menu .geo-menu--full .menu-full__header .menu-full__infos p {
+  margin: 5px 0;
+}
+.geo-menu .geo-menu--full .menu-full__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px -24px 0 -24px;
+  padding: 12px 24px 0;
+  border-top: 1px solid #edf0f4;
 }
 
 @media screen and (max-width: 100%) {
