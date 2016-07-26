@@ -43,7 +43,7 @@ $(document).ready(function(){
         if(gmFor.hasClass('geo-menu--bottom-right')) {
             gmFor.css({top: gmTop + gmId.height(), left: gmLeft + gmId.width()});
         }else if(gmFor.hasClass('geo-menu--bottom-left')) {
-            gmFor.css({top: gmTop + gmId.height(), left: gmLeft - gmFor.width()});
+            gmFor.css({top: gmTop + gmId.height() + 15, left: gmLeft - gmFor.width()});
         }else if(gmFor.hasClass('geo-menu--top-right')) {
             gmFor.css({top: gmTop - gmId.height()  - gmFor.height(), left: gmLeft + gmId.width()});
         }else if(gmFor.hasClass('geo-menu--top-left')) {
