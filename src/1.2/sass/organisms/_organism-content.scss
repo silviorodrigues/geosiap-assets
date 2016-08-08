@@ -20,6 +20,9 @@
       background-color: #F8FAFB;
       margin: -12px -12px 0;
       padding: 24px;
+      &.geo-row--title--small {
+        padding: 6px 24px;
+      }
       p {
         font-size: .9em;
         margin: 5px 0;
@@ -27,6 +30,12 @@
           margin-right: 5px;
         }
       }
+    }
+    &.geo-row--card {
+      background-color: #F8FAFB;
+      border-top: 2px solid $gray-light;
+      margin: 0 -12px;
+      padding: 24px;
     }
   }
 }

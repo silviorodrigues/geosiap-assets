@@ -7,3 +7,16 @@
 @mixin size ($width:100%, $gutter:25px) {
   width: calc(#{$width} - #{$gutter});
 }
+
+@mixin column ($width:100%, $gutter:24px) {
+  width: $width;
+  &.geo-card {
+    width: calc(#{$width} - #{$gutter});
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    &.geo-card {
+      width: calc(100% - #{$gutter});
+    }
+  }
+}

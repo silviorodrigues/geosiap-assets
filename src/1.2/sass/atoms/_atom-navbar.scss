@@ -1,0 +1,88 @@
+.geo-navbar {
+  background-color: $white;
+  border-top: 2px solid $gray-light;
+
+
+  margin: 0 -12px;
+  padding: 12px 24px;
+  .geo-navbar__item {
+    color: $gray;
+    display: inline-block;
+    padding: 0 24px 12px;
+    margin: 0 12px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid $blue;
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.geo-navbar--sub {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: 7px;
+    right: -5px;
+
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTJweCIgaGVpZ2h0PSI3LjQxcHgiIHZpZXdCb3g9IjYgOC4yOTUgMTIgNy40MSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyA2IDguMjk1IDEyIDcuNDEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0JDQzBDNyIgZD0iTTcuNDEsOC4yOTVsNC41OSw0LjU4bDQuNTktNC41OEwxOCw5LjcwNWwtNiw2bC02LTZMNy40MSw4LjI5NXoiLz4NCjwvc3ZnPg0K');
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    .geo-subbar {
+      display: block;
+    }
+  }
+  .geo-subbar {
+    background-color: $white;
+    border: 1px solid $gray-light;
+    border-top: 2px solid $blue;
+    display: none;
+    width: 200px;
+    margin-top: 20px;
+    padding: 12px 0;
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    z-index: 99;
+    .geo-subbar__item {
+      box-sizing: border-box;
+      display: block;
+      font-size: .9em;
+      padding: 12px;
+      a {
+        color: $gray;
+      }
+      &:hover {
+        a {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .geo-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .geo-navbar__item {
+      width: 20%;
+      text-align: center;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .geo-navbar--sub {
+    .geo-subbar {
+      width: 100%;
+    }
+  }
+}

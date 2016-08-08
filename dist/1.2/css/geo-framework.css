@@ -2678,6 +2678,83 @@ h6 {
     left: 7px;
   }
 }
+.geo-navbar {
+  background-color: #FFFFFF;
+  border-top: 2px solid #edf0f4;
+  margin: 0 -12px;
+  padding: 12px 24px;
+}
+.geo-navbar .geo-navbar__item {
+  color: #BCC0C7;
+  display: inline-block;
+  padding: 0 24px 12px;
+  margin: 0 12px;
+  border-bottom: 2px solid transparent;
+}
+.geo-navbar .geo-navbar__item:hover {
+  border-bottom: 2px solid #4C87FF;
+  color: #4C87FF;
+  cursor: pointer;
+}
+
+.geo-navbar--sub {
+  position: relative;
+}
+.geo-navbar--sub:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  top: 7px;
+  right: -5px;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTJweCIgaGVpZ2h0PSI3LjQxcHgiIHZpZXdCb3g9IjYgOC4yOTUgMTIgNy40MSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyA2IDguMjk1IDEyIDcuNDEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0JDQzBDNyIgZD0iTTcuNDEsOC4yOTVsNC41OSw0LjU4bDQuNTktNC41OEwxOCw5LjcwNWwtNiw2bC02LTZMNy40MSw4LjI5NXoiLz4NCjwvc3ZnPg0K");
+  background-repeat: no-repeat;
+}
+.geo-navbar--sub:hover .geo-subbar {
+  display: block;
+}
+.geo-navbar--sub .geo-subbar {
+  background-color: #FFFFFF;
+  border: 1px solid #edf0f4;
+  border-top: 2px solid #4C87FF;
+  display: none;
+  width: 200px;
+  margin-top: 20px;
+  padding: 12px 0;
+  position: absolute;
+  top: 14px;
+  left: 0px;
+  z-index: 99;
+}
+.geo-navbar--sub .geo-subbar .geo-subbar__item {
+  box-sizing: border-box;
+  display: block;
+  font-size: .9em;
+  padding: 12px;
+}
+.geo-navbar--sub .geo-subbar .geo-subbar__item a {
+  color: #BCC0C7;
+}
+.geo-navbar--sub .geo-subbar .geo-subbar__item:hover a {
+  color: #4C87FF;
+}
+
+@media screen and (max-width: 1024px) {
+  .geo-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .geo-navbar .geo-navbar__item {
+    width: 20%;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .geo-navbar--sub .geo-subbar {
+    width: 100%;
+  }
+}
 /*-------------------------------------------------------
 
      Atom name: Profile Picture
@@ -3462,19 +3539,93 @@ table th.right, table td.right {
 }
 .geo-content__row .geo-columns--12c {
   width: 100%;
+  width: 100%;
+}
+.geo-content__row .geo-columns--12c.geo-card {
+  width: calc(100% - 24px);
+}
+@media screen and (max-width: 1024px) {
+  .geo-content__row .geo-columns--12c {
+    width: 100%;
+  }
+  .geo-content__row .geo-columns--12c.geo-card {
+    width: calc(100% - 24px);
+  }
 }
 .geo-content__row .geo-columns--9c {
   width: 75%;
 }
+.geo-content__row .geo-columns--9c.geo-card {
+  width: calc(75% - 24px);
+}
+@media screen and (max-width: 1024px) {
+  .geo-content__row .geo-columns--9c {
+    width: 100%;
+  }
+  .geo-content__row .geo-columns--9c.geo-card {
+    width: calc(100% - 24px);
+  }
+}
 .geo-content__row .geo-columns--6c {
   width: 50%;
+}
+.geo-content__row .geo-columns--6c.geo-card {
+  width: calc(50% - 24px);
+}
+@media screen and (max-width: 1024px) {
+  .geo-content__row .geo-columns--6c {
+    width: 100%;
+  }
+  .geo-content__row .geo-columns--6c.geo-card {
+    width: calc(100% - 24px);
+  }
 }
 .geo-content__row .geo-columns--3c {
   width: 25%;
 }
+.geo-content__row .geo-columns--3c.geo-card {
+  width: calc(25% - 24px);
+}
+@media screen and (max-width: 1024px) {
+  .geo-content__row .geo-columns--3c {
+    width: 100%;
+  }
+  .geo-content__row .geo-columns--3c.geo-card {
+    width: calc(100% - 24px);
+  }
+}
 .geo-content__row .geo-profile-column {
   display: inline-block;
   margin-left: 20px;
+}
+.geo-content__row .geo-card {
+  background-color: #FFFFFF;
+  border: 1px solid #edf0f4;
+  margin: 12px;
+  padding: 12px;
+}
+.geo-content__row .geo-card .geo-card__title {
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.geo-content__row .geo-card .geo-card__title a {
+  color: #4C87FF;
+  font-size: 1.1em;
+  position: relative;
+}
+.geo-content__row .geo-card .geo-card__title a.geo-card--icon:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  right: 0px;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTBweCIgaGVpZ2h0PSIxMHB4IiB2aWV3Qm94PSIwLjc5MyAtMC41OCAxMCAxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwLjc5MyAtMC41OCAxMCAxMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjNEM4N0ZGIiBkPSJNNi43OTMtMC41OGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNFYtMC41OHoiLz4NCjwvc3ZnPg0K");
+  background-repeat: no-repeat;
+}
+.geo-content__row .geo-card .geo-card__content {
+  color: #BCC0C7;
 }
 
 @media screen and (max-width: 1200px) {
@@ -3556,7 +3707,6 @@ table th.right, table td.right {
   height: 6rem;
   padding: 15px;
   position: relative;
-  border-bottom: solid 2px #edf0f4;
   display: flex;
   align-items: center;
   width: 100%;
@@ -3821,12 +3971,21 @@ table th.right, table td.right {
   margin: -12px -12px 0;
   padding: 24px;
 }
+.geo-content .geo-content__row.geo-row--title.geo-row--title--small {
+  padding: 6px 24px;
+}
 .geo-content .geo-content__row.geo-row--title p {
   font-size: .9em;
   margin: 5px 0;
 }
 .geo-content .geo-content__row.geo-row--title p strong {
   margin-right: 5px;
+}
+.geo-content .geo-content__row.geo-row--card {
+  background-color: #F8FAFB;
+  border-top: 2px solid #edf0f4;
+  margin: 0 -12px;
+  padding: 24px;
 }
 
 /*-------------------------------------------------------
