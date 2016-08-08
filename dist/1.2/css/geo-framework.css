@@ -2682,7 +2682,7 @@ h6 {
   background-color: #FFFFFF;
   border-top: 2px solid #edf0f4;
   margin: 0 -12px;
-  padding: 12px 24px;
+  padding: 12px 24px 0;
 }
 .geo-navbar .geo-navbar__item {
   color: #BCC0C7;
@@ -3742,6 +3742,16 @@ table th.right, table td.right {
   color: #BCC0C7;
 }
 
+@media screen and (max-width: 1024px) {
+  .geo-search--info {
+    flex-direction: column;
+    height: 100%;
+  }
+  .geo-search--info .description {
+    padding-left: 0;
+    text-align: center;
+  }
+}
 /*-------------------------------------------------------
 
      Molecule name: Input
