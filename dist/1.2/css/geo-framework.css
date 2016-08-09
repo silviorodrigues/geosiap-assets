@@ -2691,7 +2691,7 @@ h6 {
   margin: 0 12px;
   border-bottom: 2px solid transparent;
 }
-.geo-navbar .geo-navbar__item:hover {
+.geo-navbar .geo-navbar__item:hover, .geo-navbar .geo-navbar__item.active {
   border-bottom: 2px solid #4C87FF;
   color: #4C87FF;
   cursor: pointer;
