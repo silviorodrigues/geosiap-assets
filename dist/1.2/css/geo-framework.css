@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -3524,6 +3525,10 @@ table th.right, table td.right {
 }
 .geo-content__row .geo-columns--text.geo-columns--12c p strong, .geo-content__row .geo-columns--text.geo-columns--9c p strong, .geo-content__row .geo-columns--text.geo-columns--6c p strong, .geo-content__row .geo-columns--text.geo-columns--3c p strong {
   margin-right: 5px;
+}
+.geo-content__row .geo-columns--with-columns.geo-columns--12c, .geo-content__row .geo-columns--with-columns.geo-columns--9c, .geo-content__row .geo-columns--with-columns.geo-columns--6c, .geo-content__row .geo-columns--with-columns.geo-columns--3c {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .geo-content__row {
