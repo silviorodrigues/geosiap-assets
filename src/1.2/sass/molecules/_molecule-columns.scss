@@ -25,6 +25,10 @@
       }
     }
   }
+  &.geo-columns--with-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .geo-content__row {
